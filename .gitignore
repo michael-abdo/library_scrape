@@ -1,0 +1,66 @@
+# Large video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Database files
+*.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Large data files
+*.json.large
+*.csv.large
+
+# Authentication files (sensitive)
+cookies.json
+*.key
+*.pem
+*.p12
+
+# AWS credentials and config
+.aws/
+config/.env
+*.aws
+
+# Thumbnails and temporary images
+*.jpg
+*.jpeg
+*.png
+*.gif*.mp4
+*.mov
+*.avi
+*.mkv
+*.db
+venv/
+*.log
