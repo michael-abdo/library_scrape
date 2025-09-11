@@ -33,13 +33,13 @@ import argparse
 from datetime import datetime
 from pathlib import Path
 from s3_manager import S3Manager
-from config_manager import ConfigManager
+from google_gpu_transcriber import GoogleGPUTranscriber
 
 class UnifiedVideoProcessor:
     def __init__(self):
         """Initialize the unified video processor"""
-        self.config_manager = ConfigManager()
         self.s3_manager = S3Manager()
+        self.transcriber = GoogleGPUTranscriber()
         self.db_path = self._find_database()
         self.cookies = self._load_cookies()
         self.session = self._create_session()
@@ -329,15 +329,79 @@ class UnifiedVideoProcessor:
                 print("❌ S3 verification failed")
                 return False
             
-            # Update database
+            # Update database with S3 info
             self.update_database_record(video_record, s3_key, streamable_id)
             
-            print(f"✅ Successfully processed: {title}")
+            # Start transcription process
+            transcription_success = self.transcribe_video(s3_key, video_record)
+            
+            if transcription_success:
+                print(f"✅ Successfully processed and transcribed: {title}")
+            else:
+                print(f"⚠️  S3 upload successful but transcription failed: {title}")
+                
             return True
                 
         except Exception as e:
             print(f"❌ Upload error: {e}")
             return False
+    
+    def transcribe_video(self, s3_key, video_record):
+        """Transcribe video using Google GPU transcription"""
+        try:
+            print(f"🎙️  Starting Google GPU transcription for: {video_record.get('title', 'Unknown')}")
+            
+            # Generate presigned URL for the video
+            presigned_url = self.s3_manager.get_presigned_url(s3_key, expiration=7200)  # 2 hours
+            if not presigned_url:
+                print("❌ Failed to generate presigned URL for transcription")
+                return False
+            
+            print(f"🔗 Using presigned URL for transcription")
+            
+            # Perform transcription
+            result = self.transcriber.transcribe_video_from_url(presigned_url)
+            
+            if result and result.get('success'):
+                transcript = result.get('transcript', '')
+                confidence = result.get('confidence', 0)
+                
+                # Update database with transcription
+                self.update_transcription_record(video_record, transcript, confidence)
+                print(f"✅ Transcription completed (confidence: {confidence:.2f})")
+                return True
+            else:
+                error = result.get('error', 'Unknown error') if result else 'No result returned'
+                print(f"❌ Transcription failed: {error}")
+                return False
+                
+        except Exception as e:
+            print(f"❌ Transcription error: {e}")
+            return False
+    
+    def update_transcription_record(self, video_record, transcript, confidence):
+        """Update database with transcription results"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                cursor.execute("""
+                    UPDATE videos 
+                    SET transcript = ?,
+                        transcription_confidence = ?,
+                        transcribed_at = datetime('now')
+                    WHERE id = ?
+                """, (transcript, confidence, video_record['id']))
+                
+                conn.commit()
+                
+                if cursor.rowcount > 0:
+                    print(f"   ✅ Updated transcription record: {video_record['id']}")
+                else:
+                    print(f"   ⚠️  No transcription rows updated")
+                    
+        except Exception as e:
+            print(f"   ❌ Transcription database update error: {e}")
     
     def update_database_record(self, video_record, s3_key, streamable_id):
         """Update database with S3 information"""
