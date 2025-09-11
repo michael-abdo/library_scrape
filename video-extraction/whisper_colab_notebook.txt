@@ -1,0 +1,81 @@
+
+# Create this as a new notebook in Google Colab Pro
+
+# Cell 1: Setup
+!pip install openai-whisper boto3
+
+# Cell 2: Import and Initialize
+import whisper
+import requests
+import json
+from google.colab import files
+import os
+import time
+
+# Load Whisper model (base model is good balance of speed/accuracy)
+print("Loading Whisper model...")
+model = whisper.load_model("base")
+print("✅ Model loaded!")
+
+# Cell 3: Download batch file from your local machine
+print("Upload your batch JSON file:")
+uploaded = files.upload()
+batch_file = list(uploaded.keys())[0]
+
+with open(batch_file, 'r') as f:
+    batch_data = json.load(f)
+
+print(f"📊 Loaded batch with {len(batch_data['videos'])} videos")
+
+# Cell 4: Process videos
+results = {
+    'batch_file': batch_file,
+    'start_time': time.time(),
+    'transcripts': []
+}
+
+for i, video in enumerate(batch_data['videos']):
+    print(f"\n[{i+1}/{len(batch_data['videos'])}] Processing: {video['title'][:50]}...")
+    
+    try:
+        # Download audio from presigned URL
+        audio_file = f"temp_{video['id']}.mp3"
+        response = requests.get(video['url'], stream=True)
+        with open(audio_file, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        
+        # Transcribe with Whisper
+        result = model.transcribe(audio_file, language='en')
+        
+        results['transcripts'].append({
+            'id': video['id'],
+            'title': video['title'],
+            'transcript': result['text'],
+            'status': 'success'
+        })
+        
+        # Clean up
+        os.remove(audio_file)
+        print(f"✅ Completed: {len(result['text'])} characters")
+        
+    except Exception as e:
+        print(f"❌ Error: {str(e)}")
+        results['transcripts'].append({
+            'id': video['id'],
+            'title': video['title'],
+            'error': str(e),
+            'status': 'failed'
+        })
+
+results['end_time'] = time.time()
+results['duration'] = results['end_time'] - results['start_time']
+
+# Cell 5: Save and download results
+results_file = f"results_{batch_file}"
+with open(results_file, 'w') as f:
+    json.dump(results, f, indent=2)
+
+print(f"\n✅ Completed {len(results['transcripts'])} videos in {results['duration']:.1f} seconds")
+print(f"📥 Downloading results...")
+files.download(results_file)
