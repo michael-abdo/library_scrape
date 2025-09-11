@@ -1,0 +1,558 @@
+#!/usr/bin/env python3
+"""
+ObjectivePersonality Video Downloader
+Complete solution for extracting and downloading videos from ObjectivePersonality's 
+protected video library using Streamable hosting.
+
+This script:
+1. Authenticates using existing cookies
+2. Extracts Streamable video IDs from the target page
+3. Gets signed download URLs from Streamable API
+4. Downloads the video with progress tracking
+
+Usage:
+    python3 op_video_downloader.py                          # Batch mode - download all undownloaded videos
+    python3 op_video_downloader.py <limit>                  # Batch mode - download up to <limit> videos  
+    python3 op_video_downloader.py --limit <N>              # Batch mode - download up to N videos
+    python3 op_video_downloader.py <url>                    # Single mode - download specific video
+    
+Examples:
+    python3 op_video_downloader.py                          # Download all
+    python3 op_video_downloader.py 3                        # Download 3 videos
+    python3 op_video_downloader.py --limit 5                # Download 5 videos
+    python3 op_video_downloader.py https://www.objectivepersonality.com/videos/shan-typing%3A-selena-gomez
+
+Requirements:
+    - requests, beautifulsoup4, sqlite3
+    - cookies.json file with authentication cookies
+    - library_videos.db database with video URLs
+    - Internet connection
+"""
+
+import requests
+import json
+from pathlib import Path
+import time
+import re
+import sys
+import urllib.parse
+import sqlite3
+import os
+from bs4 import BeautifulSoup
+
+class OPVideoDownloader:
+    def __init__(self, db_path="../library_videos.db"):
+        self.cookies = self.load_cookies()
+        self.session = self.create_session()
+        self.db_path = db_path
+        
+    def load_cookies(self):
+        """Load authentication cookies from multiple possible locations"""
+        possible_paths = [
+            "../celebrity_archive_scrape/cookies.json",
+            "../../celebrity_archive_scrape/cookies.json", 
+            "/Users/Mike/Xenodex/celebrity_archive_scrape/cookies.json",
+            "cookies.json"
+        ]
+        
+        for cookie_path in possible_paths:
+            path = Path(cookie_path)
+            if path.exists():
+                print(f"✅ Found cookies at: {path}")
+                with open(path, 'r') as f:
+                    return json.load(f)
+        
+        print("⚠️  Warning: No cookies.json found. Download may fail without authentication.")
+        return []
+    
+    def create_session(self):
+        """Create authenticated requests session"""
+        session = requests.Session()
+        
+        # Add authentication cookies
+        for cookie in self.cookies:
+            session.cookies.set(
+                cookie['name'], 
+                cookie['value'],
+                domain=cookie.get('domain', '.objectivepersonality.com'),
+                path=cookie.get('path', '/')
+            )
+        
+        # Set realistic headers
+        session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Referer': 'https://www.objectivepersonality.com/'
+        })
+        
+        return session
+    
+    def get_db_connection(self):
+        """Get database connection"""
+        return sqlite3.connect(self.db_path)
+    
+    def check_if_downloaded(self, video_url):
+        """Check if video is already downloaded locally"""
+        with self.get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT id, title FROM videos WHERE video_url = ?", (video_url,))
+            result = cursor.fetchone()
+            
+            if not result:
+                return False, None, None
+                
+            video_id, title = result
+            # Check if local file exists
+            safe_title = "".join(c for c in title if c.isalnum() or c in (' ', '-', '_', ')', '(')).strip()
+            local_filename = f"{safe_title}.mp4"
+            
+            if os.path.exists(local_filename):
+                return True, video_id, local_filename
+            else:
+                return False, video_id, None
+    
+    def update_download_status(self, video_url, local_filename, streamable_id=None, metadata=None):
+        """Update database with download information"""
+        with self.get_db_connection() as conn:
+            cursor = conn.cursor()
+            
+            # Add columns if they don't exist (for backwards compatibility)
+            try:
+                cursor.execute("ALTER TABLE videos ADD COLUMN local_filename TEXT")
+            except sqlite3.OperationalError:
+                pass  # Column already exists
+                
+            try:
+                cursor.execute("ALTER TABLE videos ADD COLUMN streamable_id TEXT") 
+            except sqlite3.OperationalError:
+                pass  # Column already exists
+                
+            try:
+                cursor.execute("ALTER TABLE videos ADD COLUMN download_date TIMESTAMP")
+            except sqlite3.OperationalError:
+                pass  # Column already exists
+            
+            # Update the record
+            cursor.execute("""
+                UPDATE videos 
+                SET local_filename = ?, streamable_id = ?, download_date = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP
+                WHERE video_url = ?
+            """, (local_filename, streamable_id, video_url))
+            
+            conn.commit()
+            print(f"✅ Database updated: {local_filename}")
+    
+    def get_undownloaded_videos(self, limit=None):
+        """Get list of videos that haven't been downloaded yet"""
+        with self.get_db_connection() as conn:
+            cursor = conn.cursor()
+            
+            # Add columns if they don't exist
+            try:
+                cursor.execute("ALTER TABLE videos ADD COLUMN local_filename TEXT")
+            except sqlite3.OperationalError:
+                pass  # Column already exists
+            
+            # Get videos that haven't been downloaded
+            query = """
+                SELECT id, title, video_url 
+                FROM videos 
+                WHERE local_filename IS NULL OR local_filename = ''
+                ORDER BY title
+            """
+            
+            if limit:
+                query += f" LIMIT {limit}"
+            
+            cursor.execute(query)
+            return cursor.fetchall()
+    
+    def extract_video_id(self, url):
+        """Extract Streamable video ID from ObjectivePersonality page"""
+        print(f"🌐 Fetching page: {url}")
+        
+        try:
+            response = self.session.get(url, timeout=30)
+            response.raise_for_status()
+            
+            print(f"📄 Page loaded: {len(response.content):,} bytes")
+            
+            # Parse HTML to find Streamable video ID
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Multiple patterns to find Streamable video IDs
+            patterns = [
+                # Thumbnail URLs: https://cdn-cf-east.streamable.com/image/VIDEO_ID-screenshot*.jpg
+                r'cdn-cf-east\.streamable\.com/image/([a-z0-9]+)-screenshot',
+                # Direct video URLs: https://cdn-cf-east.streamable.com/video/mp4/VIDEO_ID.mp4
+                r'cdn-cf-east\.streamable\.com/video/mp4/([a-z0-9]+)\.mp4',
+                # Streamable embed URLs: streamable.com/o/VIDEO_ID
+                r'streamable\.com/o/([a-z0-9]+)',
+                # API URLs: api.streamable.com/videos/VIDEO_ID
+                r'api\.streamable\.com/videos/([a-z0-9]+)',
+                # Plain streamable URLs: streamable.com/VIDEO_ID (6+ chars, not followed by path)
+                r'streamable\.com/([a-z0-9]{6,})(?![/-])',
+            ]
+            
+            all_matches = []
+            for pattern in patterns:
+                matches = re.findall(pattern, response.text)
+                all_matches.extend(matches)
+            
+            # Remove duplicates while preserving order
+            unique_matches = list(dict.fromkeys(all_matches))
+            
+            if unique_matches:
+                print(f"🎯 Found Streamable video ID(s): {unique_matches}")
+                # Return the first match (most likely to be the main video)
+                return unique_matches[0]
+            
+            print("❌ No Streamable video IDs found in page")
+            return None
+            
+        except Exception as e:
+            print(f"❌ Error extracting video ID: {e}")
+            return None
+    
+    def get_streamable_metadata(self, video_id):
+        """Get video metadata from Streamable API"""
+        print(f"🔗 Getting metadata for video ID: {video_id}")
+        
+        api_url = f"https://api.streamable.com/videos/{video_id}"
+        
+        try:
+            response = self.session.get(api_url, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            print(f"✅ Got metadata for: {data.get('title', 'Unknown')}")
+            
+            return data
+            
+        except Exception as e:
+            print(f"❌ Error getting Streamable metadata: {e}")
+            return None
+    
+    def download_video(self, video_metadata):
+        """Download video using signed URL from metadata"""
+        title = video_metadata.get('title', 'Unknown Video')
+        
+        # Get the highest quality MP4
+        mp4_info = video_metadata.get('files', {}).get('mp4', {})
+        if not mp4_info:
+            print("❌ No MP4 format available")
+            return False
+            
+        video_url = mp4_info.get('url')
+        video_size = mp4_info.get('size', 0)
+        duration = mp4_info.get('duration', 0)
+        
+        if not video_url:
+            print("❌ No download URL found")
+            return False
+        
+        print(f"\n🎬 Video Details:")
+        print(f"   Title: {title}")
+        print(f"   Duration: {duration/60:.1f} minutes ({duration:.0f} seconds)")
+        print(f"   Size: {video_size / (1024*1024):.1f} MB")
+        print(f"   Resolution: {mp4_info.get('width', '?')}x{mp4_info.get('height', '?')}")
+        
+        # Create safe filename
+        safe_title = "".join(c for c in title if c.isalnum() or c in (' ', '-', '_', ')', '(')).strip()
+        filename = f"{safe_title}.mp4"
+        
+        print(f"\n💾 Downloading to: {filename}")
+        
+        try:
+            # Start download with streaming
+            response = requests.get(video_url, stream=True)
+            response.raise_for_status()
+            
+            # Verify content type
+            content_type = response.headers.get('content-type', '')
+            if 'video' not in content_type:
+                print(f"⚠️  Warning: Unexpected content type: {content_type}")
+            
+            # Progress tracking
+            total_size = int(response.headers.get('content-length', video_size))
+            downloaded = 0
+            chunk_size = 8192  # 8KB chunks
+            
+            with open(filename, 'wb') as f:
+                start_time = time.time()
+                
+                for chunk in response.iter_content(chunk_size=chunk_size):
+                    if chunk:
+                        f.write(chunk)
+                        downloaded += len(chunk)
+                        
+                        # Show progress every 10MB
+                        if downloaded % (10 * 1024 * 1024) < chunk_size:
+                            elapsed = time.time() - start_time
+                            if elapsed > 0:
+                                speed = downloaded / elapsed / (1024 * 1024)  # MB/s
+                                percent = (downloaded / total_size * 100) if total_size > 0 else 0
+                                print(f"📊 Progress: {downloaded/(1024*1024):.1f}MB / {total_size/(1024*1024):.1f}MB ({percent:.1f}%) - {speed:.1f} MB/s")
+            
+            # Final statistics
+            final_size = Path(filename).stat().st_size
+            elapsed_total = time.time() - start_time
+            avg_speed = final_size / elapsed_total / (1024 * 1024) if elapsed_total > 0 else 0
+            
+            print(f"\n✅ Download completed successfully!")
+            print(f"📁 File: {filename}")
+            print(f"📦 Final size: {final_size / (1024*1024):.1f} MB")
+            print(f"⏱️  Time taken: {elapsed_total/60:.1f} minutes")
+            print(f"🚀 Average speed: {avg_speed:.1f} MB/s")
+            
+            return filename
+            
+        except Exception as e:
+            print(f"❌ Download failed: {e}")
+            return False
+
+def download_single_video(downloader, target_url):
+    """Download a single video by URL"""
+    # URL decode for display
+    decoded_url = urllib.parse.unquote(target_url)
+    print(f"🎯 Target URL: {decoded_url}")
+    
+    # Check if already downloaded
+    is_downloaded, video_id, local_file = downloader.check_if_downloaded(target_url)
+    if is_downloaded:
+        print(f"✅ Video already downloaded: {local_file}")
+        return local_file
+    
+    print("\nStep 1: Extract video ID from ObjectivePersonality page")
+    streamable_id = downloader.extract_video_id(target_url)
+    
+    if not streamable_id:
+        print("💥 Failed to extract video ID. Exiting.")
+        print("   - Check that the URL is correct and accessible")
+        print("   - Ensure you have proper authentication cookies")
+        return False
+    
+    print(f"\nStep 2: Get video metadata from Streamable")
+    metadata = downloader.get_streamable_metadata(streamable_id)
+    
+    if not metadata:
+        print("💥 Failed to get video metadata. Exiting.")
+        print(f"   - Video ID '{streamable_id}' may not exist on Streamable")
+        print("   - Video may be private or deleted")
+        return False
+    
+    print(f"\nStep 3: Download video")
+    result = downloader.download_video(metadata)
+    
+    if result:  # result is now the filename
+        print(f"\n🎉 SUCCESS! Video downloaded and ready to watch offline.")
+        print(f"📁 Output file: {result}")
+        
+        # Update database
+        downloader.update_download_status(target_url, result, streamable_id, metadata)
+        
+        return result
+    else:
+        print(f"\n💥 Download failed! Check error messages above.")
+        return False
+
+def main():
+    print("🎥 ObjectivePersonality Video Downloader")
+    print("=" * 50)
+    print("Extracting and downloading videos from Streamable hosting")
+    print()
+    
+    downloader = OPVideoDownloader()
+    
+    # Parse arguments
+    args = sys.argv[1:]
+    
+    if len(args) == 0:
+        # No arguments - batch mode (all videos)
+        print("📋 Batch Mode: Processing all undownloaded videos from database")
+        print()
+        
+        undownloaded = downloader.get_undownloaded_videos()
+        
+        if not undownloaded:
+            print("✅ All videos in database have been downloaded!")
+            return True
+        
+        print(f"🎯 Found {len(undownloaded)} videos to download:")
+        for i, (vid_id, title, url) in enumerate(undownloaded, 1):
+            print(f"   {i}. {title}")
+        print()
+        
+        return process_batch(downloader, undownloaded)
+        
+    elif len(args) == 1:
+        arg = args[0]
+        
+        # Check if it's a limit number
+        if arg.isdigit():
+            # Batch mode with limit
+            limit = int(arg)
+            print(f"📋 Batch Mode: Processing up to {limit} undownloaded videos from database")
+            print()
+            
+            undownloaded = downloader.get_undownloaded_videos(limit=limit)
+            
+            if not undownloaded:
+                print("✅ All videos in database have been downloaded!")
+                return True
+            
+            total_available = len(downloader.get_undownloaded_videos())
+            print(f"🎯 Processing {len(undownloaded)} of {total_available} available videos:")
+            for i, (vid_id, title, url) in enumerate(undownloaded, 1):
+                print(f"   {i}. {title}")
+            print()
+            
+            return process_batch(downloader, undownloaded)
+            
+        elif arg.startswith('https://www.objectivepersonality.com/videos/'):
+            # Single URL mode
+            result = download_single_video(downloader, arg)
+            return bool(result)
+            
+        elif arg in ['--status', 'status', '-s']:
+            # Status mode - show download statistics
+            return show_status(downloader)
+            
+        else:
+            print("❌ Invalid argument. Must be a video URL, number (limit), or --status.")
+            print_usage()
+            return False
+            
+    elif len(args) == 2 and args[0] == '--limit':
+        # --limit N format
+        try:
+            limit = int(args[1])
+            print(f"📋 Batch Mode: Processing up to {limit} undownloaded videos from database")
+            print()
+            
+            undownloaded = downloader.get_undownloaded_videos(limit=limit)
+            
+            if not undownloaded:
+                print("✅ All videos in database have been downloaded!")
+                return True
+            
+            total_available = len(downloader.get_undownloaded_videos())
+            print(f"🎯 Processing {len(undownloaded)} of {total_available} available videos:")
+            for i, (vid_id, title, url) in enumerate(undownloaded, 1):
+                print(f"   {i}. {title}")
+            print()
+            
+            return process_batch(downloader, undownloaded)
+            
+        except ValueError:
+            print("❌ Invalid limit. Must be a number.")
+            print_usage()
+            return False
+    else:
+        print_usage()
+        return False
+
+def process_batch(downloader, undownloaded):
+    """Process a batch of videos"""
+    success_count = 0
+    fail_count = 0
+    
+    for i, (vid_id, title, url) in enumerate(undownloaded, 1):
+        print(f"\n{'='*60}")
+        print(f"Processing {i}/{len(undownloaded)}: {title}")
+        print(f"{'='*60}")
+        
+        result = download_single_video(downloader, url)
+        if result:
+            success_count += 1
+        else:
+            fail_count += 1
+    
+    print(f"\n📊 BATCH SUMMARY:")
+    print(f"✅ Successful downloads: {success_count}")
+    print(f"❌ Failed downloads: {fail_count}")
+    print(f"📁 Total processed: {len(undownloaded)}")
+    
+    return success_count > 0
+
+def show_status(downloader):
+    """Show download status statistics"""
+    print("📊 Download Status")
+    print("=" * 30)
+    
+    with downloader.get_db_connection() as conn:
+        cursor = conn.cursor()
+        
+        # Add column if it doesn't exist
+        try:
+            cursor.execute("ALTER TABLE videos ADD COLUMN local_filename TEXT")
+        except sqlite3.OperationalError:
+            pass
+        
+        # Get counts
+        cursor.execute("SELECT COUNT(*) FROM videos")
+        total_videos = cursor.fetchone()[0]
+        
+        cursor.execute("""
+            SELECT COUNT(*) FROM videos 
+            WHERE local_filename IS NOT NULL AND local_filename != ''
+        """)
+        downloaded_count = cursor.fetchone()[0]
+        
+        cursor.execute("""
+            SELECT COUNT(*) FROM videos 
+            WHERE local_filename IS NULL OR local_filename = ''
+        """)
+        undownloaded_count = cursor.fetchone()[0]
+        
+        # Get file size of downloaded videos
+        cursor.execute("""
+            SELECT local_filename FROM videos 
+            WHERE local_filename IS NOT NULL AND local_filename != ''
+        """)
+        downloaded_files = cursor.fetchall()
+        
+        total_size = 0
+        existing_files = 0
+        for (filename,) in downloaded_files:
+            if filename and os.path.exists(filename):
+                existing_files += 1
+                total_size += os.path.getsize(filename)
+    
+    print(f"📁 Total videos in database: {total_videos}")
+    print(f"✅ Downloaded videos: {downloaded_count}")
+    print(f"📄 Local files exist: {existing_files}")
+    print(f"⏳ Pending downloads: {undownloaded_count}")
+    print(f"💾 Total downloaded size: {total_size / (1024**3):.1f} GB")
+    
+    if undownloaded_count > 0:
+        print(f"\n🎯 Next {min(5, undownloaded_count)} videos to download:")
+        undownloaded = downloader.get_undownloaded_videos(limit=5)
+        for i, (vid_id, title, url) in enumerate(undownloaded, 1):
+            print(f"   {i}. {title}")
+            
+        if undownloaded_count > 5:
+            print(f"   ... and {undownloaded_count - 5} more")
+    
+    return True
+
+def print_usage():
+    """Print usage information"""
+    print("❌ Usage:")
+    print("   python3 op_video_downloader.py                    # Download all undownloaded videos")
+    print("   python3 op_video_downloader.py <limit>            # Download up to <limit> videos (e.g., 5)")
+    print("   python3 op_video_downloader.py --limit <N>        # Download up to N videos")
+    print("   python3 op_video_downloader.py --status           # Show download status and statistics")
+    print("   python3 op_video_downloader.py <url>              # Download specific video")
+    print()
+    print("   Examples:")
+    print("     python3 op_video_downloader.py                  # Download all")
+    print("     python3 op_video_downloader.py 3                # Download 3 videos") 
+    print("     python3 op_video_downloader.py --limit 5        # Download 5 videos")
+    print("     python3 op_video_downloader.py --status         # Show status")
+    print("     python3 op_video_downloader.py https://www.objectivepersonality.com/videos/video-name")
+
+if __name__ == "__main__":
+    main()
