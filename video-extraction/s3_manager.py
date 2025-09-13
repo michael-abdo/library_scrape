@@ -5,6 +5,7 @@ import sys
 from typing import Optional, Dict
 from botocore.exceptions import ClientError, NoCredentialsError
 import time
+import unicodedata
 
 
 class S3UploadProgress:
@@ -31,18 +32,88 @@ class S3UploadProgress:
             print()  # New line when complete
 
 
+def clean_metadata_value(value: str) -> str:
+    """Convert non-ASCII characters to ASCII-safe equivalents."""
+    if not value:
+        return value
+    
+    # Common replacements
+    replacements = {
+        '…': '...',
+        '—': '--',  # Em dash
+        '–': '-',   # En dash
+        ''': "'",   # Left single quote
+        ''': "'",   # Right single quote
+        '"': '"',   # Left double quote
+        '"': '"',   # Right double quote
+        '•': '*',   # Bullet
+        '™': '(TM)',
+        '®': '(R)',
+        '©': '(C)',
+        '°': ' degrees',
+        '±': '+/-',
+        '×': 'x',
+        '÷': '/',
+        '≈': '~',
+        '≤': '<=',
+        '≥': '>=',
+        '≠': '!=',
+        '∞': 'infinity',
+        '€': 'EUR',
+        '£': 'GBP',
+        '¥': 'JPY',
+        '¢': 'cents',
+        '§': 'section',
+        '¶': 'paragraph',
+        '†': '+',
+        '‡': '++',
+        '‰': 'per mille',
+        '′': "'",   # Prime
+        '″': '"',   # Double prime
+        '‹': '<',
+        '›': '>',
+        '«': '<<',
+        '»': '>>',
+    }
+    
+    # Apply replacements
+    for char, replacement in replacements.items():
+        value = value.replace(char, replacement)
+    
+    # Normalize remaining Unicode characters to ASCII
+    # First try NFKD normalization (compatibility decomposition)
+    normalized = unicodedata.normalize('NFKD', value)
+    ascii_value = normalized.encode('ascii', 'ignore').decode('ascii')
+    
+    # If we lost too much content, try a more conservative approach
+    if len(ascii_value) < len(value) * 0.5:
+        # Just replace non-ASCII with '?'
+        ascii_value = ''.join(c if ord(c) < 128 else '?' for c in value)
+    
+    # Clean up any double spaces or weird formatting
+    ascii_value = ' '.join(ascii_value.split())
+    
+    return ascii_value
+
+
 class S3Manager:
     """Manage S3 operations for video storage."""
     
     def __init__(self, bucket_name: Optional[str] = None, region: str = "us-west-2"):
         """Initialize S3 client with credentials."""
-        self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'op-videos-storage')
-        self.region = os.getenv('AWS_DEFAULT_REGION', 'us-east-1')
+        self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'xenodx-video-archive')
+        self.region = os.getenv('AWS_DEFAULT_REGION', region)
         
         try:
-            # Initialize S3 client with zenex profile
-            session = boto3.Session(profile_name='zenex')
-            self.s3_client = session.client('s3', region_name=self.region)
+            # Initialize S3 client with profile support
+            aws_profile = os.getenv('AWS_PROFILE', 'zenex')
+            if aws_profile:
+                # Use specific profile
+                session = boto3.Session(profile_name=aws_profile)
+                self.s3_client = session.client('s3', region_name=self.region)
+            else:
+                # Use default credentials
+                self.s3_client = boto3.client('s3', region_name=self.region)
             
             # Verify bucket exists
             self._ensure_bucket_exists()
@@ -85,11 +156,17 @@ class S3Manager:
             # Prepare extra arguments
             extra_args = {
                 'ContentType': 'video/mp4',
-                'StorageClass': 'STANDARD'
+                'StorageClass': 'GLACIER_IR'  # Glacier Instant Retrieval
             }
             
             if metadata:
-                extra_args['Metadata'] = metadata
+                # Clean metadata values to ensure ASCII compatibility
+                cleaned_metadata = {}
+                for key, value in metadata.items():
+                    cleaned_key = clean_metadata_value(str(key))
+                    cleaned_value = clean_metadata_value(str(value))
+                    cleaned_metadata[cleaned_key] = cleaned_value
+                extra_args['Metadata'] = cleaned_metadata
             
             # Create progress callback
             progress = S3UploadProgress(total_size)

@@ -1,0 +1,3561 @@
+{
+  "migration_info": {
+    "source_bucket": "op-videos-storage",
+    "target_bucket": "xenodx-video-archive",
+    "timestamp": "20250913_172532",
+    "generated_at": "2025-09-13T17:25:32.240329"
+  },
+  "source_analysis": {
+    "txt_files_archived": [
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_f94ccc31-709c-46eb-a4d7-75d9f5b04ba6.txt",
+        "size": 171,
+        "size_kb": 0.17,
+        "last_modified": "2025-09-09 14:16:05+00:00",
+        "filename": "transcript_f94ccc31-709c-46eb-a4d7-75d9f5b04ba6.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p16_29_jonah-hill-(1%2F2).txt",
+        "size": 263,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p16_29_jonah-hill-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p1_1_lead-se-self-fulfill.txt",
+        "size": 267,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 14:16:07+00:00",
+        "filename": "transcript_lib_p1_1_lead-se-self-fulfill.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p1_2_david-harbour.txt",
+        "size": 248,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 14:16:07+00:00",
+        "filename": "transcript_lib_p1_2_david-harbour.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p23_33_anthony-bourdain%2C-.txt",
+        "size": 266,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p23_33_anthony-bourdain%2C-.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p23_35_anthony-bourdain-(1%.txt",
+        "size": 266,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p23_35_anthony-bourdain-(1%.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p23_39_tina-fey%2C-demon-th.txt",
+        "size": 257,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p23_39_tina-fey%2C-demon-th.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p2_7_georgia-ede-%7C-info.txt",
+        "size": 256,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p2_7_georgia-ede-%7C-info.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p48_24_tim-cook.txt",
+        "size": 243,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 14:16:07+00:00",
+        "filename": "transcript_lib_p48_24_tim-cook.txt"
+      },
+      {
+        "key": "transcripts/archive/no_timestamps/transcript_lib_p4_6_esfp-dream%2C-avoids.txt",
+        "size": 263,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 14:16:06+00:00",
+        "filename": "transcript_lib_p4_6_esfp-dream%2C-avoids.txt"
+      }
+    ],
+    "other_files_aws": [
+      {
+        "key": "transcripts/aws/.write_access_check_file.temp",
+        "size": 0,
+        "size_kb": 0.0,
+        "last_modified": "2025-09-09 14:48:50+00:00",
+        "filename": ".write_access_check_file.temp"
+      }
+    ],
+    "json_files_aws": [
+      {
+        "key": "transcripts/aws/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560_8ea10344.json",
+        "size": 744694,
+        "size_kb": 727.24,
+        "last_modified": "2025-09-09 14:39:09+00:00",
+        "filename": "transcript_03152b39-72bc-4237-ae49-28bc7b7a4560_8ea10344.json"
+      }
+    ],
+    "txt_files_classes": [
+      {
+        "key": "transcripts/classes/Class_001_Tim_Cook.txt",
+        "size": 243,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 13:11:46+00:00",
+        "filename": "Class_001_Tim_Cook.txt"
+      },
+      {
+        "key": "transcripts/classes/Class_217_FF_Se_Te_ESFP_Consume.txt",
+        "size": 263,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:11:47+00:00",
+        "filename": "Class_217_FF_Se_Te_ESFP_Consume.txt"
+      },
+      {
+        "key": "transcripts/classes/Class_310_Rob_Dyrdek.txt",
+        "size": 171,
+        "size_kb": 0.17,
+        "last_modified": "2025-09-09 13:11:46+00:00",
+        "filename": "Class_310_Rob_Dyrdek.txt"
+      },
+      {
+        "key": "transcripts/classes/Class_388_David_Harbour.txt",
+        "size": 248,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 13:11:46+00:00",
+        "filename": "Class_388_David_Harbour.txt"
+      }
+    ],
+    "txt_files_other": [
+      {
+        "key": "transcripts/other/Anthony_Bourdain_Travel_Food.txt",
+        "size": 266,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:11:47+00:00",
+        "filename": "Anthony_Bourdain_Travel_Food.txt"
+      },
+      {
+        "key": "transcripts/other/INTJ_Brian_Greene_Physics.txt",
+        "size": 349,
+        "size_kb": 0.34,
+        "last_modified": "2025-09-09 13:11:48+00:00",
+        "filename": "INTJ_Brian_Greene_Physics.txt"
+      },
+      {
+        "key": "transcripts/other/Jennifer_Lawrence_Acting_1of2.txt",
+        "size": 349,
+        "size_kb": 0.34,
+        "last_modified": "2025-09-09 13:11:48+00:00",
+        "filename": "Jennifer_Lawrence_Acting_1of2.txt"
+      },
+      {
+        "key": "transcripts/other/Meeting_Notes_Project_Alpha_2024.txt",
+        "size": 381,
+        "size_kb": 0.37,
+        "last_modified": "2025-09-09 13:11:47+00:00",
+        "filename": "Meeting_Notes_Project_Alpha_2024.txt"
+      },
+      {
+        "key": "transcripts/other/Self_Fulfilling_Fear_Discussion.txt",
+        "size": 360,
+        "size_kb": 0.35,
+        "last_modified": "2025-09-09 13:11:48+00:00",
+        "filename": "Self_Fulfilling_Fear_Discussion.txt"
+      },
+      {
+        "key": "transcripts/other/Tina_Fey_Comedy.txt",
+        "size": 257,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 13:11:48+00:00",
+        "filename": "Tina_Fey_Comedy.txt"
+      },
+      {
+        "key": "transcripts/other/Vimeo_7gsm4r_Content.txt",
+        "size": 256,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 13:11:48+00:00",
+        "filename": "Vimeo_7gsm4r_Content.txt"
+      }
+    ],
+    "txt_files_qa": [
+      {
+        "key": "transcripts/qa/QA_368_Questions_about_typing.txt",
+        "size": 82,
+        "size_kb": 0.08,
+        "last_modified": "2025-09-09 13:11:47+00:00",
+        "filename": "QA_368_Questions_about_typing.txt"
+      },
+      {
+        "key": "transcripts/qa/QA_389_Self_Fulfilling_Fears.txt",
+        "size": 267,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:11:47+00:00",
+        "filename": "QA_389_Self_Fulfilling_Fears.txt"
+      }
+    ],
+    "txt_files": [
+      {
+        "key": "transcripts/txt/220.1_Ventura.txt",
+        "size": 27522,
+        "size_kb": 26.88,
+        "last_modified": "2025-09-09 13:22:14+00:00",
+        "filename": "220.1_Ventura.txt"
+      },
+      {
+        "key": "transcripts/txt/220.2_Theo.txt",
+        "size": 18786,
+        "size_kb": 18.35,
+        "last_modified": "2025-09-09 13:22:14+00:00",
+        "filename": "220.2_Theo.txt"
+      },
+      {
+        "key": "transcripts/txt/220.3_ENTJ.txt",
+        "size": 18547,
+        "size_kb": 18.11,
+        "last_modified": "2025-09-09 13:22:05+00:00",
+        "filename": "220.3_ENTJ.txt"
+      },
+      {
+        "key": "transcripts/txt/220.4_Pete.txt",
+        "size": 20644,
+        "size_kb": 20.16,
+        "last_modified": "2025-09-09 13:22:15+00:00",
+        "filename": "220.4_Pete.txt"
+      },
+      {
+        "key": "transcripts/txt/221_Benny.txt",
+        "size": 16138,
+        "size_kb": 15.76,
+        "last_modified": "2025-09-09 13:22:15+00:00",
+        "filename": "221_Benny.txt"
+      },
+      {
+        "key": "transcripts/txt/221_Jane1.txt",
+        "size": 31297,
+        "size_kb": 30.56,
+        "last_modified": "2025-09-09 13:22:15+00:00",
+        "filename": "221_Jane1.txt"
+      },
+      {
+        "key": "transcripts/txt/221_Jane2.txt",
+        "size": 37240,
+        "size_kb": 36.37,
+        "last_modified": "2025-09-09 13:22:06+00:00",
+        "filename": "221_Jane2.txt"
+      },
+      {
+        "key": "transcripts/txt/221_Nicolas.txt",
+        "size": 20953,
+        "size_kb": 20.46,
+        "last_modified": "2025-09-09 13:22:15+00:00",
+        "filename": "221_Nicolas.txt"
+      },
+      {
+        "key": "transcripts/txt/238.4_Cohen.txt",
+        "size": 20379,
+        "size_kb": 19.9,
+        "last_modified": "2025-09-09 13:22:15+00:00",
+        "filename": "238.4_Cohen.txt"
+      },
+      {
+        "key": "transcripts/txt/239_Afgan.txt",
+        "size": 15611,
+        "size_kb": 15.25,
+        "last_modified": "2025-09-09 13:22:06+00:00",
+        "filename": "239_Afgan.txt"
+      },
+      {
+        "key": "transcripts/txt/239_Caroline1.txt",
+        "size": 33049,
+        "size_kb": 32.27,
+        "last_modified": "2025-09-09 13:22:16+00:00",
+        "filename": "239_Caroline1.txt"
+      },
+      {
+        "key": "transcripts/txt/245_Hunter.txt",
+        "size": 18788,
+        "size_kb": 18.35,
+        "last_modified": "2025-09-09 13:22:06+00:00",
+        "filename": "245_Hunter.txt"
+      },
+      {
+        "key": "transcripts/txt/245_John.txt",
+        "size": 21298,
+        "size_kb": 20.8,
+        "last_modified": "2025-09-09 13:22:16+00:00",
+        "filename": "245_John.txt"
+      },
+      {
+        "key": "transcripts/txt/245_Justin.txt",
+        "size": 14247,
+        "size_kb": 13.91,
+        "last_modified": "2025-09-09 13:22:16+00:00",
+        "filename": "245_Justin.txt"
+      },
+      {
+        "key": "transcripts/txt/245_Leslie.txt",
+        "size": 14660,
+        "size_kb": 14.32,
+        "last_modified": "2025-09-09 13:22:16+00:00",
+        "filename": "245_Leslie.txt"
+      },
+      {
+        "key": "transcripts/txt/245_Pharrell1.txt",
+        "size": 30746,
+        "size_kb": 30.03,
+        "last_modified": "2025-09-09 13:22:16+00:00",
+        "filename": "245_Pharrell1.txt"
+      },
+      {
+        "key": "transcripts/txt/246_Bam.txt",
+        "size": 18382,
+        "size_kb": 17.95,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "246_Bam.txt"
+      },
+      {
+        "key": "transcripts/txt/246_Brad.txt",
+        "size": 18388,
+        "size_kb": 17.96,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "246_Brad.txt"
+      },
+      {
+        "key": "transcripts/txt/246_Carlsen.txt",
+        "size": 21120,
+        "size_kb": 20.62,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "246_Carlsen.txt"
+      },
+      {
+        "key": "transcripts/txt/246_Idina1.txt",
+        "size": 33668,
+        "size_kb": 32.88,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "246_Idina1.txt"
+      },
+      {
+        "key": "transcripts/txt/246_MrBeast.txt",
+        "size": 16814,
+        "size_kb": 16.42,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "246_MrBeast.txt"
+      },
+      {
+        "key": "transcripts/txt/247_Alan1.txt",
+        "size": 27716,
+        "size_kb": 27.07,
+        "last_modified": "2025-09-09 13:22:17+00:00",
+        "filename": "247_Alan1.txt"
+      },
+      {
+        "key": "transcripts/txt/247_Jared.txt",
+        "size": 13008,
+        "size_kb": 12.7,
+        "last_modified": "2025-09-09 13:22:06+00:00",
+        "filename": "247_Jared.txt"
+      },
+      {
+        "key": "transcripts/txt/247_Kanye.txt",
+        "size": 23517,
+        "size_kb": 22.97,
+        "last_modified": "2025-09-09 13:22:06+00:00",
+        "filename": "247_Kanye.txt"
+      },
+      {
+        "key": "transcripts/txt/247_Paul.txt",
+        "size": 18667,
+        "size_kb": 18.23,
+        "last_modified": "2025-09-09 13:22:18+00:00",
+        "filename": "247_Paul.txt"
+      },
+      {
+        "key": "transcripts/txt/247_VideoTyping.txt",
+        "size": 8312,
+        "size_kb": 8.12,
+        "last_modified": "2025-09-09 13:22:07+00:00",
+        "filename": "247_VideoTyping.txt"
+      },
+      {
+        "key": "transcripts/txt/248_Activist1.txt",
+        "size": 15556,
+        "size_kb": 15.19,
+        "last_modified": "2025-09-09 13:22:07+00:00",
+        "filename": "248_Activist1.txt"
+      },
+      {
+        "key": "transcripts/txt/248_Activist2.txt",
+        "size": 17303,
+        "size_kb": 16.9,
+        "last_modified": "2025-09-09 13:22:07+00:00",
+        "filename": "248_Activist2.txt"
+      },
+      {
+        "key": "transcripts/txt/248_Hoffman.txt",
+        "size": 21419,
+        "size_kb": 20.92,
+        "last_modified": "2025-09-09 13:22:18+00:00",
+        "filename": "248_Hoffman.txt"
+      },
+      {
+        "key": "transcripts/txt/248_SteveO.txt",
+        "size": 25956,
+        "size_kb": 25.35,
+        "last_modified": "2025-09-09 13:22:18+00:00",
+        "filename": "248_SteveO.txt"
+      },
+      {
+        "key": "transcripts/txt/248_Susan1.txt",
+        "size": 34081,
+        "size_kb": 33.28,
+        "last_modified": "2025-09-09 13:22:07+00:00",
+        "filename": "248_Susan1.txt"
+      },
+      {
+        "key": "transcripts/txt/249.0_SerenaWilliams1.txt",
+        "size": 36451,
+        "size_kb": 35.6,
+        "last_modified": "2025-09-09 13:22:18+00:00",
+        "filename": "249.0_SerenaWilliams1.txt"
+      },
+      {
+        "key": "transcripts/txt/249.1_KristenBell.txt",
+        "size": 21941,
+        "size_kb": 21.43,
+        "last_modified": "2025-09-09 13:22:18+00:00",
+        "filename": "249.1_KristenBell.txt"
+      },
+      {
+        "key": "transcripts/txt/249.2_Boffy.txt",
+        "size": 25192,
+        "size_kb": 24.6,
+        "last_modified": "2025-09-09 13:22:07+00:00",
+        "filename": "249.2_Boffy.txt"
+      },
+      {
+        "key": "transcripts/txt/249.3_IntrusiveThoughts.txt",
+        "size": 17216,
+        "size_kb": 16.81,
+        "last_modified": "2025-09-09 13:22:08+00:00",
+        "filename": "249.3_IntrusiveThoughts.txt"
+      },
+      {
+        "key": "transcripts/txt/249.4_MarkRober.txt",
+        "size": 20402,
+        "size_kb": 19.92,
+        "last_modified": "2025-09-09 13:22:19+00:00",
+        "filename": "249.4_MarkRober.txt"
+      },
+      {
+        "key": "transcripts/txt/250.0_MinnieDriver1.txt",
+        "size": 31504,
+        "size_kb": 30.77,
+        "last_modified": "2025-09-09 13:22:19+00:00",
+        "filename": "250.0_MinnieDriver1.txt"
+      },
+      {
+        "key": "transcripts/txt/250.1_WiseCowboy.txt",
+        "size": 18025,
+        "size_kb": 17.6,
+        "last_modified": "2025-09-09 13:22:08+00:00",
+        "filename": "250.1_WiseCowboy.txt"
+      },
+      {
+        "key": "transcripts/txt/250.2_DaveChappelle.txt",
+        "size": 18597,
+        "size_kb": 18.16,
+        "last_modified": "2025-09-09 13:22:19+00:00",
+        "filename": "250.2_DaveChappelle.txt"
+      },
+      {
+        "key": "transcripts/txt/250.3_23_Me.txt",
+        "size": 26188,
+        "size_kb": 25.57,
+        "last_modified": "2025-09-09 13:22:08+00:00",
+        "filename": "250.3_23_Me.txt"
+      },
+      {
+        "key": "transcripts/txt/250.4_MileyCyrus.txt",
+        "size": 26499,
+        "size_kb": 25.88,
+        "last_modified": "2025-09-09 13:22:08+00:00",
+        "filename": "250.4_MileyCyrus.txt"
+      },
+      {
+        "key": "transcripts/txt/251.0_RanaKaliouby1.txt",
+        "size": 37703,
+        "size_kb": 36.82,
+        "last_modified": "2025-09-09 13:22:19+00:00",
+        "filename": "251.0_RanaKaliouby1.txt"
+      },
+      {
+        "key": "transcripts/txt/251.1_CillianMurphy.txt",
+        "size": 17295,
+        "size_kb": 16.89,
+        "last_modified": "2025-09-09 13:22:19+00:00",
+        "filename": "251.1_CillianMurphy.txt"
+      },
+      {
+        "key": "transcripts/txt/251.2_SeanAstin.txt",
+        "size": 16177,
+        "size_kb": 15.8,
+        "last_modified": "2025-09-09 13:22:20+00:00",
+        "filename": "251.2_SeanAstin.txt"
+      },
+      {
+        "key": "transcripts/txt/251.3_SteveBannon.txt",
+        "size": 18591,
+        "size_kb": 18.16,
+        "last_modified": "2025-09-09 13:22:20+00:00",
+        "filename": "251.3_SteveBannon.txt"
+      },
+      {
+        "key": "transcripts/txt/251.4_NancyPelosi.txt",
+        "size": 17636,
+        "size_kb": 17.22,
+        "last_modified": "2025-09-09 13:22:20+00:00",
+        "filename": "251.4_NancyPelosi.txt"
+      },
+      {
+        "key": "transcripts/txt/252.0_YannisPappas.txt",
+        "size": 33758,
+        "size_kb": 32.97,
+        "last_modified": "2025-09-09 13:22:20+00:00",
+        "filename": "252.0_YannisPappas.txt"
+      },
+      {
+        "key": "transcripts/txt/252.1_Homeless.txt",
+        "size": 20978,
+        "size_kb": 20.49,
+        "last_modified": "2025-09-09 13:22:08+00:00",
+        "filename": "252.1_Homeless.txt"
+      },
+      {
+        "key": "transcripts/txt/252.2_NickCannon.txt",
+        "size": 17899,
+        "size_kb": 17.48,
+        "last_modified": "2025-09-09 13:22:09+00:00",
+        "filename": "252.2_NickCannon.txt"
+      },
+      {
+        "key": "transcripts/txt/252.3_BedrosKeuilian.txt",
+        "size": 20893,
+        "size_kb": 20.4,
+        "last_modified": "2025-09-09 13:22:20+00:00",
+        "filename": "252.3_BedrosKeuilian.txt"
+      },
+      {
+        "key": "transcripts/txt/252.4_HughJackman.txt",
+        "size": 18430,
+        "size_kb": 18.0,
+        "last_modified": "2025-09-09 13:22:21+00:00",
+        "filename": "252.4_HughJackman.txt"
+      },
+      {
+        "key": "transcripts/txt/253.01_MeghanTrainor1.txt",
+        "size": 40504,
+        "size_kb": 39.55,
+        "last_modified": "2025-09-09 13:22:21+00:00",
+        "filename": "253.01_MeghanTrainor1.txt"
+      },
+      {
+        "key": "transcripts/txt/253.1_LaceyChabert.txt",
+        "size": 19914,
+        "size_kb": 19.45,
+        "last_modified": "2025-09-09 13:22:09+00:00",
+        "filename": "253.1_LaceyChabert.txt"
+      },
+      {
+        "key": "transcripts/txt/253.2_Woke.txt",
+        "size": 28228,
+        "size_kb": 27.57,
+        "last_modified": "2025-09-09 13:22:09+00:00",
+        "filename": "253.2_Woke.txt"
+      },
+      {
+        "key": "transcripts/txt/253.3_JeremyPope.txt",
+        "size": 22432,
+        "size_kb": 21.91,
+        "last_modified": "2025-09-09 13:22:09+00:00",
+        "filename": "253.3_JeremyPope.txt"
+      },
+      {
+        "key": "transcripts/txt/253.4_CristianoRonaldo.txt",
+        "size": 29115,
+        "size_kb": 28.43,
+        "last_modified": "2025-09-09 13:22:09+00:00",
+        "filename": "253.4_CristianoRonaldo.txt"
+      },
+      {
+        "key": "transcripts/txt/254.01_RobDelaney1.txt",
+        "size": 32929,
+        "size_kb": 32.16,
+        "last_modified": "2025-09-09 13:22:21+00:00",
+        "filename": "254.01_RobDelaney1.txt"
+      },
+      {
+        "key": "transcripts/txt/254.1_FTXSamBankman.txt",
+        "size": 24198,
+        "size_kb": 23.63,
+        "last_modified": "2025-09-09 13:22:10+00:00",
+        "filename": "254.1_FTXSamBankman.txt"
+      },
+      {
+        "key": "transcripts/txt/254.2_PeterThiel.txt",
+        "size": 23262,
+        "size_kb": 22.72,
+        "last_modified": "2025-09-09 13:22:10+00:00",
+        "filename": "254.2_PeterThiel.txt"
+      },
+      {
+        "key": "transcripts/txt/254.3_JohnKrasinski.txt",
+        "size": 16317,
+        "size_kb": 15.93,
+        "last_modified": "2025-09-09 13:22:21+00:00",
+        "filename": "254.3_JohnKrasinski.txt"
+      },
+      {
+        "key": "transcripts/txt/254.4_EmilyBlunt.txt",
+        "size": 14011,
+        "size_kb": 13.68,
+        "last_modified": "2025-09-09 13:22:21+00:00",
+        "filename": "254.4_EmilyBlunt.txt"
+      },
+      {
+        "key": "transcripts/txt/255.0_SamuelL.Jackson.txt",
+        "size": 33829,
+        "size_kb": 33.04,
+        "last_modified": "2025-09-09 13:22:22+00:00",
+        "filename": "255.0_SamuelL.Jackson.txt"
+      },
+      {
+        "key": "transcripts/txt/255.1_GlenPowell.txt",
+        "size": 27611,
+        "size_kb": 26.96,
+        "last_modified": "2025-09-09 13:22:10+00:00",
+        "filename": "255.1_GlenPowell.txt"
+      },
+      {
+        "key": "transcripts/txt/255.2_JamesAustin.txt",
+        "size": 30170,
+        "size_kb": 29.46,
+        "last_modified": "2025-09-09 13:22:22+00:00",
+        "filename": "255.2_JamesAustin.txt"
+      },
+      {
+        "key": "transcripts/txt/255.3_AnyaTaylor-Joy.txt",
+        "size": 19253,
+        "size_kb": 18.8,
+        "last_modified": "2025-09-09 13:22:22+00:00",
+        "filename": "255.3_AnyaTaylor-Joy.txt"
+      },
+      {
+        "key": "transcripts/txt/255.4_LaurenceFishburne.txt",
+        "size": 20473,
+        "size_kb": 19.99,
+        "last_modified": "2025-09-09 13:22:22+00:00",
+        "filename": "255.4_LaurenceFishburne.txt"
+      },
+      {
+        "key": "transcripts/txt/256.0_TimAllen1.txt",
+        "size": 34795,
+        "size_kb": 33.98,
+        "last_modified": "2025-09-09 13:22:22+00:00",
+        "filename": "256.0_TimAllen1.txt"
+      },
+      {
+        "key": "transcripts/txt/256.1_KenBlock.txt",
+        "size": 16508,
+        "size_kb": 16.12,
+        "last_modified": "2025-09-09 13:22:10+00:00",
+        "filename": "256.1_KenBlock.txt"
+      },
+      {
+        "key": "transcripts/txt/256.2_ACES2.txt",
+        "size": 23424,
+        "size_kb": 22.88,
+        "last_modified": "2025-09-09 13:22:10+00:00",
+        "filename": "256.2_ACES2.txt"
+      },
+      {
+        "key": "transcripts/txt/256.3_ACES1.txt",
+        "size": 16206,
+        "size_kb": 15.83,
+        "last_modified": "2025-09-09 13:22:11+00:00",
+        "filename": "256.3_ACES1.txt"
+      },
+      {
+        "key": "transcripts/txt/256.4_Deciders.txt",
+        "size": 19462,
+        "size_kb": 19.01,
+        "last_modified": "2025-09-09 13:22:11+00:00",
+        "filename": "256.4_Deciders.txt"
+      },
+      {
+        "key": "transcripts/txt/257.0_SofiaCarson.txt",
+        "size": 40642,
+        "size_kb": 39.69,
+        "last_modified": "2025-09-09 13:22:23+00:00",
+        "filename": "257.0_SofiaCarson.txt"
+      },
+      {
+        "key": "transcripts/txt/257.4_NickWalker.txt",
+        "size": 20899,
+        "size_kb": 20.41,
+        "last_modified": "2025-09-09 13:22:23+00:00",
+        "filename": "257.4_NickWalker.txt"
+      },
+      {
+        "key": "transcripts/txt/257_JeremyRenner.txt",
+        "size": 16987,
+        "size_kb": 16.59,
+        "last_modified": "2025-09-09 13:22:23+00:00",
+        "filename": "257_JeremyRenner.txt"
+      },
+      {
+        "key": "transcripts/txt/257_Lawsuits.txt",
+        "size": 17294,
+        "size_kb": 16.89,
+        "last_modified": "2025-09-09 13:22:11+00:00",
+        "filename": "257_Lawsuits.txt"
+      },
+      {
+        "key": "transcripts/txt/257_Ramy.txt",
+        "size": 19953,
+        "size_kb": 19.49,
+        "last_modified": "2025-09-09 13:22:23+00:00",
+        "filename": "257_Ramy.txt"
+      },
+      {
+        "key": "transcripts/txt/258_Gabriel.txt",
+        "size": 17918,
+        "size_kb": 17.5,
+        "last_modified": "2025-09-09 13:22:23+00:00",
+        "filename": "258_Gabriel.txt"
+      },
+      {
+        "key": "transcripts/txt/258_Lin1.txt",
+        "size": 40021,
+        "size_kb": 39.08,
+        "last_modified": "2025-09-09 13:22:24+00:00",
+        "filename": "258_Lin1.txt"
+      },
+      {
+        "key": "transcripts/txt/258_Rant.txt",
+        "size": 20164,
+        "size_kb": 19.69,
+        "last_modified": "2025-09-09 13:22:11+00:00",
+        "filename": "258_Rant.txt"
+      },
+      {
+        "key": "transcripts/txt/258_Socials1.txt",
+        "size": 22591,
+        "size_kb": 22.06,
+        "last_modified": "2025-09-09 13:22:11+00:00",
+        "filename": "258_Socials1.txt"
+      },
+      {
+        "key": "transcripts/txt/258_Socials2.txt",
+        "size": 20549,
+        "size_kb": 20.07,
+        "last_modified": "2025-09-09 13:22:12+00:00",
+        "filename": "258_Socials2.txt"
+      },
+      {
+        "key": "transcripts/txt/259_ENTJ.txt",
+        "size": 26890,
+        "size_kb": 26.26,
+        "last_modified": "2025-09-09 13:22:12+00:00",
+        "filename": "259_ENTJ.txt"
+      },
+      {
+        "key": "transcripts/txt/259_Khloe.txt",
+        "size": 22934,
+        "size_kb": 22.4,
+        "last_modified": "2025-09-09 13:22:24+00:00",
+        "filename": "259_Khloe.txt"
+      },
+      {
+        "key": "transcripts/txt/259_Morgan.txt",
+        "size": 19855,
+        "size_kb": 19.39,
+        "last_modified": "2025-09-09 13:22:24+00:00",
+        "filename": "259_Morgan.txt"
+      },
+      {
+        "key": "transcripts/txt/259_Sam.txt",
+        "size": 25712,
+        "size_kb": 25.11,
+        "last_modified": "2025-09-09 13:22:24+00:00",
+        "filename": "259_Sam.txt"
+      },
+      {
+        "key": "transcripts/txt/259_Zoe1.txt",
+        "size": 30402,
+        "size_kb": 29.69,
+        "last_modified": "2025-09-09 13:22:12+00:00",
+        "filename": "259_Zoe1.txt"
+      },
+      {
+        "key": "transcripts/txt/260.1_JackBlack.txt",
+        "size": 21271,
+        "size_kb": 20.77,
+        "last_modified": "2025-09-09 13:22:24+00:00",
+        "filename": "260.1_JackBlack.txt"
+      },
+      {
+        "key": "transcripts/txt/260.2_KrisCarr.txt",
+        "size": 28448,
+        "size_kb": 27.78,
+        "last_modified": "2025-09-09 13:22:25+00:00",
+        "filename": "260.2_KrisCarr.txt"
+      },
+      {
+        "key": "transcripts/txt/260.3_SundarPichai.txt",
+        "size": 23293,
+        "size_kb": 22.75,
+        "last_modified": "2025-09-09 13:22:12+00:00",
+        "filename": "260.3_SundarPichai.txt"
+      },
+      {
+        "key": "transcripts/txt/260.4_WaldoWaldman.txt",
+        "size": 23451,
+        "size_kb": 22.9,
+        "last_modified": "2025-09-09 13:22:12+00:00",
+        "filename": "260.4_WaldoWaldman.txt"
+      },
+      {
+        "key": "transcripts/txt/260_Jessica1.txt",
+        "size": 33235,
+        "size_kb": 32.46,
+        "last_modified": "2025-09-09 13:22:13+00:00",
+        "filename": "260_Jessica1.txt"
+      },
+      {
+        "key": "transcripts/txt/261.01_ChrisDistefano.txt",
+        "size": 31983,
+        "size_kb": 31.23,
+        "last_modified": "2025-09-09 13:22:25+00:00",
+        "filename": "261.01_ChrisDistefano.txt"
+      },
+      {
+        "key": "transcripts/txt/261.1_ChatGPT.txt",
+        "size": 19139,
+        "size_kb": 18.69,
+        "last_modified": "2025-09-09 13:22:13+00:00",
+        "filename": "261.1_ChatGPT.txt"
+      },
+      {
+        "key": "transcripts/txt/261.2_Kendrick.txt",
+        "size": 18876,
+        "size_kb": 18.43,
+        "last_modified": "2025-09-09 13:22:13+00:00",
+        "filename": "261.2_Kendrick.txt"
+      },
+      {
+        "key": "transcripts/txt/261.3_Gary.txt",
+        "size": 27988,
+        "size_kb": 27.33,
+        "last_modified": "2025-09-09 13:22:25+00:00",
+        "filename": "261.3_Gary.txt"
+      },
+      {
+        "key": "transcripts/txt/261.4_StevenBartlett.txt",
+        "size": 21378,
+        "size_kb": 20.88,
+        "last_modified": "2025-09-09 13:22:25+00:00",
+        "filename": "261.4_StevenBartlett.txt"
+      },
+      {
+        "key": "transcripts/txt/262.01_PaulEkman.txt",
+        "size": 32582,
+        "size_kb": 31.82,
+        "last_modified": "2025-09-09 13:22:25+00:00",
+        "filename": "262.01_PaulEkman.txt"
+      },
+      {
+        "key": "transcripts/txt/262.1_Method.txt",
+        "size": 14992,
+        "size_kb": 14.64,
+        "last_modified": "2025-09-09 13:22:13+00:00",
+        "filename": "262.1_Method.txt"
+      },
+      {
+        "key": "transcripts/txt/262.2_SharonHorgan.txt",
+        "size": 17419,
+        "size_kb": 17.01,
+        "last_modified": "2025-09-09 13:22:26+00:00",
+        "filename": "262.2_SharonHorgan.txt"
+      },
+      {
+        "key": "transcripts/txt/262.3_JennetteMcCurdy.txt",
+        "size": 19035,
+        "size_kb": 18.59,
+        "last_modified": "2025-09-09 13:22:26+00:00",
+        "filename": "262.3_JennetteMcCurdy.txt"
+      },
+      {
+        "key": "transcripts/txt/262.4_BrendanFraser.txt",
+        "size": 19483,
+        "size_kb": 19.03,
+        "last_modified": "2025-09-09 13:22:26+00:00",
+        "filename": "262.4_BrendanFraser.txt"
+      },
+      {
+        "key": "transcripts/txt/263.1_JoeRogan.txt",
+        "size": 14740,
+        "size_kb": 14.39,
+        "last_modified": "2025-09-09 13:22:26+00:00",
+        "filename": "263.1_JoeRogan.txt"
+      },
+      {
+        "key": "transcripts/txt/263.2_Microsoft.txt",
+        "size": 24649,
+        "size_kb": 24.07,
+        "last_modified": "2025-09-09 13:22:14+00:00",
+        "filename": "263.2_Microsoft.txt"
+      },
+      {
+        "key": "transcripts/txt/263.2_RickRubin.txt",
+        "size": 16576,
+        "size_kb": 16.19,
+        "last_modified": "2025-09-09 13:22:26+00:00",
+        "filename": "263.2_RickRubin.txt"
+      },
+      {
+        "key": "transcripts/txt/263.3_Microsoft.txt",
+        "size": 27870,
+        "size_kb": 27.22,
+        "last_modified": "2025-09-09 13:22:14+00:00",
+        "filename": "263.3_Microsoft.txt"
+      },
+      {
+        "key": "transcripts/txt/264.1_JessicaWatkins.txt",
+        "size": 25228,
+        "size_kb": 24.64,
+        "last_modified": "2025-09-09 13:22:14+00:00",
+        "filename": "264.1_JessicaWatkins.txt"
+      },
+      {
+        "key": "transcripts/txt/264.2_SIMS.txt",
+        "size": 22845,
+        "size_kb": 22.31,
+        "last_modified": "2025-09-09 13:22:27+00:00",
+        "filename": "264.2_SIMS.txt"
+      },
+      {
+        "key": "transcripts/txt/264.3_WoodyHarrelson.txt",
+        "size": 22016,
+        "size_kb": 21.5,
+        "last_modified": "2025-09-09 13:22:27+00:00",
+        "filename": "264.3_WoodyHarrelson.txt"
+      },
+      {
+        "key": "transcripts/txt/264.4_RonDeSantis.txt",
+        "size": 27169,
+        "size_kb": 26.53,
+        "last_modified": "2025-09-09 13:22:27+00:00",
+        "filename": "264.4_RonDeSantis.txt"
+      },
+      {
+        "key": "transcripts/txt/Anthony_Bourdain_Travel_Food.txt",
+        "size": 266,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:22:28+00:00",
+        "filename": "Anthony_Bourdain_Travel_Food.txt"
+      },
+      {
+        "key": "transcripts/txt/Class_001_Tim_Cook.txt",
+        "size": 243,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 13:22:27+00:00",
+        "filename": "Class_001_Tim_Cook.txt"
+      },
+      {
+        "key": "transcripts/txt/Class_217_FF_Se_Te_ESFP_Consume.txt",
+        "size": 263,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:22:27+00:00",
+        "filename": "Class_217_FF_Se_Te_ESFP_Consume.txt"
+      },
+      {
+        "key": "transcripts/txt/Class_310_Rob_Dyrdek.txt",
+        "size": 171,
+        "size_kb": 0.17,
+        "last_modified": "2025-09-09 13:22:28+00:00",
+        "filename": "Class_310_Rob_Dyrdek.txt"
+      },
+      {
+        "key": "transcripts/txt/Class_388_David_Harbour.txt",
+        "size": 248,
+        "size_kb": 0.24,
+        "last_modified": "2025-09-09 13:22:28+00:00",
+        "filename": "Class_388_David_Harbour.txt"
+      },
+      {
+        "key": "transcripts/txt/INTJ_Brian_Greene_Physics.txt",
+        "size": 349,
+        "size_kb": 0.34,
+        "last_modified": "2025-09-09 13:22:28+00:00",
+        "filename": "INTJ_Brian_Greene_Physics.txt"
+      },
+      {
+        "key": "transcripts/txt/QA_389_Self_Fulfilling_Fears.txt",
+        "size": 267,
+        "size_kb": 0.26,
+        "last_modified": "2025-09-09 13:22:29+00:00",
+        "filename": "QA_389_Self_Fulfilling_Fears.txt"
+      },
+      {
+        "key": "transcripts/txt/Tina_Fey_Comedy.txt",
+        "size": 257,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 13:22:29+00:00",
+        "filename": "Tina_Fey_Comedy.txt"
+      },
+      {
+        "key": "transcripts/txt/Vimeo_7gsm4r_Content.txt",
+        "size": 256,
+        "size_kb": 0.25,
+        "last_modified": "2025-09-09 13:22:29+00:00",
+        "filename": "Vimeo_7gsm4r_Content.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.txt",
+        "size": 22775,
+        "size_kb": 22.24,
+        "last_modified": "2025-09-09 14:40:30+00:00",
+        "filename": "transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_10_jack-black%3A-social.txt",
+        "size": 21271,
+        "size_kb": 20.77,
+        "last_modified": "2025-09-09 13:46:31+00:00",
+        "filename": "transcript_lib_p10_10_jack-black%3A-social.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_11_esfp-jessica-alba-(1.txt",
+        "size": 33235,
+        "size_kb": 32.46,
+        "last_modified": "2025-09-09 13:46:16+00:00",
+        "filename": "transcript_lib_p10_11_esfp-jessica-alba-(1.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_13_entj-kate-hopkins.txt",
+        "size": 26890,
+        "size_kb": 26.26,
+        "last_modified": "2025-09-09 13:46:13+00:00",
+        "filename": "transcript_lib_p10_13_entj-kate-hopkins.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_14_birth-order!-khloe-k.txt",
+        "size": 22934,
+        "size_kb": 22.4,
+        "last_modified": "2025-09-09 13:46:03+00:00",
+        "filename": "transcript_lib_p10_14_birth-order!-khloe-k.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_15_morgan-freeman%2C-be.txt",
+        "size": 19855,
+        "size_kb": 19.39,
+        "last_modified": "2025-09-09 13:46:43+00:00",
+        "filename": "transcript_lib_p10_15_morgan-freeman%2C-be.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_16_sam-worthington%3A-h.txt",
+        "size": 25712,
+        "size_kb": 25.11,
+        "last_modified": "2025-09-09 13:46:50+00:00",
+        "filename": "transcript_lib_p10_16_sam-worthington%3A-h.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_17_entj-zoe-saldana-(1%.txt",
+        "size": 30402,
+        "size_kb": 29.69,
+        "last_modified": "2025-09-09 13:46:13+00:00",
+        "filename": "transcript_lib_p10_17_entj-zoe-saldana-(1%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_19_social-types-intro-(.txt",
+        "size": 22591,
+        "size_kb": 22.06,
+        "last_modified": "2025-09-09 13:46:53+00:00",
+        "filename": "transcript_lib_p10_19_social-types-intro-(.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_1_steven-bartlett%3A-w.txt",
+        "size": 21378,
+        "size_kb": 20.88,
+        "last_modified": "2025-09-09 13:46:54+00:00",
+        "filename": "transcript_lib_p10_1_steven-bartlett%3A-w.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_20_social-types-intro-(.txt",
+        "size": 20549,
+        "size_kb": 20.07,
+        "last_modified": "2025-09-09 13:46:53+00:00",
+        "filename": "transcript_lib_p10_20_social-types-intro-(.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_21_esfp-gabriel-iglesia.txt",
+        "size": 17918,
+        "size_kb": 17.5,
+        "last_modified": "2025-09-09 13:46:15+00:00",
+        "filename": "transcript_lib_p10_21_esfp-gabriel-iglesia.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_22_estj-rant!.txt",
+        "size": 20164,
+        "size_kb": 19.69,
+        "last_modified": "2025-09-09 13:46:17+00:00",
+        "filename": "transcript_lib_p10_22_estj-rant!.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_23_intj-lin-manuel-mira.txt",
+        "size": 40021,
+        "size_kb": 39.08,
+        "last_modified": "2025-09-09 13:46:27+00:00",
+        "filename": "transcript_lib_p10_23_intj-lin-manuel-mira.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_24_intj-lin-manuel-mira.txt",
+        "size": 40021,
+        "size_kb": 39.08,
+        "last_modified": "2025-09-09 13:46:27+00:00",
+        "filename": "transcript_lib_p10_24_intj-lin-manuel-mira.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_25_esfp-nick-walker%3A-.txt",
+        "size": 20899,
+        "size_kb": 20.41,
+        "last_modified": "2025-09-09 13:46:16+00:00",
+        "filename": "transcript_lib_p10_25_esfp-nick-walker%3A-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_26_esfp-big-ramy%3A-soc.txt",
+        "size": 19953,
+        "size_kb": 19.49,
+        "last_modified": "2025-09-09 13:46:14+00:00",
+        "filename": "transcript_lib_p10_26_esfp-big-ramy%3A-soc.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_27_jeremy-renner%3A-sta.txt",
+        "size": 16987,
+        "size_kb": 16.59,
+        "last_modified": "2025-09-09 13:46:34+00:00",
+        "filename": "transcript_lib_p10_27_jeremy-renner%3A-sta.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_28_social-media-vs-esfj.txt",
+        "size": 17294,
+        "size_kb": 16.89,
+        "last_modified": "2025-09-09 13:46:52+00:00",
+        "filename": "transcript_lib_p10_28_social-media-vs-esfj.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_29_esfp-sofia-carson-(1.txt",
+        "size": 40642,
+        "size_kb": 39.69,
+        "last_modified": "2025-09-09 13:46:17+00:00",
+        "filename": "transcript_lib_p10_29_esfp-sofia-carson-(1.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_2_gary-vee-is-social-1.txt",
+        "size": 27988,
+        "size_kb": 27.33,
+        "last_modified": "2025-09-09 13:46:22+00:00",
+        "filename": "transcript_lib_p10_2_gary-vee-is-social-1.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_32_childhood-trauma-and.txt",
+        "size": 16206,
+        "size_kb": 15.83,
+        "last_modified": "2025-09-09 13:46:06+00:00",
+        "filename": "transcript_lib_p10_32_childhood-trauma-and.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_33_childhood-trauma-and.txt",
+        "size": 23424,
+        "size_kb": 22.88,
+        "last_modified": "2025-09-09 13:46:07+00:00",
+        "filename": "transcript_lib_p10_33_childhood-trauma-and.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_34_ken-block%3A-live-wi.txt",
+        "size": 16508,
+        "size_kb": 16.12,
+        "last_modified": "2025-09-09 13:46:38+00:00",
+        "filename": "transcript_lib_p10_34_ken-block%3A-live-wi.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_35_istp-tim-allen-(1%2F.txt",
+        "size": 34795,
+        "size_kb": 33.98,
+        "last_modified": "2025-09-09 13:46:30+00:00",
+        "filename": "transcript_lib_p10_35_istp-tim-allen-(1%2F.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_37_laurence-fishburne%3.txt",
+        "size": 20473,
+        "size_kb": 19.99,
+        "last_modified": "2025-09-09 13:46:38+00:00",
+        "filename": "transcript_lib_p10_37_laurence-fishburne%3.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_38_anya-taylor-joy%3A-f.txt",
+        "size": 19253,
+        "size_kb": 18.8,
+        "last_modified": "2025-09-09 13:46:02+00:00",
+        "filename": "transcript_lib_p10_38_anya-taylor-joy%3A-f.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_39_james-austin-and-fam.txt",
+        "size": 30170,
+        "size_kb": 29.46,
+        "last_modified": "2025-09-09 13:46:32+00:00",
+        "filename": "transcript_lib_p10_39_james-austin-and-fam.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_3_kendrick-lamar%3A-ca.txt",
+        "size": 18876,
+        "size_kb": 18.43,
+        "last_modified": "2025-09-09 13:46:38+00:00",
+        "filename": "transcript_lib_p10_3_kendrick-lamar%3A-ca.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_40_glen-powell%3A-shift.txt",
+        "size": 27611,
+        "size_kb": 26.96,
+        "last_modified": "2025-09-09 13:46:22+00:00",
+        "filename": "transcript_lib_p10_40_glen-powell%3A-shift.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_4_chatgpt%3A-more-oppo.txt",
+        "size": 19139,
+        "size_kb": 18.69,
+        "last_modified": "2025-09-09 13:46:06+00:00",
+        "filename": "transcript_lib_p10_4_chatgpt%3A-more-oppo.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_5_chris-distefano-(1%2.txt",
+        "size": 31983,
+        "size_kb": 31.23,
+        "last_modified": "2025-09-09 13:46:07+00:00",
+        "filename": "transcript_lib_p10_5_chris-distefano-(1%2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_7_waldo-waldman%3A-wha.txt",
+        "size": 23451,
+        "size_kb": 22.9,
+        "last_modified": "2025-09-09 13:46:58+00:00",
+        "filename": "transcript_lib_p10_7_waldo-waldman%3A-wha.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_8_sundar-pichai%3A-soc.txt",
+        "size": 23293,
+        "size_kb": 22.75,
+        "last_modified": "2025-09-09 13:46:54+00:00",
+        "filename": "transcript_lib_p10_8_sundar-pichai%3A-soc.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p10_9_kris-carr%3A-what's-.txt",
+        "size": 28448,
+        "size_kb": 27.78,
+        "last_modified": "2025-09-09 13:46:38+00:00",
+        "filename": "transcript_lib_p10_9_kris-carr%3A-what's-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_10_lgbtq-persecution....txt",
+        "size": 19914,
+        "size_kb": 19.45,
+        "last_modified": "2025-09-09 13:46:38+00:00",
+        "filename": "transcript_lib_p11_10_lgbtq-persecution....txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_11_woke-culture-and-soc.txt",
+        "size": 28228,
+        "size_kb": 27.57,
+        "last_modified": "2025-09-09 13:47:02+00:00",
+        "filename": "transcript_lib_p11_11_woke-culture-and-soc.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_12_new-mom-and-women's-.txt",
+        "size": 22432,
+        "size_kb": 21.91,
+        "last_modified": "2025-09-09 13:46:44+00:00",
+        "filename": "transcript_lib_p11_12_new-mom-and-women's-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_13_meghan-trainor-(1%2F.txt",
+        "size": 40504,
+        "size_kb": 39.55,
+        "last_modified": "2025-09-09 13:46:42+00:00",
+        "filename": "transcript_lib_p11_13_meghan-trainor-(1%2F.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_15_enfj-hugh-jackman%3A.txt",
+        "size": 18430,
+        "size_kb": 18.0,
+        "last_modified": "2025-09-09 13:46:11+00:00",
+        "filename": "transcript_lib_p11_15_enfj-hugh-jackman%3A.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_16_estp-bedros-keuilian.txt",
+        "size": 20893,
+        "size_kb": 20.4,
+        "last_modified": "2025-09-09 13:46:17+00:00",
+        "filename": "transcript_lib_p11_16_estp-bedros-keuilian.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_17_nick-cannon%3A-ident.txt",
+        "size": 17899,
+        "size_kb": 17.48,
+        "last_modified": "2025-09-09 13:46:45+00:00",
+        "filename": "transcript_lib_p11_17_nick-cannon%3A-ident.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_18_homelessness-and-the.txt",
+        "size": 20978,
+        "size_kb": 20.49,
+        "last_modified": "2025-09-09 13:46:24+00:00",
+        "filename": "transcript_lib_p11_18_homelessness-and-the.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_19_yannis-pappas-(1%2F2.txt",
+        "size": 33758,
+        "size_kb": 32.97,
+        "last_modified": "2025-09-09 13:47:02+00:00",
+        "filename": "transcript_lib_p11_19_yannis-pappas-(1%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_1_samuel-l.-jackson-(1.txt",
+        "size": 33829,
+        "size_kb": 33.04,
+        "last_modified": "2025-09-09 13:46:50+00:00",
+        "filename": "transcript_lib_p11_1_samuel-l.-jackson-(1.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_21_enfj-nancy-pelosi%3A.txt",
+        "size": 17636,
+        "size_kb": 17.22,
+        "last_modified": "2025-09-09 13:46:12+00:00",
+        "filename": "transcript_lib_p11_21_enfj-nancy-pelosi%3A.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_22_enfp-steve-bannon%3A.txt",
+        "size": 18591,
+        "size_kb": 18.16,
+        "last_modified": "2025-09-09 13:46:12+00:00",
+        "filename": "transcript_lib_p11_22_enfp-steve-bannon%3A.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_23_sean-astin's-an-infj.txt",
+        "size": 16177,
+        "size_kb": 15.8,
+        "last_modified": "2025-09-09 13:46:51+00:00",
+        "filename": "transcript_lib_p11_23_sean-astin's-an-infj.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_24_estp-cillian-murphy%.txt",
+        "size": 17295,
+        "size_kb": 16.89,
+        "last_modified": "2025-09-09 13:46:18+00:00",
+        "filename": "transcript_lib_p11_24_estp-cillian-murphy%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_25_rana-kaliouby-(1%2F2.txt",
+        "size": 37703,
+        "size_kb": 36.82,
+        "last_modified": "2025-09-09 13:46:48+00:00",
+        "filename": "transcript_lib_p11_25_rana-kaliouby-(1%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_27_miley-cyrus%3A-doubl.txt",
+        "size": 26499,
+        "size_kb": 25.88,
+        "last_modified": "2025-09-09 13:46:43+00:00",
+        "filename": "transcript_lib_p11_27_miley-cyrus%3A-doubl.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_28_anne-wojcicki%3A-23%.txt",
+        "size": 26188,
+        "size_kb": 25.57,
+        "last_modified": "2025-09-09 13:46:01+00:00",
+        "filename": "transcript_lib_p11_28_anne-wojcicki%3A-23%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_29_dave-chappelle%3A-ni.txt",
+        "size": 18597,
+        "size_kb": 18.16,
+        "last_modified": "2025-09-09 13:46:09+00:00",
+        "filename": "transcript_lib_p11_29_dave-chappelle%3A-ni.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_30_what-every-25-year-o.txt",
+        "size": 18025,
+        "size_kb": 17.6,
+        "last_modified": "2025-09-09 13:46:59+00:00",
+        "filename": "transcript_lib_p11_30_what-every-25-year-o.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_31_minnie-driver-(1%2F2.txt",
+        "size": 31504,
+        "size_kb": 30.77,
+        "last_modified": "2025-09-09 13:46:43+00:00",
+        "filename": "transcript_lib_p11_31_minnie-driver-(1%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_33_entp-mark-rober%3A-h.txt",
+        "size": 20402,
+        "size_kb": 19.92,
+        "last_modified": "2025-09-09 13:46:13+00:00",
+        "filename": "transcript_lib_p11_33_entp-mark-rober%3A-h.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_34_demon-ne-and-intrusi.txt",
+        "size": 17216,
+        "size_kb": 16.81,
+        "last_modified": "2025-09-09 13:46:10+00:00",
+        "filename": "transcript_lib_p11_34_demon-ne-and-intrusi.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_35_boffy%3A-prioritizin.txt",
+        "size": 25192,
+        "size_kb": 24.6,
+        "last_modified": "2025-09-09 13:46:04+00:00",
+        "filename": "transcript_lib_p11_35_boffy%3A-prioritizin.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_36_esfp-kristen-bell%3A.txt",
+        "size": 21941,
+        "size_kb": 21.43,
+        "last_modified": "2025-09-09 13:46:16+00:00",
+        "filename": "transcript_lib_p11_36_esfp-kristen-bell%3A.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_37_serena-williams-(1%2.txt",
+        "size": 36451,
+        "size_kb": 35.6,
+        "last_modified": "2025-09-09 13:46:51+00:00",
+        "filename": "transcript_lib_p11_37_serena-williams-(1%2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_39_climate-activists-1%.txt",
+        "size": 15556,
+        "size_kb": 15.19,
+        "last_modified": "2025-09-09 13:46:08+00:00",
+        "filename": "transcript_lib_p11_39_climate-activists-1%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_3_isfp-emily-blunt%3A-.txt",
+        "size": 14011,
+        "size_kb": 13.68,
+        "last_modified": "2025-09-09 13:46:28+00:00",
+        "filename": "transcript_lib_p11_3_isfp-emily-blunt%3A-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_40_climate-activists-2%.txt",
+        "size": 17303,
+        "size_kb": 16.9,
+        "last_modified": "2025-09-09 13:46:08+00:00",
+        "filename": "transcript_lib_p11_40_climate-activists-2%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_4_intj-john-krasinski%.txt",
+        "size": 16317,
+        "size_kb": 15.93,
+        "last_modified": "2025-09-09 13:46:27+00:00",
+        "filename": "transcript_lib_p11_4_intj-john-krasinski%.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_5_peter-thiel%3A-why-a.txt",
+        "size": 23262,
+        "size_kb": 22.72,
+        "last_modified": "2025-09-09 13:46:47+00:00",
+        "filename": "transcript_lib_p11_5_peter-thiel%3A-why-a.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_6_ftx-and-nf-shortcomi.txt",
+        "size": 24198,
+        "size_kb": 23.63,
+        "last_modified": "2025-09-09 13:46:20+00:00",
+        "filename": "transcript_lib_p11_6_ftx-and-nf-shortcomi.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_7_rob-delaney-(1%2F2).txt",
+        "size": 32929,
+        "size_kb": 32.16,
+        "last_modified": "2025-09-09 13:46:49+00:00",
+        "filename": "transcript_lib_p11_7_rob-delaney-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p11_9_ronaldo%3A-what-make.txt",
+        "size": 29115,
+        "size_kb": 28.43,
+        "last_modified": "2025-09-09 13:46:49+00:00",
+        "filename": "transcript_lib_p11_9_ronaldo%3A-what-make.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_12_brad-pitt-and-bad-em.txt",
+        "size": 18388,
+        "size_kb": 17.96,
+        "last_modified": "2025-09-09 13:46:05+00:00",
+        "filename": "transcript_lib_p12_12_brad-pitt-and-bad-em.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_13_bam-margera%3A-stuck.txt",
+        "size": 18382,
+        "size_kb": 17.95,
+        "last_modified": "2025-09-09 13:46:03+00:00",
+        "filename": "transcript_lib_p12_13_bam-margera%3A-stuck.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_14_magnus-carlsen-not-i.txt",
+        "size": 21120,
+        "size_kb": 20.62,
+        "last_modified": "2025-09-09 13:46:41+00:00",
+        "filename": "transcript_lib_p12_14_magnus-carlsen-not-i.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_15_idina-menzel-(1%2F2).txt",
+        "size": 33668,
+        "size_kb": 32.88,
+        "last_modified": "2025-09-09 13:46:31+00:00",
+        "filename": "transcript_lib_p12_15_idina-menzel-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_17_john-danaher%3A-cons.txt",
+        "size": 21298,
+        "size_kb": 20.8,
+        "last_modified": "2025-09-09 13:46:35+00:00",
+        "filename": "transcript_lib_p12_17_john-danaher%3A-cons.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_18_leslie-jones%3A-obse.txt",
+        "size": 14660,
+        "size_kb": 14.32,
+        "last_modified": "2025-09-09 13:46:40+00:00",
+        "filename": "transcript_lib_p12_18_leslie-jones%3A-obse.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_19_justin-trudeau%3A-fe.txt",
+        "size": 14247,
+        "size_kb": 13.91,
+        "last_modified": "2025-09-09 13:46:36+00:00",
+        "filename": "transcript_lib_p12_19_justin-trudeau%3A-fe.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_1_steve-o%3A-hero's-jo.txt",
+        "size": 25956,
+        "size_kb": 25.35,
+        "last_modified": "2025-09-09 13:46:54+00:00",
+        "filename": "transcript_lib_p12_1_steve-o%3A-hero's-jo.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_20_hunter-biden%3A-enab.txt",
+        "size": 18788,
+        "size_kb": 18.35,
+        "last_modified": "2025-09-09 13:46:25+00:00",
+        "filename": "transcript_lib_p12_20_hunter-biden%3A-enab.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_21_pharrell-williams-(1.txt",
+        "size": 30746,
+        "size_kb": 30.03,
+        "last_modified": "2025-09-09 13:46:47+00:00",
+        "filename": "transcript_lib_p12_21_pharrell-williams-(1.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_2_donald-hoffman%3A-co.txt",
+        "size": 21419,
+        "size_kb": 20.92,
+        "last_modified": "2025-09-09 13:46:11+00:00",
+        "filename": "transcript_lib_p12_2_donald-hoffman%3A-co.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_3_susan-wojcicki-(1%2F.txt",
+        "size": 34081,
+        "size_kb": 33.28,
+        "last_modified": "2025-09-09 13:46:55+00:00",
+        "filename": "transcript_lib_p12_3_susan-wojcicki-(1%2F.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_5_video-typing-faq.txt",
+        "size": 8312,
+        "size_kb": 8.12,
+        "last_modified": "2025-09-09 13:46:58+00:00",
+        "filename": "transcript_lib_p12_5_video-typing-faq.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_6_paul-reubens-%3D-ala.txt",
+        "size": 18667,
+        "size_kb": 18.23,
+        "last_modified": "2025-09-09 13:46:46+00:00",
+        "filename": "transcript_lib_p12_6_paul-reubens-%3D-ala.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_7_kanye-west%3A-an-exa.txt",
+        "size": 23517,
+        "size_kb": 22.97,
+        "last_modified": "2025-09-09 13:46:37+00:00",
+        "filename": "transcript_lib_p12_7_kanye-west%3A-an-exa.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_8_jared-kushner%3A-pol.txt",
+        "size": 13008,
+        "size_kb": 12.7,
+        "last_modified": "2025-09-09 13:46:33+00:00",
+        "filename": "transcript_lib_p12_8_jared-kushner%3A-pol.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p12_9_alan-cumming-(1%2F2).txt",
+        "size": 27716,
+        "size_kb": 27.07,
+        "last_modified": "2025-09-09 13:46:00+00:00",
+        "filename": "transcript_lib_p12_9_alan-cumming-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p13_17_caroline-leaf-(1%2F2.txt",
+        "size": 33049,
+        "size_kb": 32.27,
+        "last_modified": "2025-09-09 13:46:05+00:00",
+        "filename": "transcript_lib_p13_17_caroline-leaf-(1%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p13_18_caroline-leaf-(2%2F2.txt",
+        "size": 15611,
+        "size_kb": 15.25,
+        "last_modified": "2025-09-09 13:46:05+00:00",
+        "filename": "transcript_lib_p13_18_caroline-leaf-(2%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p13_19_intj-michael-cohen.txt",
+        "size": 20379,
+        "size_kb": 19.9,
+        "last_modified": "2025-09-09 13:46:28+00:00",
+        "filename": "transcript_lib_p13_19_intj-michael-cohen.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_10_istp-pete-davidson.txt",
+        "size": 20644,
+        "size_kb": 20.16,
+        "last_modified": "2025-09-09 13:46:30+00:00",
+        "filename": "transcript_lib_p16_10_istp-pete-davidson.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_11_chris-rock-(1%2F2).txt",
+        "size": 18786,
+        "size_kb": 18.35,
+        "last_modified": "2025-09-09 13:46:07+00:00",
+        "filename": "transcript_lib_p16_11_chris-rock-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_3_benny-hinn-is-dave.txt",
+        "size": 16138,
+        "size_kb": 15.76,
+        "last_modified": "2025-09-09 13:46:03+00:00",
+        "filename": "transcript_lib_p16_3_benny-hinn-is-dave.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_4_esfj-nicolas-cage.txt",
+        "size": 20953,
+        "size_kb": 20.46,
+        "last_modified": "2025-09-09 13:46:14+00:00",
+        "filename": "transcript_lib_p16_4_esfj-nicolas-cage.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_5_jane-goodall-(1%2F2).txt",
+        "size": 31297,
+        "size_kb": 30.56,
+        "last_modified": "2025-09-09 13:46:33+00:00",
+        "filename": "transcript_lib_p16_5_jane-goodall-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_6_jane-goodall-(2%2F2).txt",
+        "size": 37240,
+        "size_kb": 36.37,
+        "last_modified": "2025-09-09 13:46:33+00:00",
+        "filename": "transcript_lib_p16_6_jane-goodall-(2%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_7_esfp-jesse-ventura-c.txt",
+        "size": 27522,
+        "size_kb": 26.88,
+        "last_modified": "2025-09-09 13:46:16+00:00",
+        "filename": "transcript_lib_p16_7_esfp-jesse-ventura-c.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_8_istp-theo-von-is-a-g.txt",
+        "size": 18786,
+        "size_kb": 18.35,
+        "last_modified": "2025-09-09 13:46:30+00:00",
+        "filename": "transcript_lib_p16_8_istp-theo-von-is-a-g.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p16_9_istp-vs-entj-rage!.txt",
+        "size": 18547,
+        "size_kb": 18.11,
+        "last_modified": "2025-09-09 13:46:30+00:00",
+        "filename": "transcript_lib_p16_9_istp-vs-entj-rage!.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p1_1_lead-se-self-fulfill.txt",
+        "size": 75095,
+        "size_kb": 73.33,
+        "last_modified": "2025-09-09 14:57:44+00:00",
+        "filename": "transcript_lib_p1_1_lead-se-self-fulfill.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p3_26_mrbeast%3A-tall-popp.txt",
+        "size": 16814,
+        "size_kb": 16.42,
+        "last_modified": "2025-09-09 13:46:44+00:00",
+        "filename": "transcript_lib_p3_26_mrbeast%3A-tall-popp.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p45_40_gary-%22exxj%22-vayn.txt",
+        "size": 27988,
+        "size_kb": 27.33,
+        "last_modified": "2025-09-09 13:46:21+00:00",
+        "filename": "transcript_lib_p45_40_gary-%22exxj%22-vayn.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p46_2_grow-deciders%3F.txt",
+        "size": 19462,
+        "size_kb": 19.01,
+        "last_modified": "2025-09-09 13:46:23+00:00",
+        "filename": "transcript_lib_p46_2_grow-deciders%3F.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p8_28_intj-brian-greene%3A.txt",
+        "size": 349,
+        "size_kb": 0.34,
+        "last_modified": "2025-09-09 13:46:26+00:00",
+        "filename": "transcript_lib_p8_28_intj-brian-greene%3A.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_23_socials%3A-4-friends.txt",
+        "size": 25228,
+        "size_kb": 24.64,
+        "last_modified": "2025-09-09 13:46:53+00:00",
+        "filename": "transcript_lib_p9_23_socials%3A-4-friends.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_24_ron-desantis%3A-find.txt",
+        "size": 27169,
+        "size_kb": 26.53,
+        "last_modified": "2025-09-09 13:46:49+00:00",
+        "filename": "transcript_lib_p9_24_ron-desantis%3A-find.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_25_intj-woody-harrelson.txt",
+        "size": 22016,
+        "size_kb": 21.5,
+        "last_modified": "2025-09-09 13:46:28+00:00",
+        "filename": "transcript_lib_p9_25_intj-woody-harrelson.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_26_istj-lilsimsie%3A-wh.txt",
+        "size": 22845,
+        "size_kb": 22.31,
+        "last_modified": "2025-09-09 13:46:29+00:00",
+        "filename": "transcript_lib_p9_26_istj-lilsimsie%3A-wh.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_27_christine-baranski-(.txt",
+        "size": 27169,
+        "size_kb": 26.53,
+        "last_modified": "2025-09-09 13:46:07+00:00",
+        "filename": "transcript_lib_p9_27_christine-baranski-(.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_30_satya-nadella%3A-mic.txt",
+        "size": 27870,
+        "size_kb": 27.22,
+        "last_modified": "2025-09-09 13:46:51+00:00",
+        "filename": "transcript_lib_p9_30_satya-nadella%3A-mic.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_31_satya-nadella%3A-go-.txt",
+        "size": 24649,
+        "size_kb": 24.07,
+        "last_modified": "2025-09-09 13:46:50+00:00",
+        "filename": "transcript_lib_p9_31_satya-nadella%3A-go-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_33_john-travolta-(1%2F2.txt",
+        "size": 16576,
+        "size_kb": 16.19,
+        "last_modified": "2025-09-09 13:46:35+00:00",
+        "filename": "transcript_lib_p9_33_john-travolta-(1%2F2.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_35_brendan-fraser%3A-fi.txt",
+        "size": 19483,
+        "size_kb": 19.03,
+        "last_modified": "2025-09-09 13:46:05+00:00",
+        "filename": "transcript_lib_p9_35_brendan-fraser%3A-fi.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_36_jennette-mccurdy%3A-.txt",
+        "size": 19035,
+        "size_kb": 18.59,
+        "last_modified": "2025-09-09 13:46:34+00:00",
+        "filename": "transcript_lib_p9_36_jennette-mccurdy%3A-.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_37_sharon-horgan%3A-par.txt",
+        "size": 17419,
+        "size_kb": 17.01,
+        "last_modified": "2025-09-09 13:46:51+00:00",
+        "filename": "transcript_lib_p9_37_sharon-horgan%3A-par.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_39_paul-ekman-(1%2F2).txt",
+        "size": 32582,
+        "size_kb": 31.82,
+        "last_modified": "2025-09-09 13:46:46+00:00",
+        "filename": "transcript_lib_p9_39_paul-ekman-(1%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_40_paul-ekman-(2%2F2).txt",
+        "size": 14992,
+        "size_kb": 14.64,
+        "last_modified": "2025-09-09 13:46:46+00:00",
+        "filename": "transcript_lib_p9_40_paul-ekman-(2%2F2).txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_6_joe-rogan%3A-just-do.txt",
+        "size": 14740,
+        "size_kb": 14.39,
+        "last_modified": "2025-09-09 13:46:35+00:00",
+        "filename": "transcript_lib_p9_6_joe-rogan%3A-just-do.txt"
+      },
+      {
+        "key": "transcripts/txt/transcript_lib_p9_7_enfp-rick-rubin%3A-t.txt",
+        "size": 16576,
+        "size_kb": 16.19,
+        "last_modified": "2025-09-09 13:46:12+00:00",
+        "filename": "transcript_lib_p9_7_enfp-rick-rubin%3A-t.txt"
+      }
+    ],
+    "vtt_files": [
+      {
+        "key": "transcripts/vtt/auto_generated_captions (1) Sam bankman.vtt",
+        "size": 24254,
+        "size_kb": 23.69,
+        "last_modified": "2025-09-09 13:21:52+00:00",
+        "filename": "auto_generated_captions (1) Sam bankman.vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (1).vtt",
+        "size": 22072,
+        "size_kb": 21.55,
+        "last_modified": "2025-09-09 13:21:25+00:00",
+        "filename": "auto_generated_captions (1).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (10).vtt",
+        "size": 16557,
+        "size_kb": 16.17,
+        "last_modified": "2025-09-09 13:21:49+00:00",
+        "filename": "auto_generated_captions (10).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (11).vtt",
+        "size": 15202,
+        "size_kb": 14.85,
+        "last_modified": "2025-09-09 13:21:50+00:00",
+        "filename": "auto_generated_captions (11).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (12).vtt",
+        "size": 19091,
+        "size_kb": 18.64,
+        "last_modified": "2025-09-09 13:21:26+00:00",
+        "filename": "auto_generated_captions (12).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (13).vtt",
+        "size": 17475,
+        "size_kb": 17.07,
+        "last_modified": "2025-09-09 13:21:26+00:00",
+        "filename": "auto_generated_captions (13).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (14).vtt",
+        "size": 15048,
+        "size_kb": 14.7,
+        "last_modified": "2025-09-09 13:21:26+00:00",
+        "filename": "auto_generated_captions (14).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (15).vtt",
+        "size": 18842,
+        "size_kb": 18.4,
+        "last_modified": "2025-09-09 13:21:50+00:00",
+        "filename": "auto_generated_captions (15).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (16).vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:21:26+00:00",
+        "filename": "auto_generated_captions (16).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (17).vtt",
+        "size": 28044,
+        "size_kb": 27.39,
+        "last_modified": "2025-09-09 13:21:27+00:00",
+        "filename": "auto_generated_captions (17).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (18).vtt",
+        "size": 18932,
+        "size_kb": 18.49,
+        "last_modified": "2025-09-09 13:21:27+00:00",
+        "filename": "auto_generated_captions (18).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (19).vtt",
+        "size": 12322,
+        "size_kb": 12.03,
+        "last_modified": "2025-09-09 13:21:50+00:00",
+        "filename": "auto_generated_captions (19).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (2) Si.vtt",
+        "size": 22901,
+        "size_kb": 22.36,
+        "last_modified": "2025-09-09 13:21:27+00:00",
+        "filename": "auto_generated_captions (2) Si.vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (2).vtt",
+        "size": 21128,
+        "size_kb": 20.63,
+        "last_modified": "2025-09-09 13:21:50+00:00",
+        "filename": "auto_generated_captions (2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (20).vtt",
+        "size": 32039,
+        "size_kb": 31.29,
+        "last_modified": "2025-09-09 13:21:27+00:00",
+        "filename": "auto_generated_captions (20).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (21).vtt",
+        "size": 22192,
+        "size_kb": 21.67,
+        "last_modified": "2025-09-09 13:21:51+00:00",
+        "filename": "auto_generated_captions (21).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (22).vtt",
+        "size": 23349,
+        "size_kb": 22.8,
+        "last_modified": "2025-09-09 13:21:28+00:00",
+        "filename": "auto_generated_captions (22).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (23).vtt",
+        "size": 28504,
+        "size_kb": 27.84,
+        "last_modified": "2025-09-09 13:21:44+00:00",
+        "filename": "auto_generated_captions (23).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (24).vtt",
+        "size": 21327,
+        "size_kb": 20.83,
+        "last_modified": "2025-09-09 13:21:44+00:00",
+        "filename": "auto_generated_captions (24).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (25).vtt",
+        "size": 33291,
+        "size_kb": 32.51,
+        "last_modified": "2025-09-09 13:21:45+00:00",
+        "filename": "auto_generated_captions (25).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (26).vtt",
+        "size": 26946,
+        "size_kb": 26.31,
+        "last_modified": "2025-09-09 13:21:45+00:00",
+        "filename": "auto_generated_captions (26).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (27).vtt",
+        "size": 22990,
+        "size_kb": 22.45,
+        "last_modified": "2025-09-09 13:21:45+00:00",
+        "filename": "auto_generated_captions (27).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (28).vtt",
+        "size": 22804,
+        "size_kb": 22.27,
+        "last_modified": "2025-09-09 13:21:53+00:00",
+        "filename": "auto_generated_captions (28).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (29).vtt",
+        "size": 25768,
+        "size_kb": 25.16,
+        "last_modified": "2025-09-09 13:21:45+00:00",
+        "filename": "auto_generated_captions (29).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (3) 264_3.vtt",
+        "size": 27225,
+        "size_kb": 26.59,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (3) 264_3.vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (3).vtt",
+        "size": 28889,
+        "size_kb": 28.21,
+        "last_modified": "2025-09-09 13:21:51+00:00",
+        "filename": "auto_generated_captions (3).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (30).vtt",
+        "size": 30458,
+        "size_kb": 29.74,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (30).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (31).vtt",
+        "size": 16640,
+        "size_kb": 16.25,
+        "last_modified": "2025-09-09 13:21:54+00:00",
+        "filename": "auto_generated_captions (31).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (32).vtt",
+        "size": 20605,
+        "size_kb": 20.12,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (32).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (33).vtt",
+        "size": 17974,
+        "size_kb": 17.55,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (33).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (34).vtt",
+        "size": 20220,
+        "size_kb": 19.75,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (34).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (35).vtt",
+        "size": 40077,
+        "size_kb": 39.14,
+        "last_modified": "2025-09-09 13:21:46+00:00",
+        "filename": "auto_generated_captions (35).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (36).vtt",
+        "size": 20955,
+        "size_kb": 20.46,
+        "last_modified": "2025-09-09 13:21:47+00:00",
+        "filename": "auto_generated_captions (36).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (37).vtt",
+        "size": 13464,
+        "size_kb": 13.15,
+        "last_modified": "2025-09-09 13:21:54+00:00",
+        "filename": "auto_generated_captions (37).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (38).vtt",
+        "size": 17043,
+        "size_kb": 16.64,
+        "last_modified": "2025-09-09 13:21:47+00:00",
+        "filename": "auto_generated_captions (38).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (39).vtt",
+        "size": 17350,
+        "size_kb": 16.94,
+        "last_modified": "2025-09-09 13:21:47+00:00",
+        "filename": "auto_generated_captions (39).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (4).vtt",
+        "size": 18954,
+        "size_kb": 18.51,
+        "last_modified": "2025-09-09 13:21:51+00:00",
+        "filename": "auto_generated_captions (4).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (40).vtt",
+        "size": 40698,
+        "size_kb": 39.74,
+        "last_modified": "2025-09-09 13:21:47+00:00",
+        "filename": "auto_generated_captions (40).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (41).vtt",
+        "size": 19518,
+        "size_kb": 19.06,
+        "last_modified": "2025-09-09 13:21:47+00:00",
+        "filename": "auto_generated_captions (41).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (42).vtt",
+        "size": 23480,
+        "size_kb": 22.93,
+        "last_modified": "2025-09-09 13:21:48+00:00",
+        "filename": "auto_generated_captions (42).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (43).vtt",
+        "size": 16564,
+        "size_kb": 16.18,
+        "last_modified": "2025-09-09 13:21:48+00:00",
+        "filename": "auto_generated_captions (43).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (44).vtt",
+        "size": 21690,
+        "size_kb": 21.18,
+        "last_modified": "2025-09-09 13:21:55+00:00",
+        "filename": "auto_generated_captions (44).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (45).vtt",
+        "size": 15255,
+        "size_kb": 14.9,
+        "last_modified": "2025-09-09 13:21:55+00:00",
+        "filename": "auto_generated_captions (45).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (46).vtt",
+        "size": 21503,
+        "size_kb": 21.0,
+        "last_modified": "2025-09-09 13:21:55+00:00",
+        "filename": "auto_generated_captions (46).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (47).vtt",
+        "size": 27667,
+        "size_kb": 27.02,
+        "last_modified": "2025-09-09 13:21:48+00:00",
+        "filename": "auto_generated_captions (47).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (48).vtt",
+        "size": 33885,
+        "size_kb": 33.09,
+        "last_modified": "2025-09-09 13:21:48+00:00",
+        "filename": "auto_generated_captions (48).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (49).vtt",
+        "size": 14067,
+        "size_kb": 13.74,
+        "last_modified": "2025-09-09 13:21:48+00:00",
+        "filename": "auto_generated_captions (49).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (5).vtt",
+        "size": 16170,
+        "size_kb": 15.79,
+        "last_modified": "2025-09-09 13:21:51+00:00",
+        "filename": "auto_generated_captions (5).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (50) John Cr.vtt",
+        "size": 16373,
+        "size_kb": 15.99,
+        "last_modified": "2025-09-09 13:21:49+00:00",
+        "filename": "auto_generated_captions (50) John Cr.vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (50).vtt",
+        "size": 23897,
+        "size_kb": 23.34,
+        "last_modified": "2025-09-09 13:21:55+00:00",
+        "filename": "auto_generated_captions (50).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (51).vtt",
+        "size": 19691,
+        "size_kb": 19.23,
+        "last_modified": "2025-09-09 13:21:56+00:00",
+        "filename": "auto_generated_captions (51).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (52).vtt",
+        "size": 45469,
+        "size_kb": 44.4,
+        "last_modified": "2025-09-09 13:21:56+00:00",
+        "filename": "auto_generated_captions (52).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (53).vtt",
+        "size": 14583,
+        "size_kb": 14.24,
+        "last_modified": "2025-09-09 13:21:56+00:00",
+        "filename": "auto_generated_captions (53).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (54).vtt",
+        "size": 16194,
+        "size_kb": 15.81,
+        "last_modified": "2025-09-09 13:21:56+00:00",
+        "filename": "auto_generated_captions (54).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (55).vtt",
+        "size": 18697,
+        "size_kb": 18.26,
+        "last_modified": "2025-09-09 13:21:56+00:00",
+        "filename": "auto_generated_captions (55).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (56).vtt",
+        "size": 23481,
+        "size_kb": 22.93,
+        "last_modified": "2025-09-09 13:21:57+00:00",
+        "filename": "auto_generated_captions (56).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (57).vtt",
+        "size": 17206,
+        "size_kb": 16.8,
+        "last_modified": "2025-09-09 13:21:57+00:00",
+        "filename": "auto_generated_captions (57).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (58).vtt",
+        "size": 22241,
+        "size_kb": 21.72,
+        "last_modified": "2025-09-09 13:21:57+00:00",
+        "filename": "auto_generated_captions (58).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (59).vtt",
+        "size": 14408,
+        "size_kb": 14.07,
+        "last_modified": "2025-09-09 13:21:57+00:00",
+        "filename": "auto_generated_captions (59).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (6).vtt",
+        "size": 25284,
+        "size_kb": 24.69,
+        "last_modified": "2025-09-09 13:21:49+00:00",
+        "filename": "auto_generated_captions (6).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (60).vtt",
+        "size": 14144,
+        "size_kb": 13.81,
+        "last_modified": "2025-09-09 13:21:57+00:00",
+        "filename": "auto_generated_captions (60).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (61).vtt",
+        "size": 31659,
+        "size_kb": 30.92,
+        "last_modified": "2025-09-09 13:21:58+00:00",
+        "filename": "auto_generated_captions (61).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (62).vtt",
+        "size": 15960,
+        "size_kb": 15.59,
+        "last_modified": "2025-09-09 13:21:58+00:00",
+        "filename": "auto_generated_captions (62).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (63).vtt",
+        "size": 22539,
+        "size_kb": 22.01,
+        "last_modified": "2025-09-09 13:21:58+00:00",
+        "filename": "auto_generated_captions (63).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (64).vtt",
+        "size": 15115,
+        "size_kb": 14.76,
+        "last_modified": "2025-09-09 13:21:58+00:00",
+        "filename": "auto_generated_captions (64).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (65).vtt",
+        "size": 32563,
+        "size_kb": 31.8,
+        "last_modified": "2025-09-09 13:21:58+00:00",
+        "filename": "auto_generated_captions (65).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (66).vtt",
+        "size": 14343,
+        "size_kb": 14.01,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (66).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (67).vtt",
+        "size": 21058,
+        "size_kb": 20.56,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (67).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (68).vtt",
+        "size": 11954,
+        "size_kb": 11.67,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (68).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (69).vtt",
+        "size": 42151,
+        "size_kb": 41.16,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (69).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (7).vtt",
+        "size": 13064,
+        "size_kb": 12.76,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (7).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (70).vtt",
+        "size": 25689,
+        "size_kb": 25.09,
+        "last_modified": "2025-09-09 13:21:59+00:00",
+        "filename": "auto_generated_captions (70).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (71).vtt",
+        "size": 24420,
+        "size_kb": 23.85,
+        "last_modified": "2025-09-09 13:22:00+00:00",
+        "filename": "auto_generated_captions (71).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (72).vtt",
+        "size": 17450,
+        "size_kb": 17.04,
+        "last_modified": "2025-09-09 13:22:00+00:00",
+        "filename": "auto_generated_captions (72).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (73).vtt",
+        "size": 19903,
+        "size_kb": 19.44,
+        "last_modified": "2025-09-09 13:22:00+00:00",
+        "filename": "auto_generated_captions (73).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (74).vtt",
+        "size": 42867,
+        "size_kb": 41.86,
+        "last_modified": "2025-09-09 13:22:00+00:00",
+        "filename": "auto_generated_captions (74).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (75).vtt",
+        "size": 14275,
+        "size_kb": 13.94,
+        "last_modified": "2025-09-09 13:22:01+00:00",
+        "filename": "auto_generated_captions (75).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (76).vtt",
+        "size": 15924,
+        "size_kb": 15.55,
+        "last_modified": "2025-09-09 13:22:01+00:00",
+        "filename": "auto_generated_captions (76).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (77).vtt",
+        "size": 14810,
+        "size_kb": 14.46,
+        "last_modified": "2025-09-09 13:22:01+00:00",
+        "filename": "auto_generated_captions (77).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (78).vtt",
+        "size": 15044,
+        "size_kb": 14.69,
+        "last_modified": "2025-09-09 13:22:01+00:00",
+        "filename": "auto_generated_captions (78).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (79).vtt",
+        "size": 35470,
+        "size_kb": 34.64,
+        "last_modified": "2025-09-09 13:22:01+00:00",
+        "filename": "auto_generated_captions (79).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (8).vtt",
+        "size": 24705,
+        "size_kb": 24.13,
+        "last_modified": "2025-09-09 13:21:49+00:00",
+        "filename": "auto_generated_captions (8).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (80).vtt",
+        "size": 18307,
+        "size_kb": 17.88,
+        "last_modified": "2025-09-09 13:22:02+00:00",
+        "filename": "auto_generated_captions (80).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (81).vtt",
+        "size": 16929,
+        "size_kb": 16.53,
+        "last_modified": "2025-09-09 13:22:02+00:00",
+        "filename": "auto_generated_captions (81).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (82).vtt",
+        "size": 21145,
+        "size_kb": 20.65,
+        "last_modified": "2025-09-09 13:22:02+00:00",
+        "filename": "auto_generated_captions (82).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (83).vtt",
+        "size": 15369,
+        "size_kb": 15.01,
+        "last_modified": "2025-09-09 13:22:02+00:00",
+        "filename": "auto_generated_captions (83).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (84).vtt",
+        "size": 36547,
+        "size_kb": 35.69,
+        "last_modified": "2025-09-09 13:22:03+00:00",
+        "filename": "auto_generated_captions (84).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (85).vtt",
+        "size": 19133,
+        "size_kb": 18.68,
+        "last_modified": "2025-09-09 13:22:03+00:00",
+        "filename": "auto_generated_captions (85).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (86).vtt",
+        "size": 16041,
+        "size_kb": 15.67,
+        "last_modified": "2025-09-09 13:22:03+00:00",
+        "filename": "auto_generated_captions (86).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (87).vtt",
+        "size": 15934,
+        "size_kb": 15.56,
+        "last_modified": "2025-09-09 13:22:03+00:00",
+        "filename": "auto_generated_captions (87).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (88).vtt",
+        "size": 19449,
+        "size_kb": 18.99,
+        "last_modified": "2025-09-09 13:22:04+00:00",
+        "filename": "auto_generated_captions (88).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (89).vtt",
+        "size": 36314,
+        "size_kb": 35.46,
+        "last_modified": "2025-09-09 13:22:04+00:00",
+        "filename": "auto_generated_captions (89).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (9).vtt",
+        "size": 12258,
+        "size_kb": 11.97,
+        "last_modified": "2025-09-09 13:21:52+00:00",
+        "filename": "auto_generated_captions (9).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (90).vtt",
+        "size": 22039,
+        "size_kb": 21.52,
+        "last_modified": "2025-09-09 13:22:04+00:00",
+        "filename": "auto_generated_captions (90).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (91).vtt",
+        "size": 18350,
+        "size_kb": 17.92,
+        "last_modified": "2025-09-09 13:22:04+00:00",
+        "filename": "auto_generated_captions (91).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (92).vtt",
+        "size": 21992,
+        "size_kb": 21.48,
+        "last_modified": "2025-09-09 13:22:05+00:00",
+        "filename": "auto_generated_captions (92).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (93).vtt",
+        "size": 18991,
+        "size_kb": 18.55,
+        "last_modified": "2025-09-09 13:22:05+00:00",
+        "filename": "auto_generated_captions (93).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (94).vtt",
+        "size": 41426,
+        "size_kb": 40.46,
+        "last_modified": "2025-09-09 13:22:05+00:00",
+        "filename": "auto_generated_captions (94).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions (95).vtt",
+        "size": 24381,
+        "size_kb": 23.81,
+        "last_modified": "2025-09-09 13:22:05+00:00",
+        "filename": "auto_generated_captions (95).vtt"
+      },
+      {
+        "key": "transcripts/vtt/auto_generated_captions.vtt",
+        "size": 10952,
+        "size_kb": 10.7,
+        "last_modified": "2025-09-09 13:21:52+00:00",
+        "filename": "auto_generated_captions.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.vtt",
+        "size": 32443,
+        "size_kb": 31.68,
+        "last_modified": "2025-09-09 14:40:30+00:00",
+        "filename": "transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_bd30f4c6-ea45-4f3a-8357-1be42f69ebe2.vtt",
+        "size": 25768,
+        "size_kb": 25.16,
+        "last_modified": "2025-09-09 13:46:47+00:00",
+        "filename": "transcript_bd30f4c6-ea45-4f3a-8357-1be42f69ebe2.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p12_24_adam-sandler%2C-cons.vtt",
+        "size": 32039,
+        "size_kb": 31.29,
+        "last_modified": "2025-09-09 13:46:00+00:00",
+        "filename": "transcript_lib_p12_24_adam-sandler%2C-cons.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p12_25_macaulay-culkin%3A-d.vtt",
+        "size": 19518,
+        "size_kb": 19.06,
+        "last_modified": "2025-09-09 13:46:41+00:00",
+        "filename": "transcript_lib_p12_25_macaulay-culkin%3A-d.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p12_26_ray-kurzweil%3A-expo.vtt",
+        "size": 23349,
+        "size_kb": 22.8,
+        "last_modified": "2025-09-09 13:46:48+00:00",
+        "filename": "transcript_lib_p12_26_ray-kurzweil%3A-expo.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p12_27_mila-kunis-(1%2F2).vtt",
+        "size": 28504,
+        "size_kb": 27.84,
+        "last_modified": "2025-09-09 13:46:43+00:00",
+        "filename": "transcript_lib_p12_27_mila-kunis-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p12_36_andrew-tate%3A-proce.vtt",
+        "size": 30458,
+        "size_kb": 29.74,
+        "last_modified": "2025-09-09 13:46:01+00:00",
+        "filename": "transcript_lib_p12_36_andrew-tate%3A-proce.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_13_entp-quentin-taranti.vtt",
+        "size": 21690,
+        "size_kb": 21.18,
+        "last_modified": "2025-09-09 13:46:14+00:00",
+        "filename": "transcript_lib_p13_13_entp-quentin-taranti.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_14_channel-change-vs-ch.vtt",
+        "size": 15255,
+        "size_kb": 14.9,
+        "last_modified": "2025-09-09 13:46:06+00:00",
+        "filename": "transcript_lib_p13_14_channel-change-vs-ch.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_15_esfp-curtis-jackson.vtt",
+        "size": 21503,
+        "size_kb": 21.0,
+        "last_modified": "2025-09-09 13:46:15+00:00",
+        "filename": "transcript_lib_p13_15_esfp-curtis-jackson.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_16_life-sends-you-unfai.vtt",
+        "size": 27667,
+        "size_kb": 27.02,
+        "last_modified": "2025-09-09 13:46:40+00:00",
+        "filename": "transcript_lib_p13_16_life-sends-you-unfai.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_1_lex-fridman%3A-not-t.vtt",
+        "size": 19691,
+        "size_kb": 19.23,
+        "last_modified": "2025-09-09 13:46:40+00:00",
+        "filename": "transcript_lib_p13_1_lex-fridman%3A-not-t.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_20_estp-michael-jordan.vtt",
+        "size": 23897,
+        "size_kb": 23.34,
+        "last_modified": "2025-09-09 13:46:18+00:00",
+        "filename": "transcript_lib_p13_20_estp-michael-jordan.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_23_james-cameron-(1%2F2.vtt",
+        "size": 45469,
+        "size_kb": 44.4,
+        "last_modified": "2025-09-09 13:46:32+00:00",
+        "filename": "transcript_lib_p13_23_james-cameron-(1%2F2.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_27_intj-ivanka-trump.vtt",
+        "size": 18697,
+        "size_kb": 18.26,
+        "last_modified": "2025-09-09 13:46:27+00:00",
+        "filename": "transcript_lib_p13_27_intj-ivanka-trump.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_29_jamie-foxx-(1%2F2).vtt",
+        "size": 23481,
+        "size_kb": 22.93,
+        "last_modified": "2025-09-09 13:46:33+00:00",
+        "filename": "transcript_lib_p13_29_jamie-foxx-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_31_entj-alex-jones.vtt",
+        "size": 14144,
+        "size_kb": 13.81,
+        "last_modified": "2025-09-09 13:46:13+00:00",
+        "filename": "transcript_lib_p13_31_entj-alex-jones.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_33_enfj-oprah-winfrey.vtt",
+        "size": 14408,
+        "size_kb": 14.07,
+        "last_modified": "2025-09-09 13:46:12+00:00",
+        "filename": "transcript_lib_p13_33_enfj-oprah-winfrey.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_35_lebron-james-(1%2F2).vtt",
+        "size": 31659,
+        "size_kb": 30.92,
+        "last_modified": "2025-09-09 13:46:39+00:00",
+        "filename": "transcript_lib_p13_35_lebron-james-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_37_estp-denzel-washingt.vtt",
+        "size": 15960,
+        "size_kb": 15.59,
+        "last_modified": "2025-09-09 13:46:18+00:00",
+        "filename": "transcript_lib_p13_37_estp-denzel-washingt.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_39_istp-mickey-rourke.vtt",
+        "size": 22539,
+        "size_kb": 22.01,
+        "last_modified": "2025-09-09 13:46:29+00:00",
+        "filename": "transcript_lib_p13_39_istp-mickey-rourke.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p13_4_fired-for-gray-hair%.vtt",
+        "size": 13464,
+        "size_kb": 13.15,
+        "last_modified": "2025-09-09 13:46:21+00:00",
+        "filename": "transcript_lib_p13_4_fired-for-gray-hair%.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p14_33_government-talking-a.vtt",
+        "size": 25284,
+        "size_kb": 24.69,
+        "last_modified": "2025-09-09 13:46:22+00:00",
+        "filename": "transcript_lib_p14_33_government-talking-a.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p14_35_mm-esfp-queen-latifa.vtt",
+        "size": 21058,
+        "size_kb": 20.56,
+        "last_modified": "2025-09-09 13:46:41+00:00",
+        "filename": "transcript_lib_p14_35_mm-esfp-queen-latifa.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p14_37_russell-brunson-(1%2.vtt",
+        "size": 42151,
+        "size_kb": 41.16,
+        "last_modified": "2025-09-09 13:46:50+00:00",
+        "filename": "transcript_lib_p14_37_russell-brunson-(1%2.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p14_39_keira-knightly-and-n.vtt",
+        "size": 25689,
+        "size_kb": 25.09,
+        "last_modified": "2025-09-09 13:46:37+00:00",
+        "filename": "transcript_lib_p14_39_keira-knightly-and-n.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p14_3_tom-cruise-vs-matt-l.vtt",
+        "size": 15115,
+        "size_kb": 14.76,
+        "last_modified": "2025-09-09 13:46:57+00:00",
+        "filename": "transcript_lib_p14_3_tom-cruise-vs-matt-l.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_12_bill-murray-and-play.vtt",
+        "size": 16929,
+        "size_kb": 16.53,
+        "last_modified": "2025-09-09 13:46:03+00:00",
+        "filename": "transcript_lib_p15_12_bill-murray-and-play.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_13_esfj-ric-flair.vtt",
+        "size": 21145,
+        "size_kb": 20.65,
+        "last_modified": "2025-09-09 13:46:14+00:00",
+        "filename": "transcript_lib_p15_13_esfj-ric-flair.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_14_mark-miley-%26-criti.vtt",
+        "size": 15369,
+        "size_kb": 15.01,
+        "last_modified": "2025-09-09 13:46:42+00:00",
+        "filename": "transcript_lib_p15_14_mark-miley-%26-criti.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_19_istj-mike-pence-goin.vtt",
+        "size": 15934,
+        "size_kb": 15.56,
+        "last_modified": "2025-09-09 13:46:29+00:00",
+        "filename": "transcript_lib_p15_19_istj-mike-pence-goin.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_1_andrew-tate-wants-to.vtt",
+        "size": 26946,
+        "size_kb": 26.31,
+        "last_modified": "2025-09-09 13:46:00+00:00",
+        "filename": "transcript_lib_p15_1_andrew-tate-wants-to.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_20_infp-joaquin-phoenix.vtt",
+        "size": 19449,
+        "size_kb": 18.99,
+        "last_modified": "2025-09-09 13:46:26+00:00",
+        "filename": "transcript_lib_p15_20_infp-joaquin-phoenix.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_24_te%2Fne-marjorie-tay.vtt",
+        "size": 18350,
+        "size_kb": 17.92,
+        "last_modified": "2025-09-09 13:46:55+00:00",
+        "filename": "transcript_lib_p15_24_te%2Fne-marjorie-tay.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_26_istp-glenn-jacobs.vtt",
+        "size": 18991,
+        "size_kb": 18.55,
+        "last_modified": "2025-09-09 13:46:29+00:00",
+        "filename": "transcript_lib_p15_26_istp-glenn-jacobs.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_27_maya-angelou-(1%2F2).vtt",
+        "size": 41426,
+        "size_kb": 40.46,
+        "last_modified": "2025-09-09 13:46:42+00:00",
+        "filename": "transcript_lib_p15_27_maya-angelou-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_29_esfp-steve-irwin.vtt",
+        "size": 24381,
+        "size_kb": 23.81,
+        "last_modified": "2025-09-09 13:46:17+00:00",
+        "filename": "transcript_lib_p15_29_esfp-steve-irwin.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_30_fake-martial-artists.vtt",
+        "size": 10952,
+        "size_kb": 10.7,
+        "last_modified": "2025-09-09 13:46:20+00:00",
+        "filename": "transcript_lib_p15_30_fake-martial-artists.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_33_celine-dion-(1%2F2).vtt",
+        "size": 28889,
+        "size_kb": 28.21,
+        "last_modified": "2025-09-09 13:46:06+00:00",
+        "filename": "transcript_lib_p15_33_celine-dion-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_36_istp-lands-plane-bec.vtt",
+        "size": 16170,
+        "size_kb": 15.79,
+        "last_modified": "2025-09-09 13:46:29+00:00",
+        "filename": "transcript_lib_p15_36_istp-lands-plane-bec.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_5_system-even-for-the-.vtt",
+        "size": 14275,
+        "size_kb": 13.94,
+        "last_modified": "2025-09-09 13:46:55+00:00",
+        "filename": "transcript_lib_p15_5_system-even-for-the-.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_6_intj-david-meltzer.vtt",
+        "size": 14067,
+        "size_kb": 13.74,
+        "last_modified": "2025-09-09 13:46:26+00:00",
+        "filename": "transcript_lib_p15_6_intj-david-meltzer.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_8_isfj-matthew-mcconau.vtt",
+        "size": 15044,
+        "size_kb": 14.69,
+        "last_modified": "2025-09-09 13:46:28+00:00",
+        "filename": "transcript_lib_p15_8_isfj-matthew-mcconau.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p15_9_simon-sinek-(1%2F2).vtt",
+        "size": 35470,
+        "size_kb": 34.64,
+        "last_modified": "2025-09-09 13:46:52+00:00",
+        "filename": "transcript_lib_p15_9_simon-sinek-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p16_14_esfp-jennifer-lawren.vtt",
+        "size": 12322,
+        "size_kb": 12.03,
+        "last_modified": "2025-09-09 13:46:15+00:00",
+        "filename": "transcript_lib_p16_14_esfp-jennifer-lawren.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p16_16_todd-phillips-nf-lia.vtt",
+        "size": 22192,
+        "size_kb": 21.67,
+        "last_modified": "2025-09-09 13:46:56+00:00",
+        "filename": "transcript_lib_p16_16_todd-phillips-nf-lia.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p16_1_jake-paul%3A-type-ch.vtt",
+        "size": 12258,
+        "size_kb": 11.97,
+        "last_modified": "2025-09-09 13:46:32+00:00",
+        "filename": "transcript_lib_p16_1_jake-paul%3A-type-ch.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p16_22_weird-fi-and-dr-phil.vtt",
+        "size": 23349,
+        "size_kb": 22.8,
+        "last_modified": "2025-09-09 13:46:59+00:00",
+        "filename": "transcript_lib_p16_22_weird-fi-and-dr-phil.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p17_17_where-are-you-on-the.vtt",
+        "size": 19091,
+        "size_kb": 18.64,
+        "last_modified": "2025-09-09 13:47:01+00:00",
+        "filename": "transcript_lib_p17_17_where-are-you-on-the.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p17_28_joe-rogan-managing-c.vtt",
+        "size": 20220,
+        "size_kb": 19.75,
+        "last_modified": "2025-09-09 13:46:35+00:00",
+        "filename": "transcript_lib_p17_28_joe-rogan-managing-c.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p17_40_how-are-these-people.vtt",
+        "size": 20220,
+        "size_kb": 19.75,
+        "last_modified": "2025-09-09 13:46:24+00:00",
+        "filename": "transcript_lib_p17_40_how-are-these-people.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p18_14_zendaya-(1%2F2).vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:47:02+00:00",
+        "filename": "transcript_lib_p18_14_zendaya-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p18_34_endorphins%3A-feel-g.vtt",
+        "size": 19133,
+        "size_kb": 18.68,
+        "last_modified": "2025-09-09 13:46:19+00:00",
+        "filename": "transcript_lib_p18_34_endorphins%3A-feel-g.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p19_6_i-get-everything%2C-.vtt",
+        "size": 26946,
+        "size_kb": 26.31,
+        "last_modified": "2025-09-09 13:46:25+00:00",
+        "filename": "transcript_lib_p19_6_i-get-everything%2C-.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p19_8_what-lead-ne's-are-g.vtt",
+        "size": 17043,
+        "size_kb": 16.64,
+        "last_modified": "2025-09-09 13:47:00+00:00",
+        "filename": "transcript_lib_p19_8_what-lead-ne's-are-g.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p1_13_di-vs-de-processing.vtt",
+        "size": 30458,
+        "size_kb": 29.74,
+        "last_modified": "2025-09-09 13:46:45+00:00",
+        "filename": "transcript_lib_p1_13_di-vs-de-processing.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p1_1_lead-se-self-fulfill.vtt",
+        "size": 115488,
+        "size_kb": 112.78,
+        "last_modified": "2025-09-09 14:57:44+00:00",
+        "filename": "transcript_lib_p1_1_lead-se-self-fulfill.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p21_10_what-masculine-de-is.vtt",
+        "size": 14343,
+        "size_kb": 14.01,
+        "last_modified": "2025-09-09 13:47:00+00:00",
+        "filename": "transcript_lib_p21_10_what-masculine-de-is.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p21_3_video-typing%3A-you'.vtt",
+        "size": 17475,
+        "size_kb": 17.07,
+        "last_modified": "2025-09-09 13:46:58+00:00",
+        "filename": "transcript_lib_p21_3_video-typing%3A-you'.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p22_14_typing-evy-esfp.vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:46:57+00:00",
+        "filename": "transcript_lib_p22_14_typing-evy-esfp.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p23_3_processing-why-peopl.vtt",
+        "size": 22804,
+        "size_kb": 22.27,
+        "last_modified": "2025-09-09 13:46:48+00:00",
+        "filename": "transcript_lib_p23_3_processing-why-peopl.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p24_3_how-to-get-more-cons.vtt",
+        "size": 28044,
+        "size_kb": 27.39,
+        "last_modified": "2025-09-09 13:46:25+00:00",
+        "filename": "transcript_lib_p24_3_how-to-get-more-cons.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p24_5_susan-cain%2C-play-l.vtt",
+        "size": 24254,
+        "size_kb": 23.69,
+        "last_modified": "2025-09-09 13:46:55+00:00",
+        "filename": "transcript_lib_p24_5_susan-cain%2C-play-l.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p26_16_typing-mike-tyson-es.vtt",
+        "size": 21992,
+        "size_kb": 21.48,
+        "last_modified": "2025-09-09 13:46:58+00:00",
+        "filename": "transcript_lib_p26_16_typing-mike-tyson-es.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p26_33_processing-our-demon.vtt",
+        "size": 36547,
+        "size_kb": 35.69,
+        "last_modified": "2025-09-09 13:46:48+00:00",
+        "filename": "transcript_lib_p26_33_processing-our-demon.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p27_19_joe-biden-(1%2F2).vtt",
+        "size": 18932,
+        "size_kb": 18.49,
+        "last_modified": "2025-09-09 13:46:34+00:00",
+        "filename": "transcript_lib_p27_19_joe-biden-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p27_23_coming-out.vtt",
+        "size": 15048,
+        "size_kb": 14.7,
+        "last_modified": "2025-09-09 13:46:08+00:00",
+        "filename": "transcript_lib_p27_23_coming-out.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p27_36_will-this-make-the-b.vtt",
+        "size": 24705,
+        "size_kb": 24.13,
+        "last_modified": "2025-09-09 13:47:01+00:00",
+        "filename": "transcript_lib_p27_36_will-this-make-the-b.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p28_11_what's-so-bad-about-.vtt",
+        "size": 16373,
+        "size_kb": 15.99,
+        "last_modified": "2025-09-09 13:47:00+00:00",
+        "filename": "transcript_lib_p28_11_what's-so-bad-about-.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p29_28_fear-friends-more-th.vtt",
+        "size": 32039,
+        "size_kb": 31.29,
+        "last_modified": "2025-09-09 13:46:20+00:00",
+        "filename": "transcript_lib_p29_28_fear-friends-more-th.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p29_3_how-do-i-work-on-ni%.vtt",
+        "size": 25284,
+        "size_kb": 24.69,
+        "last_modified": "2025-09-09 13:46:24+00:00",
+        "filename": "transcript_lib_p29_3_how-do-i-work-on-ni%.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p29_9_jordan-peterson-upda.vtt",
+        "size": 22241,
+        "size_kb": 21.72,
+        "last_modified": "2025-09-09 13:46:36+00:00",
+        "filename": "transcript_lib_p29_9_jordan-peterson-upda.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p2_27_we-are-all-%22introv.vtt",
+        "size": 32039,
+        "size_kb": 31.29,
+        "last_modified": "2025-09-09 13:46:59+00:00",
+        "filename": "transcript_lib_p2_27_we-are-all-%22introv.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p2_32_live-shan-q%26a.vtt",
+        "size": 25284,
+        "size_kb": 24.69,
+        "last_modified": "2025-09-09 13:46:40+00:00",
+        "filename": "transcript_lib_p2_32_live-shan-q%26a.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p30_24_my-friends-and-famil.vtt",
+        "size": 15924,
+        "size_kb": 15.55,
+        "last_modified": "2025-09-09 13:46:44+00:00",
+        "filename": "transcript_lib_p30_24_my-friends-and-famil.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p30_9_discussion-on-ti.vtt",
+        "size": 22039,
+        "size_kb": 21.52,
+        "last_modified": "2025-09-09 13:46:11+00:00",
+        "filename": "transcript_lib_p30_9_discussion-on-ti.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p31_13_tips-on-double-obser.vtt",
+        "size": 19518,
+        "size_kb": 19.06,
+        "last_modified": "2025-09-09 13:46:56+00:00",
+        "filename": "transcript_lib_p31_13_tips-on-double-obser.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p32_28_hero's-journey-updat.vtt",
+        "size": 23480,
+        "size_kb": 22.93,
+        "last_modified": "2025-09-09 13:46:24+00:00",
+        "filename": "transcript_lib_p32_28_hero's-journey-updat.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p33_21_when-is-knowing-your.vtt",
+        "size": 15202,
+        "size_kb": 14.85,
+        "last_modified": "2025-09-09 13:47:01+00:00",
+        "filename": "transcript_lib_p33_21_when-is-knowing-your.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p33_39_typing-people-live%3.vtt",
+        "size": 27667,
+        "size_kb": 27.02,
+        "last_modified": "2025-09-09 13:46:58+00:00",
+        "filename": "transcript_lib_p33_39_typing-people-live%3.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_12_standards-connected-.vtt",
+        "size": 36314,
+        "size_kb": 35.46,
+        "last_modified": "2025-09-09 13:46:53+00:00",
+        "filename": "transcript_lib_p35_12_standards-connected-.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_16_2019%3A-what-surpris.vtt",
+        "size": 21327,
+        "size_kb": 20.83,
+        "last_modified": "2025-09-09 13:46:00+00:00",
+        "filename": "transcript_lib_p35_16_2019%3A-what-surpris.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_23_get-ahead-already!-(.vtt",
+        "size": 14810,
+        "size_kb": 14.46,
+        "last_modified": "2025-09-09 13:46:22+00:00",
+        "filename": "transcript_lib_p35_23_get-ahead-already!-(.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_26_steve-aoki-(1%2F2).vtt",
+        "size": 18307,
+        "size_kb": 17.88,
+        "last_modified": "2025-09-09 13:46:54+00:00",
+        "filename": "transcript_lib_p35_26_steve-aoki-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_29_obsessed-with-person.vtt",
+        "size": 24420,
+        "size_kb": 23.85,
+        "last_modified": "2025-09-09 13:46:46+00:00",
+        "filename": "transcript_lib_p35_29_obsessed-with-person.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_30_where-do-we-suck%3F.vtt",
+        "size": 17450,
+        "size_kb": 17.04,
+        "last_modified": "2025-09-09 13:47:01+00:00",
+        "filename": "transcript_lib_p35_30_where-do-we-suck%3F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_31_insecurity%3A-pets-o.vtt",
+        "size": 19903,
+        "size_kb": 19.44,
+        "last_modified": "2025-09-09 13:46:31+00:00",
+        "filename": "transcript_lib_p35_31_insecurity%3A-pets-o.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_32_edward-snowden-(1%2F.vtt",
+        "size": 42867,
+        "size_kb": 41.86,
+        "last_modified": "2025-09-09 13:46:18+00:00",
+        "filename": "transcript_lib_p35_32_edward-snowden-(1%2F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_35_cry-routine-update%3.vtt",
+        "size": 32563,
+        "size_kb": 31.8,
+        "last_modified": "2025-09-09 13:46:09+00:00",
+        "filename": "transcript_lib_p35_35_cry-routine-update%3.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p35_38_maisie-williams-(1%2.vtt",
+        "size": 11954,
+        "size_kb": 11.67,
+        "last_modified": "2025-09-09 13:46:41+00:00",
+        "filename": "transcript_lib_p35_38_maisie-williams-(1%2.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_10_kanye-west-(1%2F2).vtt",
+        "size": 25284,
+        "size_kb": 24.69,
+        "last_modified": "2025-09-09 13:46:36+00:00",
+        "filename": "transcript_lib_p36_10_kanye-west-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_11_kanye-west-(2%2F2).vtt",
+        "size": 17206,
+        "size_kb": 16.8,
+        "last_modified": "2025-09-09 13:46:37+00:00",
+        "filename": "transcript_lib_p36_11_kanye-west-(2%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_13_meanings-of-life%3F.vtt",
+        "size": 33885,
+        "size_kb": 33.09,
+        "last_modified": "2025-09-09 13:46:42+00:00",
+        "filename": "transcript_lib_p36_13_meanings-of-life%3F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_24_class-is-not-getting.vtt",
+        "size": 20955,
+        "size_kb": 20.46,
+        "last_modified": "2025-09-09 13:46:08+00:00",
+        "filename": "transcript_lib_p36_24_class-is-not-getting.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_25_people-are-not-accep.vtt",
+        "size": 16041,
+        "size_kb": 15.67,
+        "last_modified": "2025-09-09 13:46:47+00:00",
+        "filename": "transcript_lib_p36_25_people-are-not-accep.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_28_bo-burnham-(1%2F2).vtt",
+        "size": 17350,
+        "size_kb": 16.94,
+        "last_modified": "2025-09-09 13:46:04+00:00",
+        "filename": "transcript_lib_p36_28_bo-burnham-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_29_bo-burnham-(2%2F2).vtt",
+        "size": 40698,
+        "size_kb": 39.74,
+        "last_modified": "2025-09-09 13:46:04+00:00",
+        "filename": "transcript_lib_p36_29_bo-burnham-(2%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_33_conjure-up-your-shad.vtt",
+        "size": 17974,
+        "size_kb": 17.55,
+        "last_modified": "2025-09-09 13:46:09+00:00",
+        "filename": "transcript_lib_p36_33_conjure-up-your-shad.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_37_savior-vs-demon-stat.vtt",
+        "size": 33291,
+        "size_kb": 32.51,
+        "last_modified": "2025-09-09 13:46:51+00:00",
+        "filename": "transcript_lib_p36_37_savior-vs-demon-stat.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_39_enneagram-correlatio.vtt",
+        "size": 22990,
+        "size_kb": 22.45,
+        "last_modified": "2025-09-09 13:46:19+00:00",
+        "filename": "transcript_lib_p36_39_enneagram-correlatio.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_6_de-lower-your-standa.vtt",
+        "size": 14583,
+        "size_kb": 14.24,
+        "last_modified": "2025-09-09 13:46:10+00:00",
+        "filename": "transcript_lib_p36_6_de-lower-your-standa.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p36_7_are-you-done-yet%3F.vtt",
+        "size": 16194,
+        "size_kb": 15.81,
+        "last_modified": "2025-09-09 13:46:02+00:00",
+        "filename": "transcript_lib_p36_7_are-you-done-yet%3F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p37_12_novak-djokovic-(1%2F.vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:46:45+00:00",
+        "filename": "transcript_lib_p37_12_novak-djokovic-(1%2F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p37_32_tripping-over-the-sa.vtt",
+        "size": 24705,
+        "size_kb": 24.13,
+        "last_modified": "2025-09-09 13:46:57+00:00",
+        "filename": "transcript_lib_p37_32_tripping-over-the-sa.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p37_9_i-don't-like-gary-ve.vtt",
+        "size": 18842,
+        "size_kb": 18.4,
+        "last_modified": "2025-09-09 13:46:26+00:00",
+        "filename": "transcript_lib_p37_9_i-don't-like-gary-ve.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p38_22_grant-function-stack.vtt",
+        "size": 18932,
+        "size_kb": 18.49,
+        "last_modified": "2025-09-09 13:46:23+00:00",
+        "filename": "transcript_lib_p38_22_grant-function-stack.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p40_28_lead-fi-people.vtt",
+        "size": 21128,
+        "size_kb": 20.63,
+        "last_modified": "2025-09-09 13:46:39+00:00",
+        "filename": "transcript_lib_p40_28_lead-fi-people.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_14_tony-hawk-(1%2F2).vtt",
+        "size": 16564,
+        "size_kb": 16.18,
+        "last_modified": "2025-09-09 13:46:57+00:00",
+        "filename": "transcript_lib_p41_14_tony-hawk-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_18_bodily-indicators-re.vtt",
+        "size": 33291,
+        "size_kb": 32.51,
+        "last_modified": "2025-09-09 13:46:04+00:00",
+        "filename": "transcript_lib_p41_18_bodily-indicators-re.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_20_dr-phil-(1%2F2).vtt",
+        "size": 22990,
+        "size_kb": 22.45,
+        "last_modified": "2025-09-09 13:46:11+00:00",
+        "filename": "transcript_lib_p41_20_dr-phil-(1%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_33_martha-stewart-(2%2F.vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:46:42+00:00",
+        "filename": "transcript_lib_p41_33_martha-stewart-(2%2F.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_37_what-are-type-opposi.vtt",
+        "size": 13064,
+        "size_kb": 12.76,
+        "last_modified": "2025-09-09 13:47:00+00:00",
+        "filename": "transcript_lib_p41_37_what-are-type-opposi.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p41_40_did-you-type-yoursel.vtt",
+        "size": 28504,
+        "size_kb": 27.84,
+        "last_modified": "2025-09-09 13:46:10+00:00",
+        "filename": "transcript_lib_p41_40_did-you-type-yoursel.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p42_40_are-other-people-see.vtt",
+        "size": 22072,
+        "size_kb": 21.55,
+        "last_modified": "2025-09-09 13:46:02+00:00",
+        "filename": "transcript_lib_p42_40_are-other-people-see.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p43_30_ne-(masculine-vs-fem.vtt",
+        "size": 21128,
+        "size_kb": 20.63,
+        "last_modified": "2025-09-09 13:46:44+00:00",
+        "filename": "transcript_lib_p43_30_ne-(masculine-vs-fem.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p44_12_ixxp%3A-what-does-th.vtt",
+        "size": 40077,
+        "size_kb": 39.14,
+        "last_modified": "2025-09-09 13:46:31+00:00",
+        "filename": "transcript_lib_p44_12_ixxp%3A-what-does-th.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p44_24_find-your-typing-met.vtt",
+        "size": 27225,
+        "size_kb": 26.59,
+        "last_modified": "2025-09-09 13:46:21+00:00",
+        "filename": "transcript_lib_p44_24_find-your-typing-met.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p44_2_sleep-last.vtt",
+        "size": 18954,
+        "size_kb": 18.51,
+        "last_modified": "2025-09-09 13:46:52+00:00",
+        "filename": "transcript_lib_p44_2_sleep-last.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p45_2_does-feminine-ti-loo.vtt",
+        "size": 40077,
+        "size_kb": 39.14,
+        "last_modified": "2025-09-09 13:46:11+00:00",
+        "filename": "transcript_lib_p45_2_does-feminine-ti-loo.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p46_15_figuring-out-your-ty.vtt",
+        "size": 26946,
+        "size_kb": 26.31,
+        "last_modified": "2025-09-09 13:46:20+00:00",
+        "filename": "transcript_lib_p46_15_figuring-out-your-ty.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_16_objectively-calculat.vtt",
+        "size": 33885,
+        "size_kb": 33.09,
+        "last_modified": "2025-09-09 13:46:45+00:00",
+        "filename": "transcript_lib_p47_16_objectively-calculat.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_19_ff%2C-fm%2C-mf%2C-mm.vtt",
+        "size": 16640,
+        "size_kb": 16.25,
+        "last_modified": "2025-09-09 13:46:19+00:00",
+        "filename": "transcript_lib_p47_19_ff%2C-fm%2C-mf%2C-mm.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_20_developing-as-you-gr.vtt",
+        "size": 40698,
+        "size_kb": 39.74,
+        "last_modified": "2025-09-09 13:46:10+00:00",
+        "filename": "transcript_lib_p47_20_developing-as-you-gr.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_25_how-do-you-put-out-1.vtt",
+        "size": 17974,
+        "size_kb": 17.55,
+        "last_modified": "2025-09-09 13:46:25+00:00",
+        "filename": "transcript_lib_p47_25_how-do-you-put-out-1.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_28_how-much-do-our-pare.vtt",
+        "size": 20955,
+        "size_kb": 20.46,
+        "last_modified": "2025-09-09 13:46:25+00:00",
+        "filename": "transcript_lib_p47_28_how-much-do-our-pare.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_31_lindsay-defranco-(2%.vtt",
+        "size": 17350,
+        "size_kb": 16.94,
+        "last_modified": "2025-09-09 13:46:40+00:00",
+        "filename": "transcript_lib_p47_31_lindsay-defranco-(2%.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_36_jennifer-aniston-(1%.vtt",
+        "size": 22990,
+        "size_kb": 22.45,
+        "last_modified": "2025-09-09 13:46:34+00:00",
+        "filename": "transcript_lib_p47_36_jennifer-aniston-(1%.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p47_38_benedict-cumberbatch.vtt",
+        "size": 33291,
+        "size_kb": 32.51,
+        "last_modified": "2025-09-09 13:46:03+00:00",
+        "filename": "transcript_lib_p47_38_benedict-cumberbatch.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p48_9_jordan-byers-(2%2F2).vtt",
+        "size": 21434,
+        "size_kb": 20.93,
+        "last_modified": "2025-09-09 13:46:36+00:00",
+        "filename": "transcript_lib_p48_9_jordan-byers-(2%2F2).vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_14_entj-going-after-the.vtt",
+        "size": 28044,
+        "size_kb": 27.39,
+        "last_modified": "2025-09-09 13:46:13+00:00",
+        "filename": "transcript_lib_p6_14_entj-going-after-the.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_15_nt-vs-sf-why-trump-w.vtt",
+        "size": 28044,
+        "size_kb": 27.39,
+        "last_modified": "2025-09-09 13:46:44+00:00",
+        "filename": "transcript_lib_p6_15_nt-vs-sf-why-trump-w.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_26_what-unprocessed-pro.vtt",
+        "size": 22072,
+        "size_kb": 21.55,
+        "last_modified": "2025-09-09 13:47:00+00:00",
+        "filename": "transcript_lib_p6_26_what-unprocessed-pro.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_30_sleep-last-process-s.vtt",
+        "size": 22901,
+        "size_kb": 22.36,
+        "last_modified": "2025-09-09 13:46:52+00:00",
+        "filename": "transcript_lib_p6_30_sleep-last-process-s.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_35_jack-dorsey%3A-3's-m.vtt",
+        "size": 23349,
+        "size_kb": 22.8,
+        "last_modified": "2025-09-09 13:46:32+00:00",
+        "filename": "transcript_lib_p6_35_jack-dorsey%3A-3's-m.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p6_38_walk-into-the-woodch.vtt",
+        "size": 16557,
+        "size_kb": 16.17,
+        "last_modified": "2025-09-09 13:46:59+00:00",
+        "filename": "transcript_lib_p6_38_walk-into-the-woodch.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p7_18_catch-a-few!-demon-n.vtt",
+        "size": 12258,
+        "size_kb": 11.97,
+        "last_modified": "2025-09-09 13:46:06+00:00",
+        "filename": "transcript_lib_p7_18_catch-a-few!-demon-n.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p7_19_working-through-obse.vtt",
+        "size": 15048,
+        "size_kb": 14.7,
+        "last_modified": "2025-09-09 13:47:02+00:00",
+        "filename": "transcript_lib_p7_19_working-through-obse.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p7_22_exxps-seeing-ghosts-.vtt",
+        "size": 19091,
+        "size_kb": 18.64,
+        "last_modified": "2025-09-09 13:46:19+00:00",
+        "filename": "transcript_lib_p7_22_exxps-seeing-ghosts-.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p7_33_garrett-white%3A-her.vtt",
+        "size": 28504,
+        "size_kb": 27.84,
+        "last_modified": "2025-09-09 13:46:21+00:00",
+        "filename": "transcript_lib_p7_33_garrett-white%3A-her.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p7_6_have-an-authority-ov.vtt",
+        "size": 20605,
+        "size_kb": 20.12,
+        "last_modified": "2025-09-09 13:46:23+00:00",
+        "filename": "transcript_lib_p7_6_have-an-authority-ov.vtt"
+      },
+      {
+        "key": "transcripts/vtt/transcript_lib_p9_38_processing-the-typin.vtt",
+        "size": 28889,
+        "size_kb": 28.21,
+        "last_modified": "2025-09-09 13:46:48+00:00",
+        "filename": "transcript_lib_p9_38_processing-the-typin.vtt"
+      }
+    ]
+  },
+  "migration_plan_summary": {
+    "total_files": 501,
+    "file_types": {
+      "txt": 258,
+      "temp": 1,
+      "json": 1,
+      "vtt": 241
+    }
+  },
+  "cost_estimate": {
+    "total_files": 501,
+    "total_size_mb": 11.03,
+    "estimated_cost_usd": 0.0027,
+    "estimated_time_minutes": 4.2,
+    "breakdown": {
+      "get_requests": 501,
+      "put_requests": 501,
+      "get_cost": 0.0002,
+      "put_cost": 0.0025
+    }
+  },
+  "migration_results": {
+    "successful": 501,
+    "failed": 0,
+    "skipped": 0,
+    "errors": [],
+    "total_processed": 501
+  }
+}

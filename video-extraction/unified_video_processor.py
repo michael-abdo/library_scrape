@@ -33,13 +33,26 @@ import argparse
 from datetime import datetime
 from pathlib import Path
 from s3_manager import S3Manager
-from config_manager import ConfigManager
+from google_gpu_transcriber import GoogleGPUTranscriber
+from openai_whisper_transcriber import OpenAIWhisperTranscriber
+from transcription_config import TranscriptionConfig
 
 class UnifiedVideoProcessor:
     def __init__(self):
         """Initialize the unified video processor"""
-        self.config_manager = ConfigManager()
         self.s3_manager = S3Manager()
+        
+        # Service selection: Choose transcription service based on config
+        self.service = TranscriptionConfig.DEFAULT_SERVICE
+        print(f"🔧 Using transcription service: {self.service}")
+        
+        if self.service == 'openai':
+            self.transcriber = OpenAIWhisperTranscriber()
+            print(f"   💰 OpenAI Whisper: 87.5% cost savings vs Google")
+        else:  # fallback to google
+            self.transcriber = GoogleGPUTranscriber()
+            print(f"   🎯 Google Speech-to-Text: High accuracy")
+        
         self.db_path = self._find_database()
         self.cookies = self._load_cookies()
         self.session = self._create_session()
@@ -49,6 +62,12 @@ class UnifiedVideoProcessor:
     def _find_database(self):
         """Find the database file in possible locations"""
         possible_paths = [
+            # Main library database (1,903 videos)
+            "../library_scrape/library_videos.db",
+            "../../library_scrape/library_videos.db", 
+            "../../../library_scrape/library_videos.db",
+            "/home/Mike/projects/Xenodex/ops_scraping/library_scrape/library_videos.db",
+            # Fallback paths
             "../library_videos.db", 
             "../../library_videos.db",
             "/Users/Mike/Xenodx/library_scrape/library_videos.db",
@@ -155,6 +174,7 @@ class UnifiedVideoProcessor:
             
             # Multiple patterns to find Streamable video IDs
             patterns = [
+                r'cdn-cf-east\.streamable\.com/image/([a-z0-9]+)',
                 r'cdn-cf-east\.streamable\.com/image/([a-z0-9]+)-screenshot',
                 r'cdn-cf-east\.streamable\.com/video/mp4/([a-z0-9]+)\.mp4',
                 r'streamable\.com/o/([a-z0-9]+)',
@@ -343,15 +363,134 @@ class UnifiedVideoProcessor:
                 print("❌ S3 verification failed")
                 return False
             
-            # Update database
+            # Update database with S3 info
             self.update_database_record(video_record, s3_key, streamable_id)
             
-            print(f"✅ Successfully processed: {title}")
+            # Start transcription process
+            transcription_success = self.transcribe_video(s3_key, video_record)
+            
+            if transcription_success:
+                print(f"✅ Successfully processed and transcribed: {title}")
+            else:
+                print(f"⚠️  S3 upload successful but transcription failed: {title}")
+                
             return True
                 
         except Exception as e:
             print(f"❌ Upload error: {e}")
             return False
+    
+    def transcribe_video(self, s3_key, video_record):
+        """Transcribe video with fallback logic (OpenAI Whisper -> Google Speech or vice versa)"""
+        # Generate presigned URL for the video
+        presigned_url = self.s3_manager.get_presigned_url(s3_key, expiration=7200)  # 2 hours
+        if not presigned_url:
+            print("❌ Failed to generate presigned URL for transcription")
+            return False
+        
+        print(f"🔗 Using presigned URL for transcription")
+        
+        # Attempt primary service first
+        primary_service = self.service
+        primary_name = "OpenAI Whisper" if primary_service == 'openai' else "Google Speech-to-Text"
+        
+        try:
+            print(f"🎙️  Starting {primary_name} transcription for: {video_record.get('title', 'Unknown')}")
+            result = self.transcriber.transcribe_from_url(presigned_url)
+            
+            if result and result.get('success'):
+                transcript = result.get('transcript', '')
+                confidence = result.get('confidence', 0)
+                service_used = result.get('service', primary_service)
+                
+                # Update database with transcription
+                self.update_transcription_record(video_record, transcript, confidence, service_used)
+                print(f"✅ {primary_name} transcription completed (confidence: {confidence:.2f})")
+                return True
+            else:
+                error = result.get('error', 'Unknown error') if result else 'No result returned'
+                print(f"⚠️  {primary_name} failed: {error}")
+                # Continue to fallback
+                
+        except Exception as e:
+            print(f"⚠️  {primary_name} error: {e}")
+            # Continue to fallback
+        
+        # Fallback to alternative service
+        fallback_service = 'google' if primary_service == 'openai' else 'openai'
+        fallback_name = "Google Speech-to-Text" if fallback_service == 'google' else "OpenAI Whisper"
+        
+        try:
+            print(f"🔄 Attempting fallback to {fallback_name}...")
+            
+            # Initialize fallback transcriber
+            if fallback_service == 'openai':
+                fallback_transcriber = OpenAIWhisperTranscriber()
+            else:
+                fallback_transcriber = GoogleGPUTranscriber()
+            
+            result = fallback_transcriber.transcribe_from_url(presigned_url)
+            
+            if result and result.get('success'):
+                transcript = result.get('transcript', '')
+                confidence = result.get('confidence', 0)
+                service_used = result.get('service', fallback_service)
+                
+                # Update database with transcription
+                self.update_transcription_record(video_record, transcript, confidence, service_used)
+                print(f"✅ {fallback_name} fallback succeeded (confidence: {confidence:.2f})")
+                return True
+            else:
+                error = result.get('error', 'Unknown error') if result else 'No result returned'
+                print(f"❌ {fallback_name} fallback also failed: {error}")
+                return False
+                
+        except Exception as e:
+            print(f"❌ {fallback_name} fallback error: {e}")
+            print(f"❌ Both transcription services failed for: {video_record.get('title', 'Unknown')}")
+            return False
+    
+    def update_transcription_record(self, video_record, transcript, confidence, service_used=None):
+        """Update database with transcription results"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Check if transcription_service column exists (will be added in task #23)
+                cursor.execute("PRAGMA table_info(videos)")
+                columns = [row[1] for row in cursor.fetchall()]
+                has_service_column = 'transcription_service' in columns
+                
+                if has_service_column and service_used:
+                    # Update with service information
+                    cursor.execute("""
+                        UPDATE videos 
+                        SET transcript = ?,
+                            transcription_confidence = ?,
+                            transcription_service = ?,
+                            transcribed_at = datetime('now')
+                        WHERE id = ?
+                    """, (transcript, confidence, service_used, video_record['id']))
+                else:
+                    # Update without service information (backward compatibility)
+                    cursor.execute("""
+                        UPDATE videos 
+                        SET transcript = ?,
+                            transcription_confidence = ?,
+                            transcribed_at = datetime('now')
+                        WHERE id = ?
+                    """, (transcript, confidence, video_record['id']))
+                
+                conn.commit()
+                
+                if cursor.rowcount > 0:
+                    service_info = f" (via {service_used})" if service_used else ""
+                    print(f"   ✅ Updated transcription record: {video_record['id']}{service_info}")
+                else:
+                    print(f"   ⚠️  No transcription rows updated")
+                    
+        except Exception as e:
+            print(f"   ❌ Transcription database update error: {e}")
     
     def update_database_record(self, video_record, s3_key, streamable_id):
         """Update database with S3 information"""
