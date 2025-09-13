@@ -102,11 +102,11 @@ class S3Manager:
     def __init__(self, bucket_name: Optional[str] = None, region: str = "us-west-2"):
         """Initialize S3 client with credentials."""
         self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'xenodx-video-archive')
-        self.region = region
+        self.region = os.getenv('AWS_DEFAULT_REGION', region)
         
         try:
             # Initialize S3 client with profile support
-            aws_profile = os.getenv('AWS_PROFILE')
+            aws_profile = os.getenv('AWS_PROFILE', 'zenex')
             if aws_profile:
                 # Use specific profile
                 session = boto3.Session(profile_name=aws_profile)

@@ -126,24 +126,38 @@ class UnifiedVideoProcessor:
         
         return session
     
-    def get_unprocessed_videos(self, limit=None):
+    def get_unprocessed_videos(self, limit=None, use_streamable_ids=False):
         """Get videos from database where s3_key IS NULL"""
         try:
             with sqlite3.connect(self.db_path) as conn:
                 cursor = conn.cursor()
                 
-                # Build query with optional limit
-                query = "SELECT id, title, video_url FROM videos WHERE (s3_key IS NULL OR s3_key = '') AND video_url IS NOT NULL"
-                params = []
-                
-                if limit:
-                    query += " LIMIT ?"
-                    params.append(limit)
-                
-                cursor.execute(query, params)
-                results = cursor.fetchall()
-                
-                return [{'id': r[0], 'title': r[1], 'video_url': r[2]} for r in results]
+                if use_streamable_ids:
+                    # Get videos with known streamable IDs
+                    query = "SELECT id, title, video_url, streamable_id FROM videos WHERE (s3_key IS NULL OR s3_key = '') AND streamable_id IS NOT NULL AND streamable_id != 'MANUAL_CHECK_REQUIRED'"
+                    params = []
+                    
+                    if limit:
+                        query += " LIMIT ?"
+                        params.append(limit)
+                    
+                    cursor.execute(query, params)
+                    results = cursor.fetchall()
+                    
+                    return [{'id': r[0], 'title': r[1], 'video_url': r[2], 'streamable_id': r[3]} for r in results]
+                else:
+                    # Original logic - get videos with OP URLs  
+                    query = "SELECT id, title, video_url FROM videos WHERE (s3_key IS NULL OR s3_key = '') AND video_url IS NOT NULL"
+                    params = []
+                    
+                    if limit:
+                        query += " LIMIT ?"
+                        params.append(limit)
+                    
+                    cursor.execute(query, params)
+                    results = cursor.fetchall()
+                    
+                    return [{'id': r[0], 'title': r[1], 'video_url': r[2]} for r in results]
                 
         except Exception as e:
             print(f"❌ Database error: {e}")
@@ -161,6 +175,7 @@ class UnifiedVideoProcessor:
             # Multiple patterns to find Streamable video IDs
             patterns = [
                 r'cdn-cf-east\.streamable\.com/image/([a-z0-9]+)',
+                r'cdn-cf-east\.streamable\.com/image/([a-z0-9]+)-screenshot',
                 r'cdn-cf-east\.streamable\.com/video/mp4/([a-z0-9]+)\.mp4',
                 r'streamable\.com/o/([a-z0-9]+)',
                 r'api\.streamable\.com/videos/([a-z0-9]+)',
@@ -508,14 +523,24 @@ class UnifiedVideoProcessor:
         try:
             print(f"\n" + "="*60)
             print(f"Processing: {video_record['title']}")
-            print(f"URL: {video_record['video_url']}")
+            if video_record.get('video_url'):
+                print(f"URL: {video_record['video_url']}")
+            if video_record.get('streamable_id'):
+                print(f"Streamable ID: {video_record['streamable_id']}")
             print(f"="*60)
             
-            # Extract Streamable ID
-            streamable_id = self.extract_streamable_id(video_record['video_url'])
+            # Use existing streamable_id if available, otherwise extract
+            streamable_id = video_record.get('streamable_id')
             if not streamable_id:
-                print(f"❌ Failed to extract Streamable ID")
-                return False
+                if not video_record.get('video_url'):
+                    print(f"❌ No Streamable ID or video URL provided")
+                    return False
+                    
+                # Extract Streamable ID
+                streamable_id = self.extract_streamable_id(video_record['video_url'])
+                if not streamable_id:
+                    print(f"❌ Failed to extract Streamable ID")
+                    return False
             
             # Stream to S3
             return self.stream_video_to_s3(video_record, streamable_id)
@@ -524,14 +549,16 @@ class UnifiedVideoProcessor:
             print(f"❌ Error processing video: {e}")
             return False
     
-    def process_batch(self, limit=None):
+    def process_batch(self, limit=None, use_streamable_ids=False):
         """Process multiple unprocessed videos"""
         print(f"📋 Unified Video Processor - Batch Mode")
         if limit:
             print(f"   Limit: {limit} videos")
+        if use_streamable_ids:
+            print(f"   Mode: Using known Streamable IDs (skipping extraction)")
         
         # Get unprocessed videos
-        videos = self.get_unprocessed_videos(limit)
+        videos = self.get_unprocessed_videos(limit, use_streamable_ids)
         if not videos:
             print("✅ No unprocessed videos found!")
             return
@@ -606,6 +633,7 @@ def main():
     parser = argparse.ArgumentParser(description='Unified Video Processor for ObjectivePersonality Videos')
     parser.add_argument('--limit', type=int, help='Limit number of videos to process')
     parser.add_argument('--status', action='store_true', help='Show database status')
+    parser.add_argument('--streamable', action='store_true', help='Process videos with known Streamable IDs (skip extraction)')
     parser.add_argument('input', nargs='?', help='Streamable ID or ObjectivePersonality URL')
     
     args = parser.parse_args()
@@ -627,7 +655,7 @@ def main():
                 processor.stream_video_to_s3(video_record, args.input)
         else:
             # Batch processing
-            processor.process_batch(args.limit)
+            processor.process_batch(args.limit, args.streamable)
             
     except KeyboardInterrupt:
         print("\n⚠️  Interrupted by user")

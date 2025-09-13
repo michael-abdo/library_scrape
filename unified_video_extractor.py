@@ -340,11 +340,17 @@ class UnifiedVideoExtractor:
             if findings.get('iframes'):
                 for iframe in findings['iframes']:
                     src = iframe.get('src', '')
-                    if src and 'video' in src.lower():
-                        result['other_video_url'] = src
-                        result['platform'] = 'other'
-                        print(f"✅ Found other video iframe: {src}")
-                        break
+                    # Accept any iframe that looks like it could be a video player
+                    # Exclude known non-video iframes
+                    exclude_patterns = ['recaptcha', 'analytics', 'tracking', 'ads', 'facebook.com/plugins', 'twitter.com/widgets']
+                    if src and not any(pattern in src.lower() for pattern in exclude_patterns):
+                        # Check for video-related keywords or patterns
+                        video_indicators = ['video', 'player', 'embed', 'media', 'stream', 'watch', 'herokuapp.com/worker']
+                        if any(indicator in src.lower() for indicator in video_indicators) or 'w-gcb-app' in src:
+                            result['other_video_url'] = src
+                            result['platform'] = 'other'
+                            print(f"✅ Found other video iframe: {src[:100]}...")
+                            break
             
             # Check video elements
             if not result['platform'] and findings.get('video_elements'):
