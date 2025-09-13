@@ -101,7 +101,7 @@ class S3Manager:
     
     def __init__(self, bucket_name: Optional[str] = None, region: str = "us-west-2"):
         """Initialize S3 client with credentials."""
-        self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'op-videos-storage')
+        self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'xenodx-video-archive')
         self.region = region
         
         try:

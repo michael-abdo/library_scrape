@@ -1,0 +1,501 @@
+2025-09-09 14:16:05        171 transcripts/archive/no_timestamps/transcript_f94ccc31-709c-46eb-a4d7-75d9f5b04ba6.txt
+2025-09-09 14:16:06        263 transcripts/archive/no_timestamps/transcript_lib_p16_29_jonah-hill-(1%2F2).txt
+2025-09-09 14:16:07        267 transcripts/archive/no_timestamps/transcript_lib_p1_1_lead-se-self-fulfill.txt
+2025-09-09 14:16:07        248 transcripts/archive/no_timestamps/transcript_lib_p1_2_david-harbour.txt
+2025-09-09 14:16:06        266 transcripts/archive/no_timestamps/transcript_lib_p23_33_anthony-bourdain%2C-.txt
+2025-09-09 14:16:06        266 transcripts/archive/no_timestamps/transcript_lib_p23_35_anthony-bourdain-(1%.txt
+2025-09-09 14:16:06        257 transcripts/archive/no_timestamps/transcript_lib_p23_39_tina-fey%2C-demon-th.txt
+2025-09-09 14:16:06        256 transcripts/archive/no_timestamps/transcript_lib_p2_7_georgia-ede-%7C-info.txt
+2025-09-09 14:16:07        243 transcripts/archive/no_timestamps/transcript_lib_p48_24_tim-cook.txt
+2025-09-09 14:16:06        263 transcripts/archive/no_timestamps/transcript_lib_p4_6_esfp-dream%2C-avoids.txt
+2025-09-09 14:48:50          0 transcripts/aws/.write_access_check_file.temp
+2025-09-09 14:39:09     744694 transcripts/aws/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560_8ea10344.json
+2025-09-09 13:11:46        243 transcripts/classes/Class_001_Tim_Cook.txt
+2025-09-09 13:11:47        263 transcripts/classes/Class_217_FF_Se_Te_ESFP_Consume.txt
+2025-09-09 13:11:46        171 transcripts/classes/Class_310_Rob_Dyrdek.txt
+2025-09-09 13:11:46        248 transcripts/classes/Class_388_David_Harbour.txt
+2025-09-09 13:11:47        266 transcripts/other/Anthony_Bourdain_Travel_Food.txt
+2025-09-09 13:11:48        349 transcripts/other/INTJ_Brian_Greene_Physics.txt
+2025-09-09 13:11:48        349 transcripts/other/Jennifer_Lawrence_Acting_1of2.txt
+2025-09-09 13:11:47        381 transcripts/other/Meeting_Notes_Project_Alpha_2024.txt
+2025-09-09 13:11:48        360 transcripts/other/Self_Fulfilling_Fear_Discussion.txt
+2025-09-09 13:11:48        257 transcripts/other/Tina_Fey_Comedy.txt
+2025-09-09 13:11:48        256 transcripts/other/Vimeo_7gsm4r_Content.txt
+2025-09-09 13:11:47         82 transcripts/qa/QA_368_Questions_about_typing.txt
+2025-09-09 13:11:47        267 transcripts/qa/QA_389_Self_Fulfilling_Fears.txt
+2025-09-09 13:22:14      27522 transcripts/txt/220.1_Ventura.txt
+2025-09-09 13:22:14      18786 transcripts/txt/220.2_Theo.txt
+2025-09-09 13:22:05      18547 transcripts/txt/220.3_ENTJ.txt
+2025-09-09 13:22:15      20644 transcripts/txt/220.4_Pete.txt
+2025-09-09 13:22:15      16138 transcripts/txt/221_Benny.txt
+2025-09-09 13:22:15      31297 transcripts/txt/221_Jane1.txt
+2025-09-09 13:22:06      37240 transcripts/txt/221_Jane2.txt
+2025-09-09 13:22:15      20953 transcripts/txt/221_Nicolas.txt
+2025-09-09 13:22:15      20379 transcripts/txt/238.4_Cohen.txt
+2025-09-09 13:22:06      15611 transcripts/txt/239_Afgan.txt
+2025-09-09 13:22:16      33049 transcripts/txt/239_Caroline1.txt
+2025-09-09 13:22:06      18788 transcripts/txt/245_Hunter.txt
+2025-09-09 13:22:16      21298 transcripts/txt/245_John.txt
+2025-09-09 13:22:16      14247 transcripts/txt/245_Justin.txt
+2025-09-09 13:22:16      14660 transcripts/txt/245_Leslie.txt
+2025-09-09 13:22:16      30746 transcripts/txt/245_Pharrell1.txt
+2025-09-09 13:22:17      18382 transcripts/txt/246_Bam.txt
+2025-09-09 13:22:17      18388 transcripts/txt/246_Brad.txt
+2025-09-09 13:22:17      21120 transcripts/txt/246_Carlsen.txt
+2025-09-09 13:22:17      33668 transcripts/txt/246_Idina1.txt
+2025-09-09 13:22:17      16814 transcripts/txt/246_MrBeast.txt
+2025-09-09 13:22:17      27716 transcripts/txt/247_Alan1.txt
+2025-09-09 13:22:06      13008 transcripts/txt/247_Jared.txt
+2025-09-09 13:22:06      23517 transcripts/txt/247_Kanye.txt
+2025-09-09 13:22:18      18667 transcripts/txt/247_Paul.txt
+2025-09-09 13:22:07       8312 transcripts/txt/247_VideoTyping.txt
+2025-09-09 13:22:07      15556 transcripts/txt/248_Activist1.txt
+2025-09-09 13:22:07      17303 transcripts/txt/248_Activist2.txt
+2025-09-09 13:22:18      21419 transcripts/txt/248_Hoffman.txt
+2025-09-09 13:22:18      25956 transcripts/txt/248_SteveO.txt
+2025-09-09 13:22:07      34081 transcripts/txt/248_Susan1.txt
+2025-09-09 13:22:18      36451 transcripts/txt/249.0_SerenaWilliams1.txt
+2025-09-09 13:22:18      21941 transcripts/txt/249.1_KristenBell.txt
+2025-09-09 13:22:07      25192 transcripts/txt/249.2_Boffy.txt
+2025-09-09 13:22:08      17216 transcripts/txt/249.3_IntrusiveThoughts.txt
+2025-09-09 13:22:19      20402 transcripts/txt/249.4_MarkRober.txt
+2025-09-09 13:22:19      31504 transcripts/txt/250.0_MinnieDriver1.txt
+2025-09-09 13:22:08      18025 transcripts/txt/250.1_WiseCowboy.txt
+2025-09-09 13:22:19      18597 transcripts/txt/250.2_DaveChappelle.txt
+2025-09-09 13:22:08      26188 transcripts/txt/250.3_23_Me.txt
+2025-09-09 13:22:08      26499 transcripts/txt/250.4_MileyCyrus.txt
+2025-09-09 13:22:19      37703 transcripts/txt/251.0_RanaKaliouby1.txt
+2025-09-09 13:22:19      17295 transcripts/txt/251.1_CillianMurphy.txt
+2025-09-09 13:22:20      16177 transcripts/txt/251.2_SeanAstin.txt
+2025-09-09 13:22:20      18591 transcripts/txt/251.3_SteveBannon.txt
+2025-09-09 13:22:20      17636 transcripts/txt/251.4_NancyPelosi.txt
+2025-09-09 13:22:20      33758 transcripts/txt/252.0_YannisPappas.txt
+2025-09-09 13:22:08      20978 transcripts/txt/252.1_Homeless.txt
+2025-09-09 13:22:09      17899 transcripts/txt/252.2_NickCannon.txt
+2025-09-09 13:22:20      20893 transcripts/txt/252.3_BedrosKeuilian.txt
+2025-09-09 13:22:21      18430 transcripts/txt/252.4_HughJackman.txt
+2025-09-09 13:22:21      40504 transcripts/txt/253.01_MeghanTrainor1.txt
+2025-09-09 13:22:09      19914 transcripts/txt/253.1_LaceyChabert.txt
+2025-09-09 13:22:09      28228 transcripts/txt/253.2_Woke.txt
+2025-09-09 13:22:09      22432 transcripts/txt/253.3_JeremyPope.txt
+2025-09-09 13:22:09      29115 transcripts/txt/253.4_CristianoRonaldo.txt
+2025-09-09 13:22:21      32929 transcripts/txt/254.01_RobDelaney1.txt
+2025-09-09 13:22:10      24198 transcripts/txt/254.1_FTXSamBankman.txt
+2025-09-09 13:22:10      23262 transcripts/txt/254.2_PeterThiel.txt
+2025-09-09 13:22:21      16317 transcripts/txt/254.3_JohnKrasinski.txt
+2025-09-09 13:22:21      14011 transcripts/txt/254.4_EmilyBlunt.txt
+2025-09-09 13:22:22      33829 transcripts/txt/255.0_SamuelL.Jackson.txt
+2025-09-09 13:22:10      27611 transcripts/txt/255.1_GlenPowell.txt
+2025-09-09 13:22:22      30170 transcripts/txt/255.2_JamesAustin.txt
+2025-09-09 13:22:22      19253 transcripts/txt/255.3_AnyaTaylor-Joy.txt
+2025-09-09 13:22:22      20473 transcripts/txt/255.4_LaurenceFishburne.txt
+2025-09-09 13:22:22      34795 transcripts/txt/256.0_TimAllen1.txt
+2025-09-09 13:22:10      16508 transcripts/txt/256.1_KenBlock.txt
+2025-09-09 13:22:10      23424 transcripts/txt/256.2_ACES2.txt
+2025-09-09 13:22:11      16206 transcripts/txt/256.3_ACES1.txt
+2025-09-09 13:22:11      19462 transcripts/txt/256.4_Deciders.txt
+2025-09-09 13:22:23      40642 transcripts/txt/257.0_SofiaCarson.txt
+2025-09-09 13:22:23      20899 transcripts/txt/257.4_NickWalker.txt
+2025-09-09 13:22:23      16987 transcripts/txt/257_JeremyRenner.txt
+2025-09-09 13:22:11      17294 transcripts/txt/257_Lawsuits.txt
+2025-09-09 13:22:23      19953 transcripts/txt/257_Ramy.txt
+2025-09-09 13:22:23      17918 transcripts/txt/258_Gabriel.txt
+2025-09-09 13:22:24      40021 transcripts/txt/258_Lin1.txt
+2025-09-09 13:22:11      20164 transcripts/txt/258_Rant.txt
+2025-09-09 13:22:11      22591 transcripts/txt/258_Socials1.txt
+2025-09-09 13:22:12      20549 transcripts/txt/258_Socials2.txt
+2025-09-09 13:22:12      26890 transcripts/txt/259_ENTJ.txt
+2025-09-09 13:22:24      22934 transcripts/txt/259_Khloe.txt
+2025-09-09 13:22:24      19855 transcripts/txt/259_Morgan.txt
+2025-09-09 13:22:24      25712 transcripts/txt/259_Sam.txt
+2025-09-09 13:22:12      30402 transcripts/txt/259_Zoe1.txt
+2025-09-09 13:22:24      21271 transcripts/txt/260.1_JackBlack.txt
+2025-09-09 13:22:25      28448 transcripts/txt/260.2_KrisCarr.txt
+2025-09-09 13:22:12      23293 transcripts/txt/260.3_SundarPichai.txt
+2025-09-09 13:22:12      23451 transcripts/txt/260.4_WaldoWaldman.txt
+2025-09-09 13:22:13      33235 transcripts/txt/260_Jessica1.txt
+2025-09-09 13:22:25      31983 transcripts/txt/261.01_ChrisDistefano.txt
+2025-09-09 13:22:13      19139 transcripts/txt/261.1_ChatGPT.txt
+2025-09-09 13:22:13      18876 transcripts/txt/261.2_Kendrick.txt
+2025-09-09 13:22:25      27988 transcripts/txt/261.3_Gary.txt
+2025-09-09 13:22:25      21378 transcripts/txt/261.4_StevenBartlett.txt
+2025-09-09 13:22:25      32582 transcripts/txt/262.01_PaulEkman.txt
+2025-09-09 13:22:13      14992 transcripts/txt/262.1_Method.txt
+2025-09-09 13:22:26      17419 transcripts/txt/262.2_SharonHorgan.txt
+2025-09-09 13:22:26      19035 transcripts/txt/262.3_JennetteMcCurdy.txt
+2025-09-09 13:22:26      19483 transcripts/txt/262.4_BrendanFraser.txt
+2025-09-09 13:22:26      14740 transcripts/txt/263.1_JoeRogan.txt
+2025-09-09 13:22:14      24649 transcripts/txt/263.2_Microsoft.txt
+2025-09-09 13:22:26      16576 transcripts/txt/263.2_RickRubin.txt
+2025-09-09 13:22:14      27870 transcripts/txt/263.3_Microsoft.txt
+2025-09-09 13:22:14      25228 transcripts/txt/264.1_JessicaWatkins.txt
+2025-09-09 13:22:27      22845 transcripts/txt/264.2_SIMS.txt
+2025-09-09 13:22:27      22016 transcripts/txt/264.3_WoodyHarrelson.txt
+2025-09-09 13:22:27      27169 transcripts/txt/264.4_RonDeSantis.txt
+2025-09-09 13:22:28        266 transcripts/txt/Anthony_Bourdain_Travel_Food.txt
+2025-09-09 13:22:27        243 transcripts/txt/Class_001_Tim_Cook.txt
+2025-09-09 13:22:27        263 transcripts/txt/Class_217_FF_Se_Te_ESFP_Consume.txt
+2025-09-09 13:22:28        171 transcripts/txt/Class_310_Rob_Dyrdek.txt
+2025-09-09 13:22:28        248 transcripts/txt/Class_388_David_Harbour.txt
+2025-09-09 13:22:28        349 transcripts/txt/INTJ_Brian_Greene_Physics.txt
+2025-09-09 13:22:29        267 transcripts/txt/QA_389_Self_Fulfilling_Fears.txt
+2025-09-09 13:22:29        257 transcripts/txt/Tina_Fey_Comedy.txt
+2025-09-09 13:22:29        256 transcripts/txt/Vimeo_7gsm4r_Content.txt
+2025-09-09 14:40:30      22775 transcripts/txt/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.txt
+2025-09-09 13:46:31      21271 transcripts/txt/transcript_lib_p10_10_jack-black%3A-social.txt
+2025-09-09 13:46:16      33235 transcripts/txt/transcript_lib_p10_11_esfp-jessica-alba-(1.txt
+2025-09-09 13:46:13      26890 transcripts/txt/transcript_lib_p10_13_entj-kate-hopkins.txt
+2025-09-09 13:46:03      22934 transcripts/txt/transcript_lib_p10_14_birth-order!-khloe-k.txt
+2025-09-09 13:46:43      19855 transcripts/txt/transcript_lib_p10_15_morgan-freeman%2C-be.txt
+2025-09-09 13:46:50      25712 transcripts/txt/transcript_lib_p10_16_sam-worthington%3A-h.txt
+2025-09-09 13:46:13      30402 transcripts/txt/transcript_lib_p10_17_entj-zoe-saldana-(1%.txt
+2025-09-09 13:46:53      22591 transcripts/txt/transcript_lib_p10_19_social-types-intro-(.txt
+2025-09-09 13:46:54      21378 transcripts/txt/transcript_lib_p10_1_steven-bartlett%3A-w.txt
+2025-09-09 13:46:53      20549 transcripts/txt/transcript_lib_p10_20_social-types-intro-(.txt
+2025-09-09 13:46:15      17918 transcripts/txt/transcript_lib_p10_21_esfp-gabriel-iglesia.txt
+2025-09-09 13:46:17      20164 transcripts/txt/transcript_lib_p10_22_estj-rant!.txt
+2025-09-09 13:46:27      40021 transcripts/txt/transcript_lib_p10_23_intj-lin-manuel-mira.txt
+2025-09-09 13:46:27      40021 transcripts/txt/transcript_lib_p10_24_intj-lin-manuel-mira.txt
+2025-09-09 13:46:16      20899 transcripts/txt/transcript_lib_p10_25_esfp-nick-walker%3A-.txt
+2025-09-09 13:46:14      19953 transcripts/txt/transcript_lib_p10_26_esfp-big-ramy%3A-soc.txt
+2025-09-09 13:46:34      16987 transcripts/txt/transcript_lib_p10_27_jeremy-renner%3A-sta.txt
+2025-09-09 13:46:52      17294 transcripts/txt/transcript_lib_p10_28_social-media-vs-esfj.txt
+2025-09-09 13:46:17      40642 transcripts/txt/transcript_lib_p10_29_esfp-sofia-carson-(1.txt
+2025-09-09 13:46:22      27988 transcripts/txt/transcript_lib_p10_2_gary-vee-is-social-1.txt
+2025-09-09 13:46:06      16206 transcripts/txt/transcript_lib_p10_32_childhood-trauma-and.txt
+2025-09-09 13:46:07      23424 transcripts/txt/transcript_lib_p10_33_childhood-trauma-and.txt
+2025-09-09 13:46:38      16508 transcripts/txt/transcript_lib_p10_34_ken-block%3A-live-wi.txt
+2025-09-09 13:46:30      34795 transcripts/txt/transcript_lib_p10_35_istp-tim-allen-(1%2F.txt
+2025-09-09 13:46:38      20473 transcripts/txt/transcript_lib_p10_37_laurence-fishburne%3.txt
+2025-09-09 13:46:02      19253 transcripts/txt/transcript_lib_p10_38_anya-taylor-joy%3A-f.txt
+2025-09-09 13:46:32      30170 transcripts/txt/transcript_lib_p10_39_james-austin-and-fam.txt
+2025-09-09 13:46:38      18876 transcripts/txt/transcript_lib_p10_3_kendrick-lamar%3A-ca.txt
+2025-09-09 13:46:22      27611 transcripts/txt/transcript_lib_p10_40_glen-powell%3A-shift.txt
+2025-09-09 13:46:06      19139 transcripts/txt/transcript_lib_p10_4_chatgpt%3A-more-oppo.txt
+2025-09-09 13:46:07      31983 transcripts/txt/transcript_lib_p10_5_chris-distefano-(1%2.txt
+2025-09-09 13:46:58      23451 transcripts/txt/transcript_lib_p10_7_waldo-waldman%3A-wha.txt
+2025-09-09 13:46:54      23293 transcripts/txt/transcript_lib_p10_8_sundar-pichai%3A-soc.txt
+2025-09-09 13:46:38      28448 transcripts/txt/transcript_lib_p10_9_kris-carr%3A-what's-.txt
+2025-09-09 13:46:38      19914 transcripts/txt/transcript_lib_p11_10_lgbtq-persecution....txt
+2025-09-09 13:47:02      28228 transcripts/txt/transcript_lib_p11_11_woke-culture-and-soc.txt
+2025-09-09 13:46:44      22432 transcripts/txt/transcript_lib_p11_12_new-mom-and-women's-.txt
+2025-09-09 13:46:42      40504 transcripts/txt/transcript_lib_p11_13_meghan-trainor-(1%2F.txt
+2025-09-09 13:46:11      18430 transcripts/txt/transcript_lib_p11_15_enfj-hugh-jackman%3A.txt
+2025-09-09 13:46:17      20893 transcripts/txt/transcript_lib_p11_16_estp-bedros-keuilian.txt
+2025-09-09 13:46:45      17899 transcripts/txt/transcript_lib_p11_17_nick-cannon%3A-ident.txt
+2025-09-09 13:46:24      20978 transcripts/txt/transcript_lib_p11_18_homelessness-and-the.txt
+2025-09-09 13:47:02      33758 transcripts/txt/transcript_lib_p11_19_yannis-pappas-(1%2F2.txt
+2025-09-09 13:46:50      33829 transcripts/txt/transcript_lib_p11_1_samuel-l.-jackson-(1.txt
+2025-09-09 13:46:12      17636 transcripts/txt/transcript_lib_p11_21_enfj-nancy-pelosi%3A.txt
+2025-09-09 13:46:12      18591 transcripts/txt/transcript_lib_p11_22_enfp-steve-bannon%3A.txt
+2025-09-09 13:46:51      16177 transcripts/txt/transcript_lib_p11_23_sean-astin's-an-infj.txt
+2025-09-09 13:46:18      17295 transcripts/txt/transcript_lib_p11_24_estp-cillian-murphy%.txt
+2025-09-09 13:46:48      37703 transcripts/txt/transcript_lib_p11_25_rana-kaliouby-(1%2F2.txt
+2025-09-09 13:46:43      26499 transcripts/txt/transcript_lib_p11_27_miley-cyrus%3A-doubl.txt
+2025-09-09 13:46:01      26188 transcripts/txt/transcript_lib_p11_28_anne-wojcicki%3A-23%.txt
+2025-09-09 13:46:09      18597 transcripts/txt/transcript_lib_p11_29_dave-chappelle%3A-ni.txt
+2025-09-09 13:46:59      18025 transcripts/txt/transcript_lib_p11_30_what-every-25-year-o.txt
+2025-09-09 13:46:43      31504 transcripts/txt/transcript_lib_p11_31_minnie-driver-(1%2F2.txt
+2025-09-09 13:46:13      20402 transcripts/txt/transcript_lib_p11_33_entp-mark-rober%3A-h.txt
+2025-09-09 13:46:10      17216 transcripts/txt/transcript_lib_p11_34_demon-ne-and-intrusi.txt
+2025-09-09 13:46:04      25192 transcripts/txt/transcript_lib_p11_35_boffy%3A-prioritizin.txt
+2025-09-09 13:46:16      21941 transcripts/txt/transcript_lib_p11_36_esfp-kristen-bell%3A.txt
+2025-09-09 13:46:51      36451 transcripts/txt/transcript_lib_p11_37_serena-williams-(1%2.txt
+2025-09-09 13:46:08      15556 transcripts/txt/transcript_lib_p11_39_climate-activists-1%.txt
+2025-09-09 13:46:28      14011 transcripts/txt/transcript_lib_p11_3_isfp-emily-blunt%3A-.txt
+2025-09-09 13:46:08      17303 transcripts/txt/transcript_lib_p11_40_climate-activists-2%.txt
+2025-09-09 13:46:27      16317 transcripts/txt/transcript_lib_p11_4_intj-john-krasinski%.txt
+2025-09-09 13:46:47      23262 transcripts/txt/transcript_lib_p11_5_peter-thiel%3A-why-a.txt
+2025-09-09 13:46:20      24198 transcripts/txt/transcript_lib_p11_6_ftx-and-nf-shortcomi.txt
+2025-09-09 13:46:49      32929 transcripts/txt/transcript_lib_p11_7_rob-delaney-(1%2F2).txt
+2025-09-09 13:46:49      29115 transcripts/txt/transcript_lib_p11_9_ronaldo%3A-what-make.txt
+2025-09-09 13:46:05      18388 transcripts/txt/transcript_lib_p12_12_brad-pitt-and-bad-em.txt
+2025-09-09 13:46:03      18382 transcripts/txt/transcript_lib_p12_13_bam-margera%3A-stuck.txt
+2025-09-09 13:46:41      21120 transcripts/txt/transcript_lib_p12_14_magnus-carlsen-not-i.txt
+2025-09-09 13:46:31      33668 transcripts/txt/transcript_lib_p12_15_idina-menzel-(1%2F2).txt
+2025-09-09 13:46:35      21298 transcripts/txt/transcript_lib_p12_17_john-danaher%3A-cons.txt
+2025-09-09 13:46:40      14660 transcripts/txt/transcript_lib_p12_18_leslie-jones%3A-obse.txt
+2025-09-09 13:46:36      14247 transcripts/txt/transcript_lib_p12_19_justin-trudeau%3A-fe.txt
+2025-09-09 13:46:54      25956 transcripts/txt/transcript_lib_p12_1_steve-o%3A-hero's-jo.txt
+2025-09-09 13:46:25      18788 transcripts/txt/transcript_lib_p12_20_hunter-biden%3A-enab.txt
+2025-09-09 13:46:47      30746 transcripts/txt/transcript_lib_p12_21_pharrell-williams-(1.txt
+2025-09-09 13:46:11      21419 transcripts/txt/transcript_lib_p12_2_donald-hoffman%3A-co.txt
+2025-09-09 13:46:55      34081 transcripts/txt/transcript_lib_p12_3_susan-wojcicki-(1%2F.txt
+2025-09-09 13:46:58       8312 transcripts/txt/transcript_lib_p12_5_video-typing-faq.txt
+2025-09-09 13:46:46      18667 transcripts/txt/transcript_lib_p12_6_paul-reubens-%3D-ala.txt
+2025-09-09 13:46:37      23517 transcripts/txt/transcript_lib_p12_7_kanye-west%3A-an-exa.txt
+2025-09-09 13:46:33      13008 transcripts/txt/transcript_lib_p12_8_jared-kushner%3A-pol.txt
+2025-09-09 13:46:00      27716 transcripts/txt/transcript_lib_p12_9_alan-cumming-(1%2F2).txt
+2025-09-09 13:46:05      33049 transcripts/txt/transcript_lib_p13_17_caroline-leaf-(1%2F2.txt
+2025-09-09 13:46:05      15611 transcripts/txt/transcript_lib_p13_18_caroline-leaf-(2%2F2.txt
+2025-09-09 13:46:28      20379 transcripts/txt/transcript_lib_p13_19_intj-michael-cohen.txt
+2025-09-09 13:46:30      20644 transcripts/txt/transcript_lib_p16_10_istp-pete-davidson.txt
+2025-09-09 13:46:07      18786 transcripts/txt/transcript_lib_p16_11_chris-rock-(1%2F2).txt
+2025-09-09 13:46:03      16138 transcripts/txt/transcript_lib_p16_3_benny-hinn-is-dave.txt
+2025-09-09 13:46:14      20953 transcripts/txt/transcript_lib_p16_4_esfj-nicolas-cage.txt
+2025-09-09 13:46:33      31297 transcripts/txt/transcript_lib_p16_5_jane-goodall-(1%2F2).txt
+2025-09-09 13:46:33      37240 transcripts/txt/transcript_lib_p16_6_jane-goodall-(2%2F2).txt
+2025-09-09 13:46:16      27522 transcripts/txt/transcript_lib_p16_7_esfp-jesse-ventura-c.txt
+2025-09-09 13:46:30      18786 transcripts/txt/transcript_lib_p16_8_istp-theo-von-is-a-g.txt
+2025-09-09 13:46:30      18547 transcripts/txt/transcript_lib_p16_9_istp-vs-entj-rage!.txt
+2025-09-09 14:57:44      75095 transcripts/txt/transcript_lib_p1_1_lead-se-self-fulfill.txt
+2025-09-09 13:46:44      16814 transcripts/txt/transcript_lib_p3_26_mrbeast%3A-tall-popp.txt
+2025-09-09 13:46:21      27988 transcripts/txt/transcript_lib_p45_40_gary-%22exxj%22-vayn.txt
+2025-09-09 13:46:23      19462 transcripts/txt/transcript_lib_p46_2_grow-deciders%3F.txt
+2025-09-09 13:46:26        349 transcripts/txt/transcript_lib_p8_28_intj-brian-greene%3A.txt
+2025-09-09 13:46:53      25228 transcripts/txt/transcript_lib_p9_23_socials%3A-4-friends.txt
+2025-09-09 13:46:49      27169 transcripts/txt/transcript_lib_p9_24_ron-desantis%3A-find.txt
+2025-09-09 13:46:28      22016 transcripts/txt/transcript_lib_p9_25_intj-woody-harrelson.txt
+2025-09-09 13:46:29      22845 transcripts/txt/transcript_lib_p9_26_istj-lilsimsie%3A-wh.txt
+2025-09-09 13:46:07      27169 transcripts/txt/transcript_lib_p9_27_christine-baranski-(.txt
+2025-09-09 13:46:51      27870 transcripts/txt/transcript_lib_p9_30_satya-nadella%3A-mic.txt
+2025-09-09 13:46:50      24649 transcripts/txt/transcript_lib_p9_31_satya-nadella%3A-go-.txt
+2025-09-09 13:46:35      16576 transcripts/txt/transcript_lib_p9_33_john-travolta-(1%2F2.txt
+2025-09-09 13:46:05      19483 transcripts/txt/transcript_lib_p9_35_brendan-fraser%3A-fi.txt
+2025-09-09 13:46:34      19035 transcripts/txt/transcript_lib_p9_36_jennette-mccurdy%3A-.txt
+2025-09-09 13:46:51      17419 transcripts/txt/transcript_lib_p9_37_sharon-horgan%3A-par.txt
+2025-09-09 13:46:46      32582 transcripts/txt/transcript_lib_p9_39_paul-ekman-(1%2F2).txt
+2025-09-09 13:46:46      14992 transcripts/txt/transcript_lib_p9_40_paul-ekman-(2%2F2).txt
+2025-09-09 13:46:35      14740 transcripts/txt/transcript_lib_p9_6_joe-rogan%3A-just-do.txt
+2025-09-09 13:46:12      16576 transcripts/txt/transcript_lib_p9_7_enfp-rick-rubin%3A-t.txt
+2025-09-09 13:21:52      24254 transcripts/vtt/auto_generated_captions (1) Sam bankman.vtt
+2025-09-09 13:21:25      22072 transcripts/vtt/auto_generated_captions (1).vtt
+2025-09-09 13:21:49      16557 transcripts/vtt/auto_generated_captions (10).vtt
+2025-09-09 13:21:50      15202 transcripts/vtt/auto_generated_captions (11).vtt
+2025-09-09 13:21:26      19091 transcripts/vtt/auto_generated_captions (12).vtt
+2025-09-09 13:21:26      17475 transcripts/vtt/auto_generated_captions (13).vtt
+2025-09-09 13:21:26      15048 transcripts/vtt/auto_generated_captions (14).vtt
+2025-09-09 13:21:50      18842 transcripts/vtt/auto_generated_captions (15).vtt
+2025-09-09 13:21:26      21434 transcripts/vtt/auto_generated_captions (16).vtt
+2025-09-09 13:21:27      28044 transcripts/vtt/auto_generated_captions (17).vtt
+2025-09-09 13:21:27      18932 transcripts/vtt/auto_generated_captions (18).vtt
+2025-09-09 13:21:50      12322 transcripts/vtt/auto_generated_captions (19).vtt
+2025-09-09 13:21:27      22901 transcripts/vtt/auto_generated_captions (2) Si.vtt
+2025-09-09 13:21:50      21128 transcripts/vtt/auto_generated_captions (2).vtt
+2025-09-09 13:21:27      32039 transcripts/vtt/auto_generated_captions (20).vtt
+2025-09-09 13:21:51      22192 transcripts/vtt/auto_generated_captions (21).vtt
+2025-09-09 13:21:28      23349 transcripts/vtt/auto_generated_captions (22).vtt
+2025-09-09 13:21:44      28504 transcripts/vtt/auto_generated_captions (23).vtt
+2025-09-09 13:21:44      21327 transcripts/vtt/auto_generated_captions (24).vtt
+2025-09-09 13:21:45      33291 transcripts/vtt/auto_generated_captions (25).vtt
+2025-09-09 13:21:45      26946 transcripts/vtt/auto_generated_captions (26).vtt
+2025-09-09 13:21:45      22990 transcripts/vtt/auto_generated_captions (27).vtt
+2025-09-09 13:21:53      22804 transcripts/vtt/auto_generated_captions (28).vtt
+2025-09-09 13:21:45      25768 transcripts/vtt/auto_generated_captions (29).vtt
+2025-09-09 13:21:46      27225 transcripts/vtt/auto_generated_captions (3) 264_3.vtt
+2025-09-09 13:21:51      28889 transcripts/vtt/auto_generated_captions (3).vtt
+2025-09-09 13:21:46      30458 transcripts/vtt/auto_generated_captions (30).vtt
+2025-09-09 13:21:54      16640 transcripts/vtt/auto_generated_captions (31).vtt
+2025-09-09 13:21:46      20605 transcripts/vtt/auto_generated_captions (32).vtt
+2025-09-09 13:21:46      17974 transcripts/vtt/auto_generated_captions (33).vtt
+2025-09-09 13:21:46      20220 transcripts/vtt/auto_generated_captions (34).vtt
+2025-09-09 13:21:46      40077 transcripts/vtt/auto_generated_captions (35).vtt
+2025-09-09 13:21:47      20955 transcripts/vtt/auto_generated_captions (36).vtt
+2025-09-09 13:21:54      13464 transcripts/vtt/auto_generated_captions (37).vtt
+2025-09-09 13:21:47      17043 transcripts/vtt/auto_generated_captions (38).vtt
+2025-09-09 13:21:47      17350 transcripts/vtt/auto_generated_captions (39).vtt
+2025-09-09 13:21:51      18954 transcripts/vtt/auto_generated_captions (4).vtt
+2025-09-09 13:21:47      40698 transcripts/vtt/auto_generated_captions (40).vtt
+2025-09-09 13:21:47      19518 transcripts/vtt/auto_generated_captions (41).vtt
+2025-09-09 13:21:48      23480 transcripts/vtt/auto_generated_captions (42).vtt
+2025-09-09 13:21:48      16564 transcripts/vtt/auto_generated_captions (43).vtt
+2025-09-09 13:21:55      21690 transcripts/vtt/auto_generated_captions (44).vtt
+2025-09-09 13:21:55      15255 transcripts/vtt/auto_generated_captions (45).vtt
+2025-09-09 13:21:55      21503 transcripts/vtt/auto_generated_captions (46).vtt
+2025-09-09 13:21:48      27667 transcripts/vtt/auto_generated_captions (47).vtt
+2025-09-09 13:21:48      33885 transcripts/vtt/auto_generated_captions (48).vtt
+2025-09-09 13:21:48      14067 transcripts/vtt/auto_generated_captions (49).vtt
+2025-09-09 13:21:51      16170 transcripts/vtt/auto_generated_captions (5).vtt
+2025-09-09 13:21:49      16373 transcripts/vtt/auto_generated_captions (50) John Cr.vtt
+2025-09-09 13:21:55      23897 transcripts/vtt/auto_generated_captions (50).vtt
+2025-09-09 13:21:56      19691 transcripts/vtt/auto_generated_captions (51).vtt
+2025-09-09 13:21:56      45469 transcripts/vtt/auto_generated_captions (52).vtt
+2025-09-09 13:21:56      14583 transcripts/vtt/auto_generated_captions (53).vtt
+2025-09-09 13:21:56      16194 transcripts/vtt/auto_generated_captions (54).vtt
+2025-09-09 13:21:56      18697 transcripts/vtt/auto_generated_captions (55).vtt
+2025-09-09 13:21:57      23481 transcripts/vtt/auto_generated_captions (56).vtt
+2025-09-09 13:21:57      17206 transcripts/vtt/auto_generated_captions (57).vtt
+2025-09-09 13:21:57      22241 transcripts/vtt/auto_generated_captions (58).vtt
+2025-09-09 13:21:57      14408 transcripts/vtt/auto_generated_captions (59).vtt
+2025-09-09 13:21:49      25284 transcripts/vtt/auto_generated_captions (6).vtt
+2025-09-09 13:21:57      14144 transcripts/vtt/auto_generated_captions (60).vtt
+2025-09-09 13:21:58      31659 transcripts/vtt/auto_generated_captions (61).vtt
+2025-09-09 13:21:58      15960 transcripts/vtt/auto_generated_captions (62).vtt
+2025-09-09 13:21:58      22539 transcripts/vtt/auto_generated_captions (63).vtt
+2025-09-09 13:21:58      15115 transcripts/vtt/auto_generated_captions (64).vtt
+2025-09-09 13:21:58      32563 transcripts/vtt/auto_generated_captions (65).vtt
+2025-09-09 13:21:59      14343 transcripts/vtt/auto_generated_captions (66).vtt
+2025-09-09 13:21:59      21058 transcripts/vtt/auto_generated_captions (67).vtt
+2025-09-09 13:21:59      11954 transcripts/vtt/auto_generated_captions (68).vtt
+2025-09-09 13:21:59      42151 transcripts/vtt/auto_generated_captions (69).vtt
+2025-09-09 13:21:59      13064 transcripts/vtt/auto_generated_captions (7).vtt
+2025-09-09 13:21:59      25689 transcripts/vtt/auto_generated_captions (70).vtt
+2025-09-09 13:22:00      24420 transcripts/vtt/auto_generated_captions (71).vtt
+2025-09-09 13:22:00      17450 transcripts/vtt/auto_generated_captions (72).vtt
+2025-09-09 13:22:00      19903 transcripts/vtt/auto_generated_captions (73).vtt
+2025-09-09 13:22:00      42867 transcripts/vtt/auto_generated_captions (74).vtt
+2025-09-09 13:22:01      14275 transcripts/vtt/auto_generated_captions (75).vtt
+2025-09-09 13:22:01      15924 transcripts/vtt/auto_generated_captions (76).vtt
+2025-09-09 13:22:01      14810 transcripts/vtt/auto_generated_captions (77).vtt
+2025-09-09 13:22:01      15044 transcripts/vtt/auto_generated_captions (78).vtt
+2025-09-09 13:22:01      35470 transcripts/vtt/auto_generated_captions (79).vtt
+2025-09-09 13:21:49      24705 transcripts/vtt/auto_generated_captions (8).vtt
+2025-09-09 13:22:02      18307 transcripts/vtt/auto_generated_captions (80).vtt
+2025-09-09 13:22:02      16929 transcripts/vtt/auto_generated_captions (81).vtt
+2025-09-09 13:22:02      21145 transcripts/vtt/auto_generated_captions (82).vtt
+2025-09-09 13:22:02      15369 transcripts/vtt/auto_generated_captions (83).vtt
+2025-09-09 13:22:03      36547 transcripts/vtt/auto_generated_captions (84).vtt
+2025-09-09 13:22:03      19133 transcripts/vtt/auto_generated_captions (85).vtt
+2025-09-09 13:22:03      16041 transcripts/vtt/auto_generated_captions (86).vtt
+2025-09-09 13:22:03      15934 transcripts/vtt/auto_generated_captions (87).vtt
+2025-09-09 13:22:04      19449 transcripts/vtt/auto_generated_captions (88).vtt
+2025-09-09 13:22:04      36314 transcripts/vtt/auto_generated_captions (89).vtt
+2025-09-09 13:21:52      12258 transcripts/vtt/auto_generated_captions (9).vtt
+2025-09-09 13:22:04      22039 transcripts/vtt/auto_generated_captions (90).vtt
+2025-09-09 13:22:04      18350 transcripts/vtt/auto_generated_captions (91).vtt
+2025-09-09 13:22:05      21992 transcripts/vtt/auto_generated_captions (92).vtt
+2025-09-09 13:22:05      18991 transcripts/vtt/auto_generated_captions (93).vtt
+2025-09-09 13:22:05      41426 transcripts/vtt/auto_generated_captions (94).vtt
+2025-09-09 13:22:05      24381 transcripts/vtt/auto_generated_captions (95).vtt
+2025-09-09 13:21:52      10952 transcripts/vtt/auto_generated_captions.vtt
+2025-09-09 14:40:30      32443 transcripts/vtt/transcript_03152b39-72bc-4237-ae49-28bc7b7a4560.vtt
+2025-09-09 13:46:47      25768 transcripts/vtt/transcript_bd30f4c6-ea45-4f3a-8357-1be42f69ebe2.vtt
+2025-09-09 13:46:00      32039 transcripts/vtt/transcript_lib_p12_24_adam-sandler%2C-cons.vtt
+2025-09-09 13:46:41      19518 transcripts/vtt/transcript_lib_p12_25_macaulay-culkin%3A-d.vtt
+2025-09-09 13:46:48      23349 transcripts/vtt/transcript_lib_p12_26_ray-kurzweil%3A-expo.vtt
+2025-09-09 13:46:43      28504 transcripts/vtt/transcript_lib_p12_27_mila-kunis-(1%2F2).vtt
+2025-09-09 13:46:01      30458 transcripts/vtt/transcript_lib_p12_36_andrew-tate%3A-proce.vtt
+2025-09-09 13:46:14      21690 transcripts/vtt/transcript_lib_p13_13_entp-quentin-taranti.vtt
+2025-09-09 13:46:06      15255 transcripts/vtt/transcript_lib_p13_14_channel-change-vs-ch.vtt
+2025-09-09 13:46:15      21503 transcripts/vtt/transcript_lib_p13_15_esfp-curtis-jackson.vtt
+2025-09-09 13:46:40      27667 transcripts/vtt/transcript_lib_p13_16_life-sends-you-unfai.vtt
+2025-09-09 13:46:40      19691 transcripts/vtt/transcript_lib_p13_1_lex-fridman%3A-not-t.vtt
+2025-09-09 13:46:18      23897 transcripts/vtt/transcript_lib_p13_20_estp-michael-jordan.vtt
+2025-09-09 13:46:32      45469 transcripts/vtt/transcript_lib_p13_23_james-cameron-(1%2F2.vtt
+2025-09-09 13:46:27      18697 transcripts/vtt/transcript_lib_p13_27_intj-ivanka-trump.vtt
+2025-09-09 13:46:33      23481 transcripts/vtt/transcript_lib_p13_29_jamie-foxx-(1%2F2).vtt
+2025-09-09 13:46:13      14144 transcripts/vtt/transcript_lib_p13_31_entj-alex-jones.vtt
+2025-09-09 13:46:12      14408 transcripts/vtt/transcript_lib_p13_33_enfj-oprah-winfrey.vtt
+2025-09-09 13:46:39      31659 transcripts/vtt/transcript_lib_p13_35_lebron-james-(1%2F2).vtt
+2025-09-09 13:46:18      15960 transcripts/vtt/transcript_lib_p13_37_estp-denzel-washingt.vtt
+2025-09-09 13:46:29      22539 transcripts/vtt/transcript_lib_p13_39_istp-mickey-rourke.vtt
+2025-09-09 13:46:21      13464 transcripts/vtt/transcript_lib_p13_4_fired-for-gray-hair%.vtt
+2025-09-09 13:46:22      25284 transcripts/vtt/transcript_lib_p14_33_government-talking-a.vtt
+2025-09-09 13:46:41      21058 transcripts/vtt/transcript_lib_p14_35_mm-esfp-queen-latifa.vtt
+2025-09-09 13:46:50      42151 transcripts/vtt/transcript_lib_p14_37_russell-brunson-(1%2.vtt
+2025-09-09 13:46:37      25689 transcripts/vtt/transcript_lib_p14_39_keira-knightly-and-n.vtt
+2025-09-09 13:46:57      15115 transcripts/vtt/transcript_lib_p14_3_tom-cruise-vs-matt-l.vtt
+2025-09-09 13:46:03      16929 transcripts/vtt/transcript_lib_p15_12_bill-murray-and-play.vtt
+2025-09-09 13:46:14      21145 transcripts/vtt/transcript_lib_p15_13_esfj-ric-flair.vtt
+2025-09-09 13:46:42      15369 transcripts/vtt/transcript_lib_p15_14_mark-miley-%26-criti.vtt
+2025-09-09 13:46:29      15934 transcripts/vtt/transcript_lib_p15_19_istj-mike-pence-goin.vtt
+2025-09-09 13:46:00      26946 transcripts/vtt/transcript_lib_p15_1_andrew-tate-wants-to.vtt
+2025-09-09 13:46:26      19449 transcripts/vtt/transcript_lib_p15_20_infp-joaquin-phoenix.vtt
+2025-09-09 13:46:55      18350 transcripts/vtt/transcript_lib_p15_24_te%2Fne-marjorie-tay.vtt
+2025-09-09 13:46:29      18991 transcripts/vtt/transcript_lib_p15_26_istp-glenn-jacobs.vtt
+2025-09-09 13:46:42      41426 transcripts/vtt/transcript_lib_p15_27_maya-angelou-(1%2F2).vtt
+2025-09-09 13:46:17      24381 transcripts/vtt/transcript_lib_p15_29_esfp-steve-irwin.vtt
+2025-09-09 13:46:20      10952 transcripts/vtt/transcript_lib_p15_30_fake-martial-artists.vtt
+2025-09-09 13:46:06      28889 transcripts/vtt/transcript_lib_p15_33_celine-dion-(1%2F2).vtt
+2025-09-09 13:46:29      16170 transcripts/vtt/transcript_lib_p15_36_istp-lands-plane-bec.vtt
+2025-09-09 13:46:55      14275 transcripts/vtt/transcript_lib_p15_5_system-even-for-the-.vtt
+2025-09-09 13:46:26      14067 transcripts/vtt/transcript_lib_p15_6_intj-david-meltzer.vtt
+2025-09-09 13:46:28      15044 transcripts/vtt/transcript_lib_p15_8_isfj-matthew-mcconau.vtt
+2025-09-09 13:46:52      35470 transcripts/vtt/transcript_lib_p15_9_simon-sinek-(1%2F2).vtt
+2025-09-09 13:46:15      12322 transcripts/vtt/transcript_lib_p16_14_esfp-jennifer-lawren.vtt
+2025-09-09 13:46:56      22192 transcripts/vtt/transcript_lib_p16_16_todd-phillips-nf-lia.vtt
+2025-09-09 13:46:32      12258 transcripts/vtt/transcript_lib_p16_1_jake-paul%3A-type-ch.vtt
+2025-09-09 13:46:59      23349 transcripts/vtt/transcript_lib_p16_22_weird-fi-and-dr-phil.vtt
+2025-09-09 13:47:01      19091 transcripts/vtt/transcript_lib_p17_17_where-are-you-on-the.vtt
+2025-09-09 13:46:35      20220 transcripts/vtt/transcript_lib_p17_28_joe-rogan-managing-c.vtt
+2025-09-09 13:46:24      20220 transcripts/vtt/transcript_lib_p17_40_how-are-these-people.vtt
+2025-09-09 13:47:02      21434 transcripts/vtt/transcript_lib_p18_14_zendaya-(1%2F2).vtt
+2025-09-09 13:46:19      19133 transcripts/vtt/transcript_lib_p18_34_endorphins%3A-feel-g.vtt
+2025-09-09 13:46:25      26946 transcripts/vtt/transcript_lib_p19_6_i-get-everything%2C-.vtt
+2025-09-09 13:47:00      17043 transcripts/vtt/transcript_lib_p19_8_what-lead-ne's-are-g.vtt
+2025-09-09 13:46:45      30458 transcripts/vtt/transcript_lib_p1_13_di-vs-de-processing.vtt
+2025-09-09 14:57:44     115488 transcripts/vtt/transcript_lib_p1_1_lead-se-self-fulfill.vtt
+2025-09-09 13:47:00      14343 transcripts/vtt/transcript_lib_p21_10_what-masculine-de-is.vtt
+2025-09-09 13:46:58      17475 transcripts/vtt/transcript_lib_p21_3_video-typing%3A-you'.vtt
+2025-09-09 13:46:57      21434 transcripts/vtt/transcript_lib_p22_14_typing-evy-esfp.vtt
+2025-09-09 13:46:48      22804 transcripts/vtt/transcript_lib_p23_3_processing-why-peopl.vtt
+2025-09-09 13:46:25      28044 transcripts/vtt/transcript_lib_p24_3_how-to-get-more-cons.vtt
+2025-09-09 13:46:55      24254 transcripts/vtt/transcript_lib_p24_5_susan-cain%2C-play-l.vtt
+2025-09-09 13:46:58      21992 transcripts/vtt/transcript_lib_p26_16_typing-mike-tyson-es.vtt
+2025-09-09 13:46:48      36547 transcripts/vtt/transcript_lib_p26_33_processing-our-demon.vtt
+2025-09-09 13:46:34      18932 transcripts/vtt/transcript_lib_p27_19_joe-biden-(1%2F2).vtt
+2025-09-09 13:46:08      15048 transcripts/vtt/transcript_lib_p27_23_coming-out.vtt
+2025-09-09 13:47:01      24705 transcripts/vtt/transcript_lib_p27_36_will-this-make-the-b.vtt
+2025-09-09 13:47:00      16373 transcripts/vtt/transcript_lib_p28_11_what's-so-bad-about-.vtt
+2025-09-09 13:46:20      32039 transcripts/vtt/transcript_lib_p29_28_fear-friends-more-th.vtt
+2025-09-09 13:46:24      25284 transcripts/vtt/transcript_lib_p29_3_how-do-i-work-on-ni%.vtt
+2025-09-09 13:46:36      22241 transcripts/vtt/transcript_lib_p29_9_jordan-peterson-upda.vtt
+2025-09-09 13:46:59      32039 transcripts/vtt/transcript_lib_p2_27_we-are-all-%22introv.vtt
+2025-09-09 13:46:40      25284 transcripts/vtt/transcript_lib_p2_32_live-shan-q%26a.vtt
+2025-09-09 13:46:44      15924 transcripts/vtt/transcript_lib_p30_24_my-friends-and-famil.vtt
+2025-09-09 13:46:11      22039 transcripts/vtt/transcript_lib_p30_9_discussion-on-ti.vtt
+2025-09-09 13:46:56      19518 transcripts/vtt/transcript_lib_p31_13_tips-on-double-obser.vtt
+2025-09-09 13:46:24      23480 transcripts/vtt/transcript_lib_p32_28_hero's-journey-updat.vtt
+2025-09-09 13:47:01      15202 transcripts/vtt/transcript_lib_p33_21_when-is-knowing-your.vtt
+2025-09-09 13:46:58      27667 transcripts/vtt/transcript_lib_p33_39_typing-people-live%3.vtt
+2025-09-09 13:46:53      36314 transcripts/vtt/transcript_lib_p35_12_standards-connected-.vtt
+2025-09-09 13:46:00      21327 transcripts/vtt/transcript_lib_p35_16_2019%3A-what-surpris.vtt
+2025-09-09 13:46:22      14810 transcripts/vtt/transcript_lib_p35_23_get-ahead-already!-(.vtt
+2025-09-09 13:46:54      18307 transcripts/vtt/transcript_lib_p35_26_steve-aoki-(1%2F2).vtt
+2025-09-09 13:46:46      24420 transcripts/vtt/transcript_lib_p35_29_obsessed-with-person.vtt
+2025-09-09 13:47:01      17450 transcripts/vtt/transcript_lib_p35_30_where-do-we-suck%3F.vtt
+2025-09-09 13:46:31      19903 transcripts/vtt/transcript_lib_p35_31_insecurity%3A-pets-o.vtt
+2025-09-09 13:46:18      42867 transcripts/vtt/transcript_lib_p35_32_edward-snowden-(1%2F.vtt
+2025-09-09 13:46:09      32563 transcripts/vtt/transcript_lib_p35_35_cry-routine-update%3.vtt
+2025-09-09 13:46:41      11954 transcripts/vtt/transcript_lib_p35_38_maisie-williams-(1%2.vtt
+2025-09-09 13:46:36      25284 transcripts/vtt/transcript_lib_p36_10_kanye-west-(1%2F2).vtt
+2025-09-09 13:46:37      17206 transcripts/vtt/transcript_lib_p36_11_kanye-west-(2%2F2).vtt
+2025-09-09 13:46:42      33885 transcripts/vtt/transcript_lib_p36_13_meanings-of-life%3F.vtt
+2025-09-09 13:46:08      20955 transcripts/vtt/transcript_lib_p36_24_class-is-not-getting.vtt
+2025-09-09 13:46:47      16041 transcripts/vtt/transcript_lib_p36_25_people-are-not-accep.vtt
+2025-09-09 13:46:04      17350 transcripts/vtt/transcript_lib_p36_28_bo-burnham-(1%2F2).vtt
+2025-09-09 13:46:04      40698 transcripts/vtt/transcript_lib_p36_29_bo-burnham-(2%2F2).vtt
+2025-09-09 13:46:09      17974 transcripts/vtt/transcript_lib_p36_33_conjure-up-your-shad.vtt
+2025-09-09 13:46:51      33291 transcripts/vtt/transcript_lib_p36_37_savior-vs-demon-stat.vtt
+2025-09-09 13:46:19      22990 transcripts/vtt/transcript_lib_p36_39_enneagram-correlatio.vtt
+2025-09-09 13:46:10      14583 transcripts/vtt/transcript_lib_p36_6_de-lower-your-standa.vtt
+2025-09-09 13:46:02      16194 transcripts/vtt/transcript_lib_p36_7_are-you-done-yet%3F.vtt
+2025-09-09 13:46:45      21434 transcripts/vtt/transcript_lib_p37_12_novak-djokovic-(1%2F.vtt
+2025-09-09 13:46:57      24705 transcripts/vtt/transcript_lib_p37_32_tripping-over-the-sa.vtt
+2025-09-09 13:46:26      18842 transcripts/vtt/transcript_lib_p37_9_i-don't-like-gary-ve.vtt
+2025-09-09 13:46:23      18932 transcripts/vtt/transcript_lib_p38_22_grant-function-stack.vtt
+2025-09-09 13:46:39      21128 transcripts/vtt/transcript_lib_p40_28_lead-fi-people.vtt
+2025-09-09 13:46:57      16564 transcripts/vtt/transcript_lib_p41_14_tony-hawk-(1%2F2).vtt
+2025-09-09 13:46:04      33291 transcripts/vtt/transcript_lib_p41_18_bodily-indicators-re.vtt
+2025-09-09 13:46:11      22990 transcripts/vtt/transcript_lib_p41_20_dr-phil-(1%2F2).vtt
+2025-09-09 13:46:42      21434 transcripts/vtt/transcript_lib_p41_33_martha-stewart-(2%2F.vtt
+2025-09-09 13:47:00      13064 transcripts/vtt/transcript_lib_p41_37_what-are-type-opposi.vtt
+2025-09-09 13:46:10      28504 transcripts/vtt/transcript_lib_p41_40_did-you-type-yoursel.vtt
+2025-09-09 13:46:02      22072 transcripts/vtt/transcript_lib_p42_40_are-other-people-see.vtt
+2025-09-09 13:46:44      21128 transcripts/vtt/transcript_lib_p43_30_ne-(masculine-vs-fem.vtt
+2025-09-09 13:46:31      40077 transcripts/vtt/transcript_lib_p44_12_ixxp%3A-what-does-th.vtt
+2025-09-09 13:46:21      27225 transcripts/vtt/transcript_lib_p44_24_find-your-typing-met.vtt
+2025-09-09 13:46:52      18954 transcripts/vtt/transcript_lib_p44_2_sleep-last.vtt
+2025-09-09 13:46:11      40077 transcripts/vtt/transcript_lib_p45_2_does-feminine-ti-loo.vtt
+2025-09-09 13:46:20      26946 transcripts/vtt/transcript_lib_p46_15_figuring-out-your-ty.vtt
+2025-09-09 13:46:45      33885 transcripts/vtt/transcript_lib_p47_16_objectively-calculat.vtt
+2025-09-09 13:46:19      16640 transcripts/vtt/transcript_lib_p47_19_ff%2C-fm%2C-mf%2C-mm.vtt
+2025-09-09 13:46:10      40698 transcripts/vtt/transcript_lib_p47_20_developing-as-you-gr.vtt
+2025-09-09 13:46:25      17974 transcripts/vtt/transcript_lib_p47_25_how-do-you-put-out-1.vtt
+2025-09-09 13:46:25      20955 transcripts/vtt/transcript_lib_p47_28_how-much-do-our-pare.vtt
+2025-09-09 13:46:40      17350 transcripts/vtt/transcript_lib_p47_31_lindsay-defranco-(2%.vtt
+2025-09-09 13:46:34      22990 transcripts/vtt/transcript_lib_p47_36_jennifer-aniston-(1%.vtt
+2025-09-09 13:46:03      33291 transcripts/vtt/transcript_lib_p47_38_benedict-cumberbatch.vtt
+2025-09-09 13:46:36      21434 transcripts/vtt/transcript_lib_p48_9_jordan-byers-(2%2F2).vtt
+2025-09-09 13:46:13      28044 transcripts/vtt/transcript_lib_p6_14_entj-going-after-the.vtt
+2025-09-09 13:46:44      28044 transcripts/vtt/transcript_lib_p6_15_nt-vs-sf-why-trump-w.vtt
+2025-09-09 13:47:00      22072 transcripts/vtt/transcript_lib_p6_26_what-unprocessed-pro.vtt
+2025-09-09 13:46:52      22901 transcripts/vtt/transcript_lib_p6_30_sleep-last-process-s.vtt
+2025-09-09 13:46:32      23349 transcripts/vtt/transcript_lib_p6_35_jack-dorsey%3A-3's-m.vtt
+2025-09-09 13:46:59      16557 transcripts/vtt/transcript_lib_p6_38_walk-into-the-woodch.vtt
+2025-09-09 13:46:06      12258 transcripts/vtt/transcript_lib_p7_18_catch-a-few!-demon-n.vtt
+2025-09-09 13:47:02      15048 transcripts/vtt/transcript_lib_p7_19_working-through-obse.vtt
+2025-09-09 13:46:19      19091 transcripts/vtt/transcript_lib_p7_22_exxps-seeing-ghosts-.vtt
+2025-09-09 13:46:21      28504 transcripts/vtt/transcript_lib_p7_33_garrett-white%3A-her.vtt
+2025-09-09 13:46:23      20605 transcripts/vtt/transcript_lib_p7_6_have-an-authority-ov.vtt
+2025-09-09 13:46:48      28889 transcripts/vtt/transcript_lib_p9_38_processing-the-typin.vtt
