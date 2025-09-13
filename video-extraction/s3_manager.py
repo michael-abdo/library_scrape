@@ -37,11 +37,12 @@ class S3Manager:
     def __init__(self, bucket_name: Optional[str] = None, region: str = "us-west-2"):
         """Initialize S3 client with credentials."""
         self.bucket_name = bucket_name or os.getenv('S3_BUCKET', 'op-videos-storage')
-        self.region = region
+        self.region = os.getenv('AWS_DEFAULT_REGION', 'us-east-1')
         
         try:
-            # Initialize S3 client
-            self.s3_client = boto3.client('s3', region_name=self.region)
+            # Initialize S3 client with zenex profile
+            session = boto3.Session(profile_name='zenex')
+            self.s3_client = session.client('s3', region_name=self.region)
             
             # Verify bucket exists
             self._ensure_bucket_exists()

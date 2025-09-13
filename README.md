@@ -1,16 +1,61 @@
-# Library Video Scraper
+# Objective Personality Video Processing System
 
-This scraper extracts all videos from the Objective Personality library (https://www.objectivepersonality.com/library).
+This system extracts, downloads, and processes videos from the Objective Personality library, uploading them to AWS S3 with database tracking.
 
-## Current Status
+## Current Status (Updated 2025-09-13)
 
-- ✅ 39 videos scraped from page 1
-- 📊 Database: `/Users/Mike/Xenodex/library_scrape/library_videos.db`
-- 🎯 Total expected: ~1,911 videos (39 videos × 49 pages)
+- ✅ **1,903 videos** with Streamable IDs in database
+- ✅ **773 videos** (40.6%) uploaded to S3  
+- 🎯 **1,130 videos** (59.4%) remaining to process
+- 📊 Database: `library_videos.db`
+- ☁️ **S3 Storage**: `s3://op-videos-storage/objectivepersonality/videos/`
 
-## How to Scrape All Videos
+## Quick Start - Process Videos to S3
 
 ### Prerequisites
+
+1. **AWS Credentials** (zenex profile configured):
+   ```bash
+   aws configure --profile zenex
+   aws --profile zenex s3 ls s3://op-videos-storage/
+   ```
+
+### Processing Videos
+
+**Recommended: Use Unified Processor**
+```bash
+# Process 200 videos with known Streamable IDs
+python3 video-extraction/unified_video_processor.py --limit 200 --streamable
+
+# Process ALL remaining videos (1,130)
+python3 video-extraction/unified_video_processor.py --streamable
+
+# Show database status
+python3 video-extraction/unified_video_processor.py --status
+```
+
+**Alternative: Direct S3 Upload** (no database updates)
+```bash
+# Process N videos directly
+python3 streamable_to_s3.py --200
+
+# Test with 5 videos  
+python3 streamable_to_s3.py --test
+```
+
+### Monitoring Progress
+
+```bash
+# Check database status
+sqlite3 library_videos.db "SELECT COUNT(*) FROM videos WHERE s3_key IS NOT NULL;"
+
+# Check S3 uploads
+aws --profile zenex s3 ls s3://op-videos-storage/objectivepersonality/videos/ --recursive | wc -l
+```
+
+## Video Scraping (Initial Setup)
+
+### Prerequisites for New Videos
 
 1. **Chrome with Remote Debugging**:
    ```bash
@@ -23,52 +68,48 @@ This scraper extracts all videos from the Objective Personality library (https:/
    - Make sure you're logged in with proper membership access
    - Keep the tab open
 
-3. **Activate Python Environment**:
-   ```bash
-   source venv/bin/activate
-   ```
-
 ### Running the Full Scraper
 
 ```bash
 # Scrape all 49 pages
 python scrape_all_library_videos.py
-
-# Or scrape specific pages
-python scrape_all_library_videos.py
-# Then enter start page: 2
-# And end page: 49
 ```
 
 The scraper will:
 - Navigate through each page automatically
-- Extract all video metadata
+- Extract all video metadata and Streamable IDs
 - Save to the SQLite database
 - Show progress for each page
-- Wait 3 seconds between pages to be respectful
 
-### Estimated Time
+## System Architecture
 
-- ~5-8 seconds per page
-- Total time for all 49 pages: ~4-7 minutes
+### Processing Pipeline
+1. **Video Scraping**: Extract video metadata and Streamable IDs from OP library
+2. **Streamable Download**: Get videos from Streamable's CDN using API
+3. **S3 Upload**: Stream directly to AWS S3 storage (no local storage)
+4. **Database Update**: Track S3 keys and metadata in SQLite
+
+### Key Scripts
+- `video-extraction/unified_video_processor.py` - **Complete workflow with database updates**
+- `streamable_to_s3.py` - Direct Streamable to S3 upload  
+- `scrape_all_library_videos.py` - Initial video metadata extraction
 
 ### Database Schema
 
 ```sql
 CREATE TABLE videos (
-    id TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
-    description TEXT,
-    duration TEXT,
-    upload_date TEXT,
-    video_url TEXT,
-    thumbnail_url TEXT,
-    tags TEXT,
-    category TEXT,
-    data_json TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    local_filename TEXT
+    video_url TEXT,                 -- ObjectivePersonality URL
+    s3_key TEXT,                    -- S3 object path (set after upload)
+    s3_bucket TEXT,                 -- S3 bucket name
+    storage_mode TEXT,              -- 's3' after successful upload
+    streamable_id TEXT,             -- Streamable video ID (e.g., 'u189o6')
+    local_filename TEXT,
+    transcript TEXT,
+    downloaded_at DATETIME,         -- Upload timestamp
+    created_at DATETIME DEFAULT (datetime('now')),
+    updated_at DATETIME DEFAULT (datetime('now'))
 );
 ```
 
