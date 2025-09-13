@@ -105,8 +105,15 @@ class S3Manager:
         self.region = region
         
         try:
-            # Initialize S3 client
-            self.s3_client = boto3.client('s3', region_name=self.region)
+            # Initialize S3 client with profile support
+            aws_profile = os.getenv('AWS_PROFILE')
+            if aws_profile:
+                # Use specific profile
+                session = boto3.Session(profile_name=aws_profile)
+                self.s3_client = session.client('s3', region_name=self.region)
+            else:
+                # Use default credentials
+                self.s3_client = boto3.client('s3', region_name=self.region)
             
             # Verify bucket exists
             self._ensure_bucket_exists()

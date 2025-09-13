@@ -1,0 +1,26 @@
+{
+  "video": {
+    "id": "test-video-001",
+    "title": "Sample Test Video",
+    "duration": 120,
+    "s3_key": "videos/test-001/sample_video.mp4",
+    "video_url": "https://www.objectivepersonality.com/videos/sample"
+  },
+  "config": {
+    "model": "chirp_2",
+    "language": "en-US",
+    "batch_size": 10,
+    "project_id": "claude-code-dev-20250615-1851"
+  },
+  "result": {
+    "success": true,
+    "transcript": "This is a sample transcription of the video content. The actual transcription would contain the complete spoken text from the video with high accuracy using Google's advanced speech recognition technology.",
+    "confidence": 0.95,
+    "processing_time": 45.2,
+    "cost_estimate": 0.096,
+    "model_used": "chirp_2",
+    "language": "en-US",
+    "word_count": 28,
+    "timestamp": "2025-09-11T19:58:28.579728"
+  }
+}

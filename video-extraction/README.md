@@ -1,12 +1,21 @@
-# Google GPU Video Transcription System
+# Video Transcription System with OpenAI Whisper & Google Speech
 
-A production-ready system for extracting, uploading, and transcribing ObjectivePersonality videos using Google Cloud Speech-to-Text GPU acceleration.
+A production-ready system for extracting, uploading, and transcribing ObjectivePersonality videos using **OpenAI Whisper API** (primary) and **Google Cloud Speech-to-Text** (fallback) with automatic service selection and cost optimization.
 
 ## Architecture Overview
 
 ```
-Video URL → Streamable ID Extraction → S3 Upload → Google GPU Transcription → Database Storage
+Video URL → Streamable ID Extraction → S3 Upload → OpenAI Whisper/Google Speech → Database Storage
+                                                     ↑ (Service Selection + Fallback)
 ```
+
+## 🚀 Key Features
+
+- **87.5% Cost Savings**: OpenAI Whisper API ($151.20 vs $907.20+ for Google)
+- **Dual Service Support**: OpenAI Whisper (primary) + Google Speech (fallback)
+- **Automatic Fallback**: Switches to backup service if primary fails
+- **Service Selection**: Environment variable controlled service preference
+- **Cost Analysis**: Real-time cost comparison and optimization recommendations
 
 ## Core Components
 
@@ -15,27 +24,38 @@ Video URL → Streamable ID Extraction → S3 Upload → Google GPU Transcriptio
 - **Features**: 
   - Multi-method Streamable ID extraction (cookies + Chrome debug)
   - Direct S3 streaming (no local storage)
-  - Integrated Google GPU transcription
+  - **Dual-service transcription** with automatic fallback
+  - Service selection based on cost optimization
   - Progress tracking and error recovery
-  - Database updates with metadata
+  - Database updates with service tracking
 
-### 2. `google_gpu_transcriber.py` - Google Cloud Speech-to-Text Integration
+### 2. `openai_whisper_transcriber.py` - OpenAI Whisper API Integration (Primary)
+- **Purpose**: Cost-effective, high-accuracy transcription using OpenAI Whisper API
+- **Features**:
+  - **87.5% cheaper** than Google Speech ($0.006/minute)
+  - S3 download → OpenAI upload workflow (25MB file limit)
+  - Excellent accuracy with multilingual support
+  - Fast processing and reliable API
+  - Compatible result format for seamless integration
+
+### 3. `google_gpu_transcriber.py` - Google Cloud Speech-to-Text Integration (Fallback)
 - **Purpose**: High-accuracy video transcription using Google's GPU-accelerated models
 - **Features**:
   - Support for multiple Google Speech models (chirp_2, latest_long, latest_short, video)
-  - S3 presigned URL processing
+  - S3 presigned URL processing (no file size limits)
   - Confidence scoring and error handling
-  - Cost-effective transcription ($0.012/15s vs $0.44/min for OpenAI)
+  - Premium transcription quality ($0.036-0.048/minute)
 
-### 3. `transcription_config.py` - Google GPU Configuration
-- **Purpose**: Centralized configuration for Google Cloud Speech-to-Text
+### 4. `transcription_config.py` - Unified Service Configuration
+- **Purpose**: Centralized configuration for both OpenAI Whisper and Google Speech
 - **Features**:
-  - Model selection and optimization
-  - Cost estimation utilities
+  - **Service selection**: 'openai' (default) or 'google'
+  - Cost estimation and comparison utilities
+  - Model information and recommendations
   - Environment variable management
-  - Validation and diagnostics
+  - Validation and diagnostics for both services
 
-### 4. `s3_manager.py` - AWS S3 Storage Manager
+### 5. `s3_manager.py` - AWS S3 Storage Manager
 - **Purpose**: Efficient video storage and access for transcription
 - **Features**:
   - Direct streaming uploads (no local storage)
@@ -46,6 +66,29 @@ Video URL → Streamable ID Extraction → S3 Upload → Google GPU Transcriptio
 ## Quick Start
 
 ### Prerequisites
+
+#### Option 1: OpenAI Whisper Setup (Recommended - 87.5% cheaper)
+
+1. **OpenAI API Key**:
+   ```bash
+   # Get API key from https://platform.openai.com/api-keys
+   export OPENAI_API_KEY="sk-your-openai-api-key"
+   ```
+
+2. **Basic Environment Variables**:
+   ```bash
+   export TRANSCRIPTION_SERVICE="openai"  # Use OpenAI Whisper (default)
+   export AWS_ACCESS_KEY_ID="your-aws-key"
+   export AWS_SECRET_ACCESS_KEY="your-aws-secret" 
+   export S3_BUCKET="your-s3-bucket"
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   pip install openai boto3 requests
+   ```
+
+#### Option 2: Google Cloud Setup (Fallback/Premium)
 
 1. **Google Cloud Setup**:
    ```bash
@@ -59,8 +102,9 @@ Video URL → Streamable ID Extraction → S3 Upload → Google GPU Transcriptio
      --role="roles/speech.client"
    ```
 
-2. **Environment Variables**:
+2. **Google Environment Variables**:
    ```bash
+   export TRANSCRIPTION_SERVICE="google"  # Force Google Speech
    export GOOGLE_CLOUD_PROJECT="your-project-id"
    export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
    export AWS_ACCESS_KEY_ID="your-aws-key"
@@ -68,9 +112,9 @@ Video URL → Streamable ID Extraction → S3 Upload → Google GPU Transcriptio
    export S3_BUCKET="your-s3-bucket"
    ```
 
-3. **Install Dependencies**:
+3. **Install Google Dependencies**:
    ```bash
-   pip install google-cloud-speech google-auth boto3 requests
+   pip install google-cloud-speech google-auth openai boto3 requests
    ```
 
 ### Basic Usage
@@ -98,8 +142,11 @@ python3 unified_video_processor.py "abc123"
 
 #### Configuration Testing
 ```bash
-# Test Google GPU transcription configuration
+# Test transcription service configuration (OpenAI + Google)
 python3 transcription_config.py
+
+# Run cost comparison analysis
+python3 cost_comparison.py
 ```
 
 ## Configuration Options
@@ -132,17 +179,29 @@ AWS_ACCESS_KEY_ID="your-key"
 AWS_SECRET_ACCESS_KEY="your-secret"
 ```
 
-## Cost Analysis
+## 💰 Cost Analysis & Savings
 
-### For 336 Videos (75 min average):
-- **Google GPU Transcription**: $1,209.60 ($3.60/video)
-- **Total Processing Time**: ~420 hours of audio
+### For 336 Videos (75 min average = 25,200 minutes total):
+
+| Service | Total Cost | Per Video | Savings vs OpenAI |
+|---------|------------|-----------|-------------------|
+| **🥇 OpenAI Whisper** | **$151.20** | **$0.45** | **- (baseline)** |
+| 🥈 AWS Transcribe | $604.80 | $1.80 | 300% more expensive |
+| 🥉 Google latest_long | $907.20 | $2.70 | 500% more expensive |
+| 💸 Google chirp_2 | $1,209.60 | $3.60 | 700% more expensive |
+
+### 🚀 OpenAI Whisper Advantages:
+- **87.5% cheaper** than Google Speech-to-Text
+- **$756-$1,058 savings** for 336 videos compared to Google
+- **Excellent accuracy** with multilingual support  
+- **Fast processing** and reliable API
+- **Easy setup** - just need OpenAI API key
+
+### 💡 Cost Breakdown:
+- **OpenAI Whisper**: $0.006/minute × 25,200 minutes = $151.20
+- **Google latest_long**: $0.036/minute equivalent = $907.20  
+- **Google chirp_2**: $0.048/minute equivalent = $1,209.60
 - **Storage**: S3 Glacier Instant Retrieval (~$0.004/GB/month)
-
-### Comparison:
-- **OpenAI Whisper API**: $2,646.00 (120% more expensive)
-- **Local GPU**: Free but requires expensive GPU hardware
-- **Google GPU**: Best balance of cost, accuracy, and reliability
 
 ## Database Schema
 
@@ -161,7 +220,14 @@ streamable_id      TEXT    -- Streamable video ID
 -- Transcription Results
 transcript         TEXT    -- Full transcript text
 transcription_confidence REAL -- Confidence score (0-1)
+transcription_service TEXT    -- Service used: 'openai' or 'google' 
 transcribed_at     TEXT    -- Transcription timestamp
+```
+
+### Database Migration
+```bash
+# Add transcription_service column to existing database
+python3 database_migration.py
 ```
 
 ## Workflow Details
@@ -288,6 +354,8 @@ For issues or questions:
 
 ---
 
-**Status**: Production Ready ✅  
-**Last Updated**: December 2024  
-**Cost**: ~$3.60 per 75-minute video
+**Status**: Production Ready with OpenAI Whisper Integration ✅  
+**Last Updated**: September 2025  
+**Primary Service**: OpenAI Whisper API ($0.45 per 75-minute video)  
+**Fallback Service**: Google Cloud Speech-to-Text ($2.70+ per 75-minute video)  
+**Cost Savings**: 87.5% reduction vs Google-only solution
